@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16 - Récupération d’Eau Usée</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section16.png') }}" alt="Section 16" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration16.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>L’immeuble possédera-t-il une récupération d’eau usée destinée à l'arrosage de la végétalisation ?</h2>
+
+            <form method="POST" action="{{ url_for('question16') }}" id="wastewaterForm">
+                <div class="form-group">
+                    <label>Faites un choix :</label><br>
+                    <input type="radio" id="wastewater_yes" name="wastewater_recovery" value="oui" {% if has_wastewater_recovery %}checked{% endif %} onclick="toggleWastewaterFields(true)">
+                    <label for="wastewater_yes">Oui</label><br>
+
+                    <input type="radio" id="wastewater_no" name="wastewater_recovery" value="non" {% if not has_wastewater_recovery %}checked{% endif %} onclick="toggleWastewaterFields(false)">
+                    <label for="wastewater_no">Non</label>
+                </div>
+
+                <!-- Champs conditionnels pour entrer le prix -->
+                <div id="wastewater_fields" class="form-group" style="display: none;">
+                    <label for="wastewater_cost">Prix de mise en œuvre (€) :</label>
+                    <input type="number" name="wastewater_cost" id="wastewater_cost" value="{{ wastewater_cost }}" min="0" step="0.01">
+
+                    <!-- Champ caché pour stocker la valeur de PrEU -->
+                    <input type="hidden" name="PrEU" id="PrEU_hidden">
+                </div>
+
+                <!-- Affichage dynamique du coût total -->
+                <p><strong>Coût total estimé de la récupération d’eau usée : </strong> <span id="PrEU_display">{{ session.get('PrEU', 0) }}</span> €</p>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question15'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script pour afficher ou cacher les champs et calculer PrEU -->
+    <script>
+        function toggleWastewaterFields(show) {
+            let wastewaterFields = document.getElementById("wastewater_fields");
+            wastewaterFields.style.display = show ? "block" : "none";
+
+            if (!show) {
+                document.getElementById("PrEU_display").innerText = "0";
+                document.getElementById("PrEU_hidden").value = "0";
+            }
+        }
+
+        function updatePrEU() {
+            let cost = parseFloat(document.getElementById("wastewater_cost").value) || 0;
+            let totalPrEU = cost;
+
+            // Mise à jour de l'affichage et de l'input caché
+            document.getElementById("PrEU_display").innerText = totalPrEU.toLocaleString('fr-FR');
+            document.getElementById("PrEU_hidden").value = totalPrEU;
+        }
+
+        document.getElementById("wastewater_cost").addEventListener("input", updatePrEU);
+
+        // S'assurer que les champs sélectionnés sont affichés au rechargement
+        document.addEventListener("DOMContentLoaded", function() {
+            if (document.getElementById("wastewater_yes").checked) {
+                document.getElementById("wastewater_fields").style.display = "block";
+            }
+            updatePrEU();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 14 - Composte</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section14.png') }}" alt="Section 14" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration14.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>L’immeuble possédera-t-il un compost accessible à tous les habitants ?</h2>
+
+            <form method="POST" action="{{ url_for('question14') }}">
+                <div class="form-group">
+                    <label>Souhaitez-vous ajouter un compost ?</label><br>
+                    <input type="radio" id="composte_yes" name="composte" value="oui" {% if has_composte %}checked{% endif %} onclick="toggleComposteInput(true)"> Oui<br>
+                    <input type="radio" id="composte_no" name="composte" value="non" {% if not has_composte %}checked{% endif %} onclick="toggleComposteInput(false)"> Non<br>
+                </div>
+
+                <!-- Champ conditionnel pour le prix du compost -->
+                <div class="form-group" id="composte_price_field" style="display: none;">
+                    <label for="composte_price">Prix de mise en œuvre (€) :</label>
+                    <input type="number" id="composte_price" name="composte_price" value="{{ composte_price }}" min="0">
+                </div>
+
+                <!-- Champ caché pour stocker le score -->
+                <input type="hidden" name="score_q14" value="{{ score_q14 }}">
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question13'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script pour gérer l'affichage dynamique du champ de prix -->
+    <script>
+        function toggleComposteInput(show) {
+            let field = document.getElementById("composte_price_field");
+            if (show) {
+                field.style.display = "block";
+            } else {
+                field.style.display = "none";
+                document.getElementById("composte_price").value = ""; // Effacer la valeur si "Non" est sélectionné
+            }
+        }
+
+        // Vérifier au chargement de la page si "Oui" était sélectionné
+        document.addEventListener("DOMContentLoaded", function() {
+            let composteYesChecked = document.getElementById("composte_yes").checked;
+            toggleComposteInput(composteYesChecked);
+        });
+    </script>
+</body>
+</html>
+

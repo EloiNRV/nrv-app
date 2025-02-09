@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 22 - Jardins partagés</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section22.png') }}" alt="Section 22" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration22.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>Des jardins partagés ou des potagers sont-ils intégrés au projet ?</h2>
+
+            <!-- Formulaire -->
+            <form method="POST" action="{{ url_for('question22') }}">
+                <div class="form-group">
+                    <label>Choisissez une seule option :</label><br>
+
+                    <input type="radio" id="jardin_oui" name="jardins_partages" value="Oui" {% if jardins_partages == "Oui" %}checked{% endif %}>
+                    <label for="jardin_oui">Oui</label><br>
+
+                    <input type="radio" id="jardin_partiel" name="jardins_partages" value="Partiellement" {% if jardins_partages == "Partiellement" %}checked{% endif %}>
+                    <label for="jardin_partiel">Partiellement</label><br>
+
+                    <input type="radio" id="jardin_non" name="jardins_partages" value="Non" {% if jardins_partages == "Non" %}checked{% endif %}>
+                    <label for="jardin_non">Non</label>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question21'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

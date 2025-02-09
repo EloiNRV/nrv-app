@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5 - Taux d’intérêt</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section5.png') }}" alt="Section 5" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration5.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>À quel taux d’intérêt empruntez-vous sans végétalisation du projet pour financer votre projet d’immeuble de logements ?</h2>
+            <p>Veuillez entrer un taux d’intérêt compris entre <strong>0% et 10%</strong>.</p>
+
+            <form id="interestForm" method="POST" action="{{ url_for('question5') }}">
+                <div class="form-group">
+                    <label for="interest_input">Taux d’intérêt (%) :</label>
+                    <input type="text" id="interest_input" name="Ti" required>
+                    <p id="error-message" style="color: red; display: none;">Le taux doit être compris entre 0% et 10%.</p>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question4'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script pour valider et formater l'entrée -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const interestInput = document.getElementById("interest_input");
+            const errorMessage = document.getElementById("error-message");
+            const interestForm = document.getElementById("interestForm");
+
+            // Permet d'entrer des nombres avec des décimales
+            interestInput.addEventListener("input", function(event) {
+                let value = event.target.value.replace(",", "."); // Remplace les virgules par des points
+                event.target.value = value.replace(/[^0-9.]/g, ""); // Garde seulement chiffres et points
+            });
+
+            // Vérifier la valeur avant soumission
+            interestForm.addEventListener("submit", function(event) {
+                let interest = parseFloat(interestInput.value);
+
+                if (isNaN(interest) || interest < 0 || interest > 10) {
+                    errorMessage.style.display = "block"; // Affiche l'erreur
+                    event.preventDefault(); // Empêche l'envoi du formulaire
+                } else {
+                    errorMessage.style.display = "none"; // Cache l'erreur si OK
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1 - Coefficient de Biotope par Surface</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section1.png') }}" alt="Progression" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration1.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question -->
+        <div class="question-content">
+            <h2>Calcul du Coefficient de Biotope par Surface (CBS)</h2>
+            <p>Veuillez indiquer les surfaces suivantes en m² :</p>
+
+            <!-- Formulaire -->
+            <form method="POST" action="{{ url_for('question1') }}">
+                <div class="form-group">
+                    <label for="surface_batie">Surface bâtie au sol (m²) :</label>
+                    <input type="number" id="surface_batie" name="surface_batie" min="0" step="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="surface_dalle">Surface végétalisée sur dalle ou parking (m²) :</label>
+                    <input type="number" id="surface_dalle" name="surface_dalle" min="0" step="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="surface_pleine_terre">Surface végétalisée en pleine terre (m²) :</label>
+                    <input type="number" id="surface_pleine_terre" name="surface_pleine_terre" min="0" step="1" required>
+                </div>
+
+                <button type="submit" class="button">Suivant</button>
+            </form>
+
+            <!-- Affichage des erreurs Flask -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <div class="error-messages">
+                        {% for category, message in messages %}
+                            <p class="{{ category }}">{{ message }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+
+</body>
+</html>

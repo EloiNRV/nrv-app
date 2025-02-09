@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 21 - Haies végétales</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section21.png') }}" alt="Section 21" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration21.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>Quel pourcentage de haies végétales avez-vous mis en place pour clôturer la parcelle ?</h2>
+
+            <!-- Formulaire -->
+            <form method="POST" action="{{ url_for('question21') }}">
+                <div class="form-group">
+                    <label>Choisissez une seule option :</label><br>
+
+                    <input type="radio" id="haies_0" name="haies_percentage" value="0%" {% if haies_percentage == "0%" %}checked{% endif %}>
+                    <label for="haies_0">0%</label><br>
+
+                    <input type="radio" id="haies_25" name="haies_percentage" value="25%" {% if haies_percentage == "25%" %}checked{% endif %}>
+                    <label for="haies_25">25%</label><br>
+
+                    <input type="radio" id="haies_50" name="haies_percentage" value="50%" {% if haies_percentage == "50%" %}checked{% endif %}>
+                    <label for="haies_50">50%</label><br>
+
+                    <input type="radio" id="haies_75" name="haies_percentage" value="75%" {% if haies_percentage == "75%" %}checked{% endif %}>
+                    <label for="haies_75">75%</label><br>
+
+                    <input type="radio" id="haies_100" name="haies_percentage" value="100%" {% if haies_percentage == "100%" %}checked{% endif %}>
+                    <label for="haies_100">100%</label>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question20'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

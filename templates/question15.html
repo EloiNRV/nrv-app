@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 15 - Récupération d’Eau Pluviale</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section15.png') }}" alt="Section 15" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration15.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>L’immeuble possédera-t-il une récupération d’eau pluviale destinée à l'arrosage de la végétalisation ?</h2>
+
+            <form method="POST" action="{{ url_for('question15') }}" id="rainwaterForm">
+                <div class="form-group">
+                    <label>Faites un choix :</label><br>
+                    <input type="radio" id="rainwater_yes" name="rainwater_recovery" value="oui" {% if has_rainwater_recovery %}checked{% endif %} onclick="toggleRainwaterFields(true)">
+                    <label for="rainwater_yes">Oui</label><br>
+
+                    <input type="radio" id="rainwater_no" name="rainwater_recovery" value="non" {% if not has_rainwater_recovery %}checked{% endif %} onclick="toggleRainwaterFields(false)">
+                    <label for="rainwater_no">Non</label>
+                </div>
+
+                <!-- Champs conditionnels pour entrer le prix -->
+                <div id="rainwater_fields" class="form-group" style="display: none;">
+                    <label for="rainwater_cost">Prix de mise en œuvre (€) :</label>
+                    <input type="number" name="rainwater_cost" id="rainwater_cost" value="{{ rainwater_cost }}" min="0" step="1">
+
+                    <!-- Champ caché pour stocker la valeur de PrEP -->
+                    <input type="hidden" name="PrEP" id="PrEP_hidden">
+                </div>
+
+                <!-- Affichage dynamique du coût total -->
+                <p><strong>Coût total estimé de la récupération d’eau pluviale : </strong> <span id="PrEP_display">{{ session.get('PrEP', 0) }}</span> €</p>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question14'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script pour afficher ou cacher les champs et calculer PrEP -->
+    <script>
+        function toggleRainwaterFields(show) {
+            let rainwaterFields = document.getElementById("rainwater_fields");
+            rainwaterFields.style.display = show ? "block" : "none";
+
+            if (!show) {
+                document.getElementById("PrEP_display").innerText = "0";
+                document.getElementById("PrEP_hidden").value = "0";
+            }
+        }
+
+        function updatePrEP() {
+            let cost = parseFloat(document.getElementById("rainwater_cost").value) || 0;
+            let totalPrEP = cost;
+
+            // Mise à jour de l'affichage et de l'input caché
+            document.getElementById("PrEP_display").innerText = totalPrEP.toLocaleString('fr-FR');
+            document.getElementById("PrEP_hidden").value = totalPrEP;
+        }
+
+        document.getElementById("rainwater_cost").addEventListener("input", updatePrEP);
+
+        // S'assurer que les champs sélectionnés sont affichés au rechargement
+        document.addEventListener("DOMContentLoaded", function() {
+            if (document.getElementById("rainwater_yes").checked) {
+                document.getElementById("rainwater_fields").style.display = "block";
+            }
+            updatePrEP();
+        });
+    </script>
+
+</body>
+</html>
+

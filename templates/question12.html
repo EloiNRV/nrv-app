@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12 - Type de toiture végétale</title>
+
+    <!-- Importation des polices et du CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <style>
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            margin-left: 10px;
+            font-size: 1rem;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barre de progression -->
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section12.png') }}" alt="Section 12" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration12.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>Quel est le type de toiture végétale que vous souhaitez mettre en place ?</h2>
+            <p>Cochez une ou plusieurs options, ou sélectionnez "Pas de toiture végétale".</p>
+
+            <form method="POST" action="{{ url_for('question12') }}" id="toitureForm">
+                
+
+                <!-- Type de toiture végétale avec champs dynamiques -->
+                <div class="form-group">
+                    <input type="checkbox" id="intensive" name="intensive">
+                    <label for="intensive">Toiture intensive</label>
+                    <input type="number" id="intensive_surface" name="intensive_surface" min="0" step="1" class="input-field hidden" placeholder="Surface (m²)">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="semi_intensive" name="semi_intensive">
+                    <label for="semi_intensive">Toiture semi-intensive</label>
+                    <input type="number" id="semi_intensive_surface" name="semi_intensive_surface" min="0" step="1" class="input-field hidden" placeholder="Surface (m²)">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="extensive" name="extensive">
+                    <label for="extensive">Toiture extensive</label>
+                    <input type="number" id="extensive_surface" name="extensive_surface" min="0" step="1" class="input-field hidden" placeholder="Surface (m²)">
+                </div>
+
+                 <!-- Option "Pas de toiture végétale" -->
+                 <div class="form-group">
+                    <input type="checkbox" id="no_toiture" name="no_toiture">
+                    <label for="no_toiture"><em>Pas de toiture végétale</em></label>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question11'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script pour gérer l'affichage dynamique des champs -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function toggleInput(checkboxId, inputId) {
+                let checkbox = document.getElementById(checkboxId);
+                let input = document.getElementById(inputId);
+                input.classList.add("hidden"); // Assure que les champs sont initialement cachés
+
+                checkbox.addEventListener("change", function() {
+                    input.classList.toggle("hidden", !this.checked);
+                    if (!this.checked) input.value = ""; // Réinitialise la valeur si décoché
+                });
+            }
+
+            toggleInput("intensive", "intensive_surface");
+            toggleInput("semi_intensive", "semi_intensive_surface");
+            toggleInput("extensive", "extensive_surface");
+
+            // Gestion de la case "Pas de toiture végétale"
+            let noToiture = document.getElementById("no_toiture");
+            let allCheckboxes = ["intensive", "semi_intensive", "extensive"];
+            let allInputs = ["intensive_surface", "semi_intensive_surface", "extensive_surface"];
+
+            noToiture.addEventListener("change", function() {
+                let isChecked = this.checked;
+                
+                // Désactiver toutes les autres cases et champs si "Pas de toiture végétale" est sélectionné
+                allCheckboxes.forEach(id => document.getElementById(id).disabled = isChecked);
+                allInputs.forEach(id => {
+                    let input = document.getElementById(id);
+                    input.classList.add("hidden");
+                    input.value = "";
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

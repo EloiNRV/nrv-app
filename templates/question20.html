@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 20 - Espèces locales adaptées</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section20.png') }}" alt="Section 20" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration20.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>Quelle proportion d’espèces locales ou adaptées au changement climatique sont actuellement présentes sur le site, ou que vous envisagez d’implanter ?</h2>
+
+            <!-- Formulaire -->
+            <form method="POST" action="{{ url_for('question20') }}">
+                <div class="form-group">
+                    <label>Choisissez une seule option :</label><br>
+
+                    <input type="radio" id="especes_0" name="proportion_especes" value="0%" {% if proportion_especes == "0%" %}checked{% endif %}>
+                    <label for="especes_0">0%</label><br>
+
+                    <input type="radio" id="especes_25" name="proportion_especes" value="25%" {% if proportion_especes == "25%" %}checked{% endif %}>
+                    <label for="especes_25">25%</label><br>
+
+                    <input type="radio" id="especes_50" name="proportion_especes" value="50%" {% if proportion_especes == "50%" %}checked{% endif %}>
+                    <label for="especes_50">50%</label><br>
+
+                    <input type="radio" id="especes_75" name="proportion_especes" value="75%" {% if proportion_especes == "75%" %}checked{% endif %}>
+                    <label for="especes_75">75%</label><br>
+
+                    <input type="radio" id="especes_100" name="proportion_especes" value="100%" {% if proportion_especes == "100%" %}checked{% endif %}>
+                    <label for="especes_100">100%</label>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question19'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

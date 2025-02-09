@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 17 - Ombrage par la végétalisation</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section17.png') }}" alt="Section 17" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration17.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>Quel est le pourcentage de l’enveloppe ombrée par la végétalisation de la parcelle et du bâtiment ?</h2>
+
+            <!-- Formulaire -->
+            <form method="POST" action="{{ url_for('question17') }}">
+                <div class="form-group">
+                    <label>Sélectionnez un pourcentage :</label><br>
+
+                    <input type="radio" id="q17_0" name="q17" value="0%" {% if selected_option == "0%" %}checked{% endif %}>
+                    <label for="q17_0">0%</label><br>
+
+                    <input type="radio" id="q17_25" name="q17" value="25%" {% if selected_option == "25%" %}checked{% endif %}>
+                    <label for="q17_25">25%</label><br>
+
+                    <input type="radio" id="q17_50" name="q17" value="50%" {% if selected_option == "50%" %}checked{% endif %}>
+                    <label for="q17_50">50%</label><br>
+
+                    <input type="radio" id="q17_75" name="q17" value="75%" {% if selected_option == "75%" %}checked{% endif %}>
+                    <label for="q17_75">75%</label><br>
+
+                    <input type="radio" id="q17_100" name="q17" value="100%" {% if selected_option == "100%" %}checked{% endif %}>
+                    <label for="q17_100">100%</label><br>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question16'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11 - Végétalisation des Façades</title>
+
+    <!-- Importation des polices et du CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <style>
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            margin-left: 10px;
+            font-size: 1rem;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barre de progression -->
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section11.png') }}" alt="Section 11" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration11.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>Quel est le type de façade végétale que vous souhaitez mettre en place ?</h2>
+            <p>Cochez une ou plusieurs options, ou sélectionnez "Pas de façade végétale".</p>
+
+            <form method="POST" action="{{ url_for('question11') }}" id="facadeForm">
+                
+
+                <!-- Type de façade végétale avec champs dynamiques -->
+                <div class="form-group">
+                    <input type="checkbox" id="grimpantes_mur" name="grimpantes_mur">
+                    <label for="grimpantes_mur">Grimpantes sur mur</label>
+                    <input type="number" id="grimpantes_mur_surface" name="grimpantes_mur_surface" min="0" step="1" class="input-field hidden" placeholder="Surface (m²)">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="grimpantes_cables" name="grimpantes_cables">
+                    <label for="grimpantes_cables">Grimpantes sur câbles</label>
+                    <input type="number" id="grimpantes_cables_surface" name="grimpantes_cables_surface" min="0" step="1" class="input-field hidden" placeholder="Surface (m²)">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="jardiniere" name="jardiniere">
+                    <label for="jardiniere">Jardinière construite</label>
+                    <input type="number" id="jardiniere_nombre" name="jardiniere_nombre" min="0" step="1" class="input-field hidden" placeholder="Nombre">
+                    <input type="number" id="jardiniere_cout" name="jardiniere_cout" min="0" step="1" class="input-field hidden" placeholder="Coût (€)">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="hydroponie_substrat" name="hydroponie_substrat">
+                    <label for="hydroponie_substrat">Hydroponie sur substrat</label>
+                    <input type="number" id="hydroponie_substrat_surface" name="hydroponie_substrat_surface" min="0" step="1" class="input-field hidden" placeholder="Surface (m²)">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="hydroponie_feutre" name="hydroponie_feutre">
+                    <label for="hydroponie_feutre">Hydroponie sur feutre</label>
+                    <input type="number" id="hydroponie_feutre_surface" name="hydroponie_feutre_surface" min="0" step="1" class="input-field hidden" placeholder="Surface (m²)">
+                </div>
+
+                <!-- Option "Pas de façade végétale" -->
+                <div class="form-group">
+                    <input type="checkbox" id="no_facade" name="no_facade">
+                    <label for="no_facade"><em>Pas de façade végétale</em></label>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question10'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script pour gérer l'affichage dynamique des champs -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function toggleInput(checkboxId, inputIds) {
+                let checkbox = document.getElementById(checkboxId);
+                let inputs = inputIds.map(id => document.getElementById(id));
+
+                // Masquer les champs initialement
+                inputs.forEach(input => input.classList.add("hidden"));
+
+                checkbox.addEventListener("change", function() {
+                    inputs.forEach(input => {
+                        input.classList.toggle("hidden", !this.checked);
+                        if (!this.checked) input.value = ""; // Réinitialisation si décoché
+                    });
+                });
+            }
+
+            toggleInput("grimpantes_mur", ["grimpantes_mur_surface"]);
+            toggleInput("grimpantes_cables", ["grimpantes_cables_surface"]);
+            toggleInput("jardiniere", ["jardiniere_nombre", "jardiniere_cout"]);
+            toggleInput("hydroponie_substrat", ["hydroponie_substrat_surface"]);
+            toggleInput("hydroponie_feutre", ["hydroponie_feutre_surface"]);
+
+            // Gestion de la case "Pas de façade végétale"
+            let noFacade = document.getElementById("no_facade");
+            let allCheckboxes = ["grimpantes_mur", "grimpantes_cables", "jardiniere", "hydroponie_substrat", "hydroponie_feutre"];
+            let allInputs = ["grimpantes_mur_surface", "grimpantes_cables_surface", "jardiniere_nombre", "jardiniere_cout", "hydroponie_substrat_surface", "hydroponie_feutre_surface"];
+
+            noFacade.addEventListener("change", function() {
+                let isChecked = this.checked;
+                
+                // Désactiver toutes les autres cases et champs si "Pas de façade végétale" est sélectionné
+                allCheckboxes.forEach(id => document.getElementById(id).disabled = isChecked);
+                allInputs.forEach(id => {
+                    let input = document.getElementById(id);
+                    input.classList.add("hidden");
+                    input.value = "";
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation des services écosystémiques</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <section class="main-section">
+        <article class="left-content">
+            <h1>Evaluation des services écosystémiques apportés par la végétalisation des logements</h1>
+            <p>Le site est en ligne simple et intuitif à utiliser. L'utilisateur est invité à répondre à un questionnaire comprenant des valeurs à renseigner, des choix multiples et uniques. Les résultats affichés par le site incluent d'abord un radar élaboré à partir des questions et des données issues de la littérature, visant à estimer les avantages de la végétalisation sous différents critères. Ensuite, un graphique exprime en euros par an les avantages financiers de la végétation, permettant à l'utilisateur de comprendre quand son projet de végétalisation deviendra rentable ou s'équilibrera.</p>
+            <button class="begin-btn" onclick="window.location.href='/question1'">Commencer</button>
+        </article>
+        <aside class="right-content">
+            <img src="{{ url_for('static', filename='images/project-logo-new.png') }}" alt="Project Logo" class="project-logo">
+        </aside>
+    </section>
+
+    <section class="logos-section">
+        <div class="logos-content">
+            <div class="logo-item">
+                <img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Logo 1">
+
+            </div>
+            <div class="logo-item">
+                <img src="{{ url_for('static', filename='images/logo2.png') }}" alt="Logo 2">
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="partner-item">
+                <img src="{{ url_for('static', filename='images/Big-Logo.png') }}" alt="Big Logo">
+            </div>
+            <div class="partners">
+                <img src="{{ url_for('static', filename='images/Partner0.png') }}" alt="Partner 0">
+                <img src="{{ url_for('static', filename='images/Partner1.png') }}" alt="Partner 1">
+                <img src="{{ url_for('static', filename='images/Partner12.png') }}" alt="Partner 12">
+                <img src="{{ url_for('static', filename='images/Partner2.png') }}" alt="Partner 2">
+                <img src="{{ url_for('static', filename='images/Partner3.png') }}" alt="Partner 3">
+                <img src="{{ url_for('static', filename='images/Partner4.png') }}" alt="Partner 4">
+                <img src="{{ url_for('static', filename='images/Partner5.png') }}" alt="Partner 5">
+
+
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <p>Contactez-nous: architectures@xlgd.fr | Phone: +33 (0)1 48 06 44 00</p>
+            <p>15 passage de la Main d'Or, 75011 Paris | <a href="https://www.xlgd.fr/">Visit our Website</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

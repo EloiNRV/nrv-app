@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3 - Répartition des logements</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section1.png') }}" alt="Section 1" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration3.png') }}" alt="Illustration">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>Combien de logements de chaque type votre immeuble comprendra-t-il ?</h2>
+            <p>Merci d'indiquer le nombre de logements de chaque catégorie :</p>
+
+            <form method="POST" action="{{ url_for('question3') }}">
+                <div class="form-group">
+                    <label for="num_T1">Nombre de T1 :</label>
+                    <input type="number" id="num_T1" name="num_T1" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="num_T2">Nombre de T2 :</label>
+                    <input type="number" id="num_T2" name="num_T2" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="num_T3">Nombre de T3 :</label>
+                    <input type="number" id="num_T3" name="num_T3" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="num_T4">Nombre de T4 :</label>
+                    <input type="number" id="num_T4" name="num_T4" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="num_T5">Nombre de T5 :</label>
+                    <input type="number" id="num_T5" name="num_T5" min="0" required>
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question2'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

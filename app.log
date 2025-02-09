@@ -1,0 +1,35 @@
+2025-02-09 23:52:10,339 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-09 23:52:10,339 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:52:10,341 - INFO -  * Restarting with stat
+2025-02-09 23:52:11,464 - WARNING -  * Debugger is active!
+2025-02-09 23:52:11,466 - INFO -  * Debugger PIN: 915-481-357
+2025-02-09 23:52:13,938 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:13] "GET / HTTP/1.1" 200 -
+2025-02-09 23:52:14,168 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-09 23:52:14,179 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/images/Partner1.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:14,188 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/images/logo1.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:14,189 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/images/Partner12.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:14,198 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/images/Partner0.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:14,206 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/images/Partner2.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:14,211 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/images/project-logo-new.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:14,213 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/images/Big-Logo.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:14,217 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/images/Partner3.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:14,217 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/images/Partner4.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:14,226 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/images/logo2.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:14,228 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:14] "[36mGET /static/images/Partner5.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:15,708 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:15] "GET /question1 HTTP/1.1" 200 -
+2025-02-09 23:52:15,734 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-09 23:52:15,746 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:15] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:15,750 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:15] "[36mGET /static/images/illustration1.png HTTP/1.1[0m" 304 -
+2025-02-09 23:52:20,275 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:20] "GET /question24 HTTP/1.1" 200 -
+2025-02-09 23:52:20,295 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:20] "[33mGET /static/images/section24.png HTTP/1.1[0m" 404 -
+2025-02-09 23:52:20,297 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-09 23:52:20,301 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:20] "[33mGET /static/images/illustration24.png HTTP/1.1[0m" 404 -
+2025-02-09 23:52:25,009 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:25] "[32mPOST /question24 HTTP/1.1[0m" 302 -
+2025-02-09 23:52:25,027 - INFO - Pfv (Façades) = 48000.0 €, Ptv (Toitures) = 60000.0 €
+2025-02-09 23:52:25,027 - INFO - Pe (Entretien façades) = 5600.0 €/an, Pe1 (Entretien toitures) = 4000.0 €/an
+2025-02-09 23:52:25,027 - INFO - Cost Setup = 108000.0 €, Cost Fixed = 21000.0 €, Cost Maintenance = 9600.0 €/an
+2025-02-09 23:52:25,027 - INFO - Gain Rotation = 21428.57142857143 €, Gain Intérêt = 4780.047388989071 €
+2025-02-09 23:52:25,028 - INFO - Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-09 23:52:25,260 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:25] "GET /results HTTP/1.1" 200 -
+2025-02-09 23:52:25,290 - INFO - 127.0.0.1 - - [09/Feb/2025 23:52:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

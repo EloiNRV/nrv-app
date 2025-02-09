@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 18 - Connectivité Écologique</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section18.png') }}" alt="Section 18" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration18.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>La végétalisation de votre parcelle participe-t-elle à la connectivité écologique ?</h2>
+
+            <!-- Formulaire -->
+            <form method="POST" action="{{ url_for('question18') }}">
+                <div class="form-group">
+                    <label>Faites un choix :</label><br>
+
+                    <input type="radio" id="connectivite_yes" name="connectivite" value="Oui" {% if connectivite == "Oui" %}checked{% endif %} onclick="toggleConnectiviteFields(true)">
+                    <label for="connectivite_yes">Oui</label><br>
+
+                    <input type="radio" id="connectivite_no" name="connectivite" value="Non" {% if connectivite == "Non" %}checked{% endif %} onclick="toggleConnectiviteFields(false)">
+                    <label for="connectivite_no">Non</label>
+                </div>
+
+                <!-- Champs conditionnels pour préciser la contribution -->
+                <div id="connectivite_fields" class="form-group" style="display: none;">
+                    <label>Si oui, sélectionnez une seule option :</label><br>
+
+                    <input type="radio" id="ilot" name="connectivite_type" value="Ilot" {% if connectivite_type == "Ilot" %}checked{% endif %}>
+                    <label for="ilot">Au titre d'un îlot isolé</label><br>
+
+                    <input type="radio" id="corridor" name="connectivite_type" value="Corridor" {% if connectivite_type == "Corridor" %}checked{% endif %}>
+                    <label for="corridor">Au titre d'un corridor</label><br>
+
+                    <input type="radio" id="reserve" name="connectivite_type" value="Reserve" {% if connectivite_type == "Reserve" %}checked{% endif %}>
+                    <label for="reserve">Au titre d'une réserve de biodiversité</label>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question17'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script pour afficher ou cacher les options -->
+    <script>
+        function toggleConnectiviteFields(show) {
+            let connectiviteFields = document.getElementById("connectivite_fields");
+            connectiviteFields.style.display = show ? "block" : "none";
+        }
+
+        // Vérifier si "Oui" était déjà coché au chargement
+        document.addEventListener("DOMContentLoaded", function() {
+            if (document.getElementById("connectivite_yes").checked) {
+                document.getElementById("connectivite_fields").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
+

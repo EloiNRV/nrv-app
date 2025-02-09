@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 19 - Fréquence d'entretien</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section19.png') }}" alt="Section 19" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration19.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>À quelle fréquence envisagez-vous d’entretenir les espaces extérieurs par un jardinier ?</h2>
+
+            <!-- Formulaire -->
+            <form method="POST" action="{{ url_for('question19') }}">
+                <div class="form-group">
+                    <label>Choisissez une seule option :</label><br>
+
+                    <input type="radio" id="entretien_1" name="entretien_frequence" value="plus d’1 fois /mois" {% if entretien_frequence == "plus d’1 fois /mois" %}checked{% endif %}>
+                    <label for="entretien_1">Plus d’1 fois /mois</label><br>
+
+                    <input type="radio" id="entretien_2" name="entretien_frequence" value="1 fois /mois" {% if entretien_frequence == "1 fois /mois" %}checked{% endif %}>
+                    <label for="entretien_2">1 fois /mois</label><br>
+
+                    <input type="radio" id="entretien_3" name="entretien_frequence" value="4 fois /an" {% if entretien_frequence == "4 fois /an" %}checked{% endif %}>
+                    <label for="entretien_3">4 fois /an</label><br>
+
+                    <input type="radio" id="entretien_4" name="entretien_frequence" value="2 fois /an" {% if entretien_frequence == "2 fois /an" %}checked{% endif %}>
+                    <label for="entretien_4">2 fois /an</label><br>
+
+                    <input type="radio" id="entretien_5" name="entretien_frequence" value="1 fois /an ou moins" {% if entretien_frequence == "1 fois /an ou moins" %}checked{% endif %}>
+                    <label for="entretien_5">1 fois /an ou moins</label>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question18'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

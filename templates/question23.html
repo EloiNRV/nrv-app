@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 23 - Zones humides mitoyennes</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section23.png') }}" alt="Section 23" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration23.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>Sur les parcelles mitoyennes existent-ils des zones humides, des bassins, mares ou ruisseaux ?</h2>
+
+            <!-- Formulaire -->
+            <form method="POST" action="{{ url_for('question23') }}">
+                <div class="form-group">
+                    <label>Choisissez une seule option :</label><br>
+
+                    <input type="radio" id="zone_0" name="zone_humide" value="0%" {% if zone_humide == "0%" %}checked{% endif %}>
+                    <label for="zone_0">0%</label><br>
+
+                    <input type="radio" id="zone_25" name="zone_humide" value="25%" {% if zone_humide == "25%" %}checked{% endif %}>
+                    <label for="zone_25">25%</label><br>
+
+                    <input type="radio" id="zone_50" name="zone_humide" value="50%" {% if zone_humide == "50%" %}checked{% endif %}>
+                    <label for="zone_50">50%</label><br>
+
+                    <input type="radio" id="zone_75" name="zone_humide" value="75%" {% if zone_humide == "75%" %}checked{% endif %}>
+                    <label for="zone_75">75%</label><br>
+
+                    <input type="radio" id="zone_100" name="zone_humide" value="100%" {% if zone_humide == "100%" %}checked{% endif %}>
+                    <label for="zone_100">100%</label>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question22'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

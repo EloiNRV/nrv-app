@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 24 - Valorisation immobilière</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section24.png') }}" alt="Section 24" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration24.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>À quel pourcentage estimez-vous que la végétalisation de votre immeuble augmente sa valorisation immobilière ?</h2>
+
+            <form method="POST" action="{{ url_for('question24') }}" id="valuationForm">
+                <div class="form-group">
+                    <label for="valuation_percentage">Sélectionnez une estimation :</label>
+                    <select name="valuation_percentage" id="valuation_percentage" required>
+                        <option value="0%" {% if valuation_percentage == "0%" %}selected{% endif %}>0%</option>
+                        <option value="2%" {% if valuation_percentage == "2%" %}selected{% endif %}>2%</option>
+                        <option value="5%" {% if valuation_percentage == "5%" %}selected{% endif %}>5%</option>
+                        <option value="10%" {% if valuation_percentage == "10%" %}selected{% endif %}>10%</option>
+                        <option value="15%" {% if valuation_percentage == "15%" %}selected{% endif %}>15%</option>
+                        <option value="20%" {% if valuation_percentage == "20%" %}selected{% endif %}>20%</option>
+                        <option value="Aucune idée" {% if valuation_percentage == "Aucune idée" %}selected{% endif %}>Aucune idée</option>
+                    </select>
+                </div>
+
+                <!-- Champ caché pour stocker la valeur réelle -->
+                <input type="hidden" name="valuation_hidden" id="valuation_hidden" value="">
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question23'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.getElementById("valuation_percentage");
+            const hiddenInput = document.getElementById("valuation_hidden");
+
+            dropdown.addEventListener("change", function() {
+                if (dropdown.value === "Aucune idée") {
+                    hiddenInput.value = "5%";  // Stocker la valeur 5% sans l'afficher
+                } else {
+                    hiddenInput.value = dropdown.value;
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+

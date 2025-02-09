@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 13 - Arrivées d’eau</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section13.png') }}" alt="Section 13" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration13.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>Souhaitez-vous installer des arrivées d’eau au niveau des balcons et des terrasses ?</h2>
+
+            <form method="POST" action="{{ url_for('question13') }}" id="waterForm">
+                <div class="form-group">
+                    <label>Faites un choix :</label><br>
+                    <input type="radio" id="water_yes" name="water_installation" value="oui" {% if has_water_installation %}checked{% endif %} onclick="toggleWaterFields(true)">
+                    <label for="water_yes">Oui</label><br>
+
+                    <input type="radio" id="water_no" name="water_installation" value="non" {% if not has_water_installation %}checked{% endif %} onclick="toggleWaterFields(false)">
+                    <label for="water_no">Non</label>
+                </div>
+
+                <!-- Champs conditionnels pour entrer les valeurs -->
+                <div id="water_fields" class="form-group" style="display: none;">
+                    <label for="cost_per_logement">Prix par logement pour l’installation de l’arrivée d’eau (€) :</label>
+                    <input type="number" name="cost_per_logement" id="cost_per_logement" value="{{ cost_per_logement }}" min="0" step="0.01">
+
+                    <label for="num_logements_water">Nombre de logements concernés :</label>
+                    <input type="number" name="num_logements_water" id="num_logements_water" value="{{ num_logements_water }}" min="0">
+
+                    <!-- Champ caché pour stocker la valeur de Pae -->
+                    <input type="hidden" name="Pae" id="Pae_hidden">
+                </div>
+
+                <!-- Affichage dynamique du coût total -->
+                <p><strong>Coût total estimé des arrivées d’eau : </strong> <span id="Pae_display">{{ session.get('Pae', 0) }}</span> €</p>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question12'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script pour afficher ou cacher les champs et calculer Pae -->
+    <script>
+        function toggleWaterFields(show) {
+            let waterFields = document.getElementById("water_fields");
+            waterFields.style.display = show ? "block" : "none";
+
+            if (!show) {
+                document.getElementById("Pae_display").innerText = "0";
+                document.getElementById("Pae_hidden").value = "0";
+            }
+        }
+
+        function updatePae() {
+            let cost = parseFloat(document.getElementById("cost_per_logement").value) || 0;
+            let numLogements = parseInt(document.getElementById("num_logements_water").value) || 0;
+            let totalPae = cost * numLogements;
+
+            // Mise à jour de l'affichage et de l'input caché
+            document.getElementById("Pae_display").innerText = totalPae.toLocaleString('fr-FR');
+            document.getElementById("Pae_hidden").value = totalPae;
+        }
+
+        document.getElementById("cost_per_logement").addEventListener("input", updatePae);
+        document.getElementById("num_logements_water").addEventListener("input", updatePae);
+
+        // S'assurer que les champs sélectionnés sont affichés au rechargement
+        document.addEventListener("DOMContentLoaded", function() {
+            if (document.getElementById("water_yes").checked) {
+                document.getElementById("water_fields").style.display = "block";
+            }
+            updatePae();
+        });
+    </script>
+
+</body>
+</html>
+

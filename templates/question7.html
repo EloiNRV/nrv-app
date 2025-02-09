@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 7 - Subventions</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section7.png') }}" alt="Section 7" class="progress-section">
+    </div>
+
+    <div class="container">
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration7.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <div class="question-content">
+            <h2>La végétalisation donne droit à des subventions.</h2>
+            <p>À combien estimez-vous cette subvention en euros (€) ?</p>
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="flash-message {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <form method="POST" action="{{ url_for('question7') }}" id="subsidyForm">
+                <div class="form-group">
+                    <label for="Ps_input">Montant des subventions (€) :</label>
+                    <input type="text" id="Ps_input" required>
+                    <input type="hidden" id="Ps_hidden" name="Ps">
+                </div>
+
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question6'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script pour formater les nombres et envoyer proprement -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const subsidyInput = document.getElementById("Ps_input");
+            const hiddenInput = document.getElementById("Ps_hidden");
+            const subsidyForm = document.getElementById("subsidyForm");
+
+            // Formatage dynamique lors de la saisie
+            subsidyInput.addEventListener("input", function(event) {
+                let rawValue = event.target.value.replace(/\s+/g, ""); // Supprime les espaces existants
+                if (!isNaN(rawValue) && rawValue.length > 0) {
+                    event.target.value = Number(rawValue).toLocaleString('fr-FR'); // Affichage avec espaces
+                }
+            });
+
+            // Avant soumission : envoyer la valeur brute sans espaces
+            subsidyForm.addEventListener("submit", function() {
+                hiddenInput.value = subsidyInput.value.replace(/\s+/g, ""); // Nettoyage de la valeur
+            });
+        });
+    </script>
+
+</body>
+</html>

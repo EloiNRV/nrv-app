@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8 - Durée moyenne d'occupation</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="progress-container">
+        <img src="{{ url_for('static', filename='images/section8.png') }}" alt="Section 8" class="progress-section">
+    </div>
+
+    <div class="container">
+        <!-- Illustration à gauche -->
+        <div class="illustration">
+            <img src="{{ url_for('static', filename='images/illustration8.png') }}" alt="Illustration" class="illustration-img">
+        </div>
+
+        <!-- Contenu de la question à droite -->
+        <div class="question-content">
+            <h2>À combien estimez-vous la durée moyenne d'occupation pour chaque type de logement ?</h2>
+            <p>Sélectionnez une durée pour chaque type de logement en années.</p>
+
+            <form method="POST" action="{{ url_for('question8') }}">
+                <!-- Durée moyenne pour un T2 -->
+                <div class="form-group">
+                    <label for="T2_duration">Durée moyenne pour un T2 :</label>
+                    <select id="T2_duration" name="T2_duration" required>
+                        <option value="2" {% if session.get('T2_duration', 2) == 2 %}selected{% endif %}>2 ans</option>
+                        <option value="5" {% if session.get('T2_duration', 2) == 5 %}selected{% endif %}>5 ans</option>
+                        <option value="10" {% if session.get('T2_duration', 2) == 10 %}selected{% endif %}>10 ans</option>
+                    </select>
+                </div>
+
+                <!-- Durée moyenne pour un T3 -->
+                <div class="form-group">
+                    <label for="T3_duration">Durée moyenne pour un T3 :</label>
+                    <select id="T3_duration" name="T3_duration" required>
+                        <option value="5" {% if session.get('T3_duration', 5) == 5 %}selected{% endif %}>5 ans</option>
+                        <option value="10" {% if session.get('T3_duration', 5) == 10 %}selected{% endif %}>10 ans</option>
+                        <option value="15" {% if session.get('T3_duration', 5) == 15 %}selected{% endif %}>15 ans</option>
+                    </select>
+                </div>
+
+                <!-- Durée moyenne pour un T4 -->
+                <div class="form-group">
+                    <label for="T4_duration">Durée moyenne pour un T4 :</label>
+                    <select id="T4_duration" name="T4_duration" required>
+                        <option value="5" {% if session.get('T4_duration', 10) == 5 %}selected{% endif %}>5 ans</option>
+                        <option value="10" {% if session.get('T4_duration', 10) == 10 %}selected{% endif %}>10 ans</option>
+                        <option value="15" {% if session.get('T4_duration', 10) == 15 %}selected{% endif %}>15 ans</option>
+                        <option value="20" {% if session.get('T4_duration', 10) == 20 %}selected{% endif %}>20 ans</option>
+                    </select>
+                </div>
+
+                <!-- Durée moyenne pour un T5 -->
+                <div class="form-group">
+                    <label for="T5_duration">Durée moyenne pour un T5 :</label>
+                    <select id="T5_duration" name="T5_duration" required>
+                        <option value="5" {% if session.get('T5_duration', 15) == 5 %}selected{% endif %}>5 ans</option>
+                        <option value="10" {% if session.get('T5_duration', 15) == 10 %}selected{% endif %}>10 ans</option>
+                        <option value="15" {% if session.get('T5_duration', 15) == 15 %}selected{% endif %}>15 ans</option>
+                        <option value="20" {% if session.get('T5_duration', 15) == 20 %}selected{% endif %}>20 ans</option>
+                    </select>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <div class="button-container">
+                    <button type="button" class="button prev-btn" onclick="window.location.href='/question7'">⬅ Précédent</button>
+                    <button type="submit" class="button">Suivant ➡</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

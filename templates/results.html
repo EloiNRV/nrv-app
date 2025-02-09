@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats Finaux - Graphique ROI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .question-navigation {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: #4CAF50;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .question-box {
+            width: calc(100% / 24 - 5px);
+            height: 30px;
+            background-color: white;
+            color: #4CAF50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .question-box:hover {
+            background-color: #2b8230;
+            color: white;
+        }
+
+        .results-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .graph-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+
+        .graph-description {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+
+        .button-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #2b8230;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation entre les questions -->
+    <div class="question-navigation">
+        {% for i in range(1, 25) %}
+            <a href="{{ url_for('question' + i|string) }}" class="question-box">{{ i }}</a>
+        {% endfor %}
+    </div>
+    
+    <div class="container">
+        <h1>Évaluation du Retour sur Investissement</h1>
+        
+        <!-- Graphique ROI -->
+        <div class="results-section">
+            <h2>Comparaison des coûts et gains de la végétalisation</h2>
+            <img src="{{ roi_graph_url }}" alt="Graphique ROI" class="graph-img">
+            <p class="graph-description">
+                Ce graphique compare l’évolution des coûts et des gains liés à la végétalisation sur une période de 20 ans.
+                L'intersection des courbes indique le moment où l’investissement devient rentable.
+            </p>
+        </div>
+    </div>
+
+    <!-- Bouton recommencer en bas à droite -->
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='/'">Recommencer</button>
+    </div>
+    
+</body>
+</html>
+
+
+
+
