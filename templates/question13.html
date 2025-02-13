@@ -7,11 +7,52 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+ 
+    <script>
+        function toggleExplication() {
+            var explication = document.getElementById("explication");
+            if (explication.style.display === "none") {
+                explication.style.display = "block";
+            } else {
+                explication.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        .explication {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .explication-button {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .question-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+   
+        
+    </style>
 </head>
 <body>
     <div class="progress-container">
         <img src="{{ url_for('static', filename='images/section13.png') }}" alt="Section 13" class="progress-section">
     </div>
+
+    <div class="container">
+        <div class="question-title">Question 13</div>
 
     <div class="container">
         <!-- Illustration à gauche -->
@@ -22,6 +63,14 @@
         <!-- Contenu de la question à droite -->
         <div class="question-content">
             <h2>Souhaitez-vous installer des arrivées d’eau au niveau des balcons et des terrasses ?</h2>
+
+            <!-- Bouton pour afficher l'explication -->
+            <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
+
+            <!-- Explication cachée par défaut -->
+            <div id="explication" class="explication">
+                <p> A faire </p>
+            </div>
 
             <form method="POST" action="{{ url_for('question13') }}" id="waterForm">
                 <div class="form-group">
@@ -36,7 +85,7 @@
                 <!-- Champs conditionnels pour entrer les valeurs -->
                 <div id="water_fields" class="form-group" style="display: none;">
                     <label for="cost_per_logement">Prix par logement pour l’installation de l’arrivée d’eau (€) :</label>
-                    <input type="number" name="cost_per_logement" id="cost_per_logement" value="{{ cost_per_logement }}" min="0" step="0.01">
+                    <input type="number" name="cost_per_logement" id="cost_per_logement" value="{{ cost_per_logement }}" min="0" step="1">
 
                     <label for="num_logements_water">Nombre de logements concernés :</label>
                     <input type="number" name="num_logements_water" id="num_logements_water" value="{{ num_logements_water }}" min="0">
@@ -93,4 +142,5 @@
 
 </body>
 </html>
+
 

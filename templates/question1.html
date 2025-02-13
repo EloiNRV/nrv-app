@@ -6,6 +6,40 @@
     <title>Question 1 - Coefficient de Biotope par Surface</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        function toggleExplication() {
+            var explication = document.getElementById("explication");
+            if (explication.style.display === "none") {
+                explication.style.display = "block";
+            } else {
+                explication.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        .explication {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .explication-button {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .question-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -14,6 +48,8 @@
     </div>
 
     <div class="container">
+        <div class="question-title">Question 1</div>
+        
         <!-- Illustration à gauche -->
         <div class="illustration">
             <img src="{{ url_for('static', filename='images/illustration1.png') }}" alt="Illustration" class="illustration-img">
@@ -24,38 +60,38 @@
             <h2>Calcul du Coefficient de Biotope par Surface (CBS)</h2>
             <p>Veuillez indiquer les surfaces suivantes en m² :</p>
 
+            <!-- Bouton pour afficher l'explication -->
+            <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
+
+            <!-- Explication cachée par défaut -->
+            <div id="explication" class="explication">
+                <p>Le Coefficient de Biotope par Surface (CBS) est un indicateur qui permet d’évaluer la part de surfaces végétalisées par rapport à la surface totale d’un projet. Il est utilisé pour mesurer l’impact environnemental et la perméabilité d’un aménagement.</p>
+            </div>
+
             <!-- Formulaire -->
             <form method="POST" action="{{ url_for('question1') }}">
                 <div class="form-group">
                     <label for="surface_batie">Surface bâtie au sol (m²) :</label>
-                    <input type="number" id="surface_batie" name="surface_batie" min="0" step="1" required>
+                    <input type="number" id="surface_batie" name="surface_batie" min="0" step="1" required value="{{ session.get('surface_batie', '') }}">
                 </div>
 
                 <div class="form-group">
                     <label for="surface_dalle">Surface végétalisée sur dalle ou parking (m²) :</label>
-                    <input type="number" id="surface_dalle" name="surface_dalle" min="0" step="1" required>
+                    <input type="number" id="surface_dalle" name="surface_dalle" min="0" step="1" required value="{{ session.get('surface_dalle', '') }}">
                 </div>
 
                 <div class="form-group">
                     <label for="surface_pleine_terre">Surface végétalisée en pleine terre (m²) :</label>
-                    <input type="number" id="surface_pleine_terre" name="surface_pleine_terre" min="0" step="1" required>
+                    <input type="number" id="surface_pleine_terre" name="surface_pleine_terre" min="0" step="1" required value="{{ session.get('surface_pleine_terre', '') }}">
                 </div>
 
                 <button type="submit" class="button">Suivant</button>
             </form>
-
-            <!-- Affichage des erreurs Flask -->
-            {% with messages = get_flashed_messages(with_categories=true) %}
-                {% if messages %}
-                    <div class="error-messages">
-                        {% for category, message in messages %}
-                            <p class="{{ category }}">{{ message }}</p>
-                        {% endfor %}
-                    </div>
-                {% endif %}
-            {% endwith %}
         </div>
     </div>
 
 </body>
 </html>
+
+
+

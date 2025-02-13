@@ -9,7 +9,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     
+    <script>
+        function toggleExplication() {
+            var explication = document.getElementById("explication");
+            if (explication.style.display === "none") {
+                explication.style.display = "block";
+            } else {
+                explication.style.display = "none";
+            }
+        }
+    </script>
     <style>
+        .explication {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .explication-button {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .question-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    
         .form-group {
             display: flex;
             align-items: center;
@@ -32,15 +65,28 @@
     </div>
 
     <div class="container">
+        <div class="question-title">Question 11</div>
+
+    <div class="container">
         <!-- Illustration à gauche -->
         <div class="illustration">
             <img src="{{ url_for('static', filename='images/illustration11.png') }}" alt="Illustration" class="illustration-img">
         </div>
 
+        
+
         <!-- Contenu de la question à droite -->
         <div class="question-content">
             <h2>Quel est le type de façade végétale que vous souhaitez mettre en place ?</h2>
             <p>Cochez une ou plusieurs options, ou sélectionnez "Pas de façade végétale".</p>
+
+             <!-- Bouton pour afficher l'explication -->
+             <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
+
+             <!-- Explication cachée par défaut -->
+             <div id="explication" class="explication">
+                 <p> A faire <p></p>
+             </div>
 
             <form method="POST" action="{{ url_for('question11') }}" id="facadeForm">
                 

@@ -7,6 +7,40 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        function toggleExplication() {
+            var explication = document.getElementById("explication");
+            if (explication.style.display === "none") {
+                explication.style.display = "block";
+            } else {
+                explication.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        .explication {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .explication-button {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .question-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="progress-container">
@@ -14,34 +48,40 @@
     </div>
 
     <div class="container">
-        <!-- Illustration à gauche -->
+        <div class="question-title">Question 10</div>
+        
         <div class="illustration">
             <img src="{{ url_for('static', filename='images/illustration10.png') }}" alt="Illustration" class="illustration-img">
         </div>
 
-        <!-- Contenu de la question à droite -->
         <div class="question-content">
             <h2>Quel est le coût estimé de rafraîchissement par mètre carré pour vos logements ?</h2>
             <p>Veuillez sélectionner une valeur parmi les options suivantes :</p>
 
-            <!-- Formulaire -->
+            <!-- Bouton pour afficher l'explication -->
+            <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
+
+            <!-- Explication cachée par défaut -->
+            <div id="explication" class="explication">
+                <p>Cette section vous permet de renseigner le coût estimé des travaux de rafraîchissement pour vos logements, en fonction de leur état et du niveau de rénovation prévu.</p>
+            </div>
+
             <form method="POST" action="{{ url_for('question10') }}">
                 <div class="form-group">
                     <label for="rotation_cost">Coût de rafraîchissement (€/m²) :</label>
                     <select id="rotation_cost" name="rotation_cost" required>
-                        <option value="100" {% if rotation_cost == 100 %}selected{% endif %}>100 €/m² - Rafraîchissement très léger</option>
-                        <option value="150" {% if rotation_cost == 150 %}selected{% endif %}>150 €/m² - Rafraîchissement simple</option>
-                        <option value="200" {% if rotation_cost == 200 %}selected{% endif %}>200 €/m² - Remise en état standard</option>
-                        <option value="250" {% if rotation_cost == 250 %}selected{% endif %}>250 €/m²</option>
-                        <option value="300" {% if rotation_cost == 300 %}selected{% endif %}>300 €/m² - Rafraîchissement intermédiaire</option>
-                        <option value="350" {% if rotation_cost == 350 %}selected{% endif %}>350 €/m² - Travaux importants</option>
-                        <option value="400" {% if rotation_cost == 400 %}selected{% endif %}>400 €/m²</option>
-                        <option value="450" {% if rotation_cost == 450 %}selected{% endif %}>450 €/m² - Travaux lourds</option>
-                        <option value="500" {% if rotation_cost == 500 %}selected{% endif %}>500 €/m² - Travaux très lourds</option>
+                        <option value="100" {% if session.get('rotation_cost', 100) == 100 %}selected{% endif %}>100 €/m² - Rafraîchissement très léger</option>
+                        <option value="150" {% if session.get('rotation_cost', 150) == 150 %}selected{% endif %}>150 €/m² - Rafraîchissement simple</option>
+                        <option value="200" {% if session.get('rotation_cost', 200) == 200 %}selected{% endif %}>200 €/m² - Remise en état standard</option>
+                        <option value="250" {% if session.get('rotation_cost', 250) == 250 %}selected{% endif %}>250 €/m²</option>
+                        <option value="300" {% if session.get('rotation_cost', 300) == 300 %}selected{% endif %}>300 €/m² - Rafraîchissement intermédiaire</option>
+                        <option value="350" {% if session.get('rotation_cost', 350) == 350 %}selected{% endif %}>350 €/m² - Travaux importants</option>
+                        <option value="400" {% if session.get('rotation_cost', 400) == 400 %}selected{% endif %}>400 €/m²</option>
+                        <option value="450" {% if session.get('rotation_cost', 450) == 450 %}selected{% endif %}>450 €/m² - Travaux lourds</option>
+                        <option value="500" {% if session.get('rotation_cost', 500) == 500 %}selected{% endif %}>500 €/m² - Travaux très lourds</option>
                     </select>
                 </div>
 
-                <!-- Boutons de navigation -->
                 <div class="button-container">
                     <button type="button" class="button prev-btn" onclick="window.location.href='/question9'">⬅ Précédent</button>
                     <button type="submit" class="button">Suivant ➡</button>
@@ -51,3 +91,4 @@
     </div>
 </body>
 </html>
+

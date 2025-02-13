@@ -7,14 +7,49 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        function toggleExplication() {
+            var explication = document.getElementById("explication");
+            if (explication.style.display === "none") {
+                explication.style.display = "block";
+            } else {
+                explication.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        .explication {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .explication-button {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .question-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-
     <div class="progress-container">
         <img src="{{ url_for('static', filename='images/section6.png') }}" alt="Section 6" class="progress-section">
     </div>
 
     <div class="container">
+        <div class="question-title">Question 6</div>
+        
         <!-- Illustration à gauche -->
         <div class="illustration">
             <img src="{{ url_for('static', filename='images/illustration6.png') }}" alt="Illustration" class="illustration-img">
@@ -25,18 +60,18 @@
             <h2>Quelle bonification de votre taux d’intérêt espérez-vous obtenir avec une végétalisation ?</h2>
             <p>Votre taux d’intérêt actuel est de <strong>{{ Ti }}%</strong>. Indiquez la réduction espérée :</p>
 
-            {% with messages = get_flashed_messages(with_categories=true) %}
-                {% if messages %}
-                    {% for category, message in messages %}
-                        <div class="flash-message {{ category }}">{{ message }}</div>
-                    {% endfor %}
-                {% endif %}
-            {% endwith %}
+            <!-- Bouton pour afficher l'explication -->
+            <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
+
+            <!-- Explication cachée par défaut -->
+            <div id="explication" class="explication">
+                <p>Cette section vous permet de renseigner la réduction de taux d'intérêt que vous espérez obtenir grâce à la végétalisation de votre projet immobilier. Assurez-vous que cette réduction ne dépasse pas le taux initial.</p>
+            </div>
 
             <form method="POST" action="{{ url_for('question6') }}" id="interestForm">
                 <div class="form-group">
                     <label for="Tib_input">Réduction du taux d’intérêt (%):</label>
-                    <input type="text" id="Tib_input" name="Tib" required>
+                    <input type="text" id="Tib_input" name="Tib" required value="{{ session.get('Tib', '') }}">
                 </div>
 
                 <p id="tiv_info">Nouveau taux d’intérêt avec végétalisation : <span id="tiv_result">?</span>%</p>

@@ -7,6 +7,40 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        function toggleExplication() {
+            var explication = document.getElementById("explication");
+            if (explication.style.display === "none") {
+                explication.style.display = "block";
+            } else {
+                explication.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        .explication {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .explication-button {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .question-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="progress-container">
@@ -14,6 +48,8 @@
     </div>
 
     <div class="container">
+        <div class="question-title">Question 5</div>
+        
         <!-- Illustration à gauche -->
         <div class="illustration">
             <img src="{{ url_for('static', filename='images/illustration5.png') }}" alt="Illustration" class="illustration-img">
@@ -24,10 +60,18 @@
             <h2>À quel taux d’intérêt empruntez-vous sans végétalisation du projet pour financer votre projet d’immeuble de logements ?</h2>
             <p>Veuillez entrer un taux d’intérêt compris entre <strong>0% et 10%</strong>.</p>
 
+            <!-- Bouton pour afficher l'explication -->
+            <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
+
+            <!-- Explication cachée par défaut -->
+            <div id="explication" class="explication">
+                <p>Cette section vous permet d'indiquer le taux d'intérêt auquel vous empruntez pour votre projet immobilier. Assurez-vous qu'il est bien compris entre 0% et 10%.</p>
+            </div>
+
             <form id="interestForm" method="POST" action="{{ url_for('question5') }}">
                 <div class="form-group">
                     <label for="interest_input">Taux d’intérêt (%) :</label>
-                    <input type="text" id="interest_input" name="Ti" required>
+                    <input type="text" id="interest_input" name="Ti" required value="{{ session.get('Ti', '') }}">
                     <p id="error-message" style="color: red; display: none;">Le taux doit être compris entre 0% et 10%.</p>
                 </div>
 
@@ -69,4 +113,5 @@
 
 </body>
 </html>
+
 

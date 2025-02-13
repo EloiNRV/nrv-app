@@ -7,11 +7,50 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        function toggleExplication() {
+            var explication = document.getElementById("explication");
+            if (explication.style.display === "none") {
+                explication.style.display = "block";
+            } else {
+                explication.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        .explication {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .explication-button {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .question-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+   
+        
+    </style>
 </head>
 <body>
     <div class="progress-container">
         <img src="{{ url_for('static', filename='images/section20.png') }}" alt="Section 20" class="progress-section">
     </div>
+
+    <div class="container">
+        <div class="question-title">Question 20</div>
 
     <div class="container">
         <!-- Illustration à gauche -->
@@ -23,22 +62,30 @@
         <div class="question-content">
             <h2>Quelle proportion d’espèces locales ou adaptées au changement climatique sont actuellement présentes sur le site, ou que vous envisagez d’implanter ?</h2>
 
+             <!-- Bouton pour afficher l'explication -->
+         <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
+
+         <!-- Explication cachée par défaut -->
+         <div id="explication" class="explication">
+             <p> A faire </p>
+         </div>
+
             <!-- Formulaire -->
             <form method="POST" action="{{ url_for('question20') }}">
                 <div class="form-group">
                     <label>Choisissez une seule option :</label><br>
 
                     <input type="radio" id="especes_0" name="proportion_especes" value="0%" {% if proportion_especes == "0%" %}checked{% endif %}>
-                    <label for="especes_0">0%</label><br>
+                    <label for="especes_0">0%</label>
 
                     <input type="radio" id="especes_25" name="proportion_especes" value="25%" {% if proportion_especes == "25%" %}checked{% endif %}>
-                    <label for="especes_25">25%</label><br>
+                    <label for="especes_25">25%</label>
 
                     <input type="radio" id="especes_50" name="proportion_especes" value="50%" {% if proportion_especes == "50%" %}checked{% endif %}>
-                    <label for="especes_50">50%</label><br>
+                    <label for="especes_50">50%</label>
 
                     <input type="radio" id="especes_75" name="proportion_especes" value="75%" {% if proportion_especes == "75%" %}checked{% endif %}>
-                    <label for="especes_75">75%</label><br>
+                    <label for="especes_75">75%</label>
 
                     <input type="radio" id="especes_100" name="proportion_especes" value="100%" {% if proportion_especes == "100%" %}checked{% endif %}>
                     <label for="especes_100">100%</label>

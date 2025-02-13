@@ -7,6 +7,40 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        function toggleExplication() {
+            var explication = document.getElementById("explication");
+            if (explication.style.display === "none") {
+                explication.style.display = "block";
+            } else {
+                explication.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        .explication {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .explication-button {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .question-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="progress-container">
@@ -14,18 +48,25 @@
     </div>
 
     <div class="container">
-        <!-- Illustration à gauche -->
+        <div class="question-title">Question 8</div>
+        
         <div class="illustration">
             <img src="{{ url_for('static', filename='images/illustration8.png') }}" alt="Illustration" class="illustration-img">
         </div>
 
-        <!-- Contenu de la question à droite -->
         <div class="question-content">
             <h2>À combien estimez-vous la durée moyenne d'occupation pour chaque type de logement ?</h2>
             <p>Sélectionnez une durée pour chaque type de logement en années.</p>
 
+            <!-- Bouton pour afficher l'explication -->
+            <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
+
+            <!-- Explication cachée par défaut -->
+            <div id="explication" class="explication">
+                <p>Cette section vous permet d'indiquer la durée moyenne d'occupation estimée pour chaque type de logement. Ces informations aident à analyser la rotation des occupants.</p>
+            </div>
+
             <form method="POST" action="{{ url_for('question8') }}">
-                <!-- Durée moyenne pour un T2 -->
                 <div class="form-group">
                     <label for="T2_duration">Durée moyenne pour un T2 :</label>
                     <select id="T2_duration" name="T2_duration" required>
@@ -35,7 +76,6 @@
                     </select>
                 </div>
 
-                <!-- Durée moyenne pour un T3 -->
                 <div class="form-group">
                     <label for="T3_duration">Durée moyenne pour un T3 :</label>
                     <select id="T3_duration" name="T3_duration" required>
@@ -45,7 +85,6 @@
                     </select>
                 </div>
 
-                <!-- Durée moyenne pour un T4 -->
                 <div class="form-group">
                     <label for="T4_duration">Durée moyenne pour un T4 :</label>
                     <select id="T4_duration" name="T4_duration" required>
@@ -56,7 +95,6 @@
                     </select>
                 </div>
 
-                <!-- Durée moyenne pour un T5 -->
                 <div class="form-group">
                     <label for="T5_duration">Durée moyenne pour un T5 :</label>
                     <select id="T5_duration" name="T5_duration" required>
@@ -67,7 +105,6 @@
                     </select>
                 </div>
 
-                <!-- Boutons de navigation -->
                 <div class="button-container">
                     <button type="button" class="button prev-btn" onclick="window.location.href='/question7'">⬅ Précédent</button>
                     <button type="submit" class="button">Suivant ➡</button>
@@ -75,6 +112,5 @@
             </form>
         </div>
     </div>
-
 </body>
 </html>

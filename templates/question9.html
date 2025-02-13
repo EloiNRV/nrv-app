@@ -7,6 +7,40 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        function toggleExplication() {
+            var explication = document.getElementById("explication");
+            if (explication.style.display === "none") {
+                explication.style.display = "block";
+            } else {
+                explication.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        .explication {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .explication-button {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .question-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="progress-container">
@@ -14,19 +48,26 @@
     </div>
 
     <div class="container">
-        <!-- Illustration à gauche -->
+        <div class="question-title">Question 9</div>
+        
         <div class="illustration">
             <img src="{{ url_for('static', filename='images/illustration9.png') }}" alt="Illustration" class="illustration-img">
         </div>
 
-        <!-- Contenu de la question à droite -->
         <div class="question-content">
-            <h2>La végétalisation du bâti peut renforcer le bien-être et l'attachement des occupants à leur logement, prolongeant ainsi leur durée moyenne d'occupation.</h2>
-            <p>Pour chaque type de logement (T2, T3, T4, T5), indiquez de combien d'années supplémentaires, selon vous, la durée moyenne d'occupation pourrait augmenter grâce à la végétalisation (entre 0 et 10 ans).</p>
+            <h2>Pour chaque type de logement (T2, T3, T4, T5), indiquez de combien d'années supplémentaires, selon vous, la durée moyenne d'occupation pourrait augmenter grâce à la végétalisation (entre 0 et 10 ans).</h2>
+            
 
-            <!-- Formulaire -->
+            <!-- Bouton pour afficher l'explication -->
+            <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
+
+            <!-- Explication cachée par défaut -->
+            <div id="explication" class="explication">
+                <p>La végétalisation du bâti peut renforcer le bien-être et l'attachement des occupants à leur logement, prolongeant ainsi leur durée moyenne d'occupation.</p>
+                <p>Cette section vous permet d'estimer l'impact de la végétalisation sur la fidélité des occupants à leur logement, en indiquant combien d'années supplémentaires ils pourraient y rester.</p>
+            </div>
+
             <form method="POST" action="{{ url_for('question9') }}">
-                <!-- 🔹 1. Ajout des valeurs de rappel des durées précédentes -->
                 <p><strong>Rappel :</strong></p>
                 <ul>
                     <li>Durée moyenne actuelle pour un T2 : <strong>{{ session.get('T2_duration', 2) }} ans</strong></li>
@@ -35,7 +76,6 @@
                     <li>Durée moyenne actuelle pour un T5 : <strong>{{ session.get('T5_duration', 15) }} ans</strong></li>
                 </ul>
 
-                <!-- 🔹 2. Ajout des champs pour la durée supplémentaire -->
                 <div class="form-group">
                     <label for="T2_additional">Durée supplémentaire pour un T2 :</label>
                     <input type="number" id="T2_additional" name="T2_additional" min="0" max="10" step="0.5" value="{{ session.get('T2_additional', 0) }}" required>
@@ -56,7 +96,6 @@
                     <input type="number" id="T5_additional" name="T5_additional" min="0" max="10" step="0.5" value="{{ session.get('T5_additional', 0) }}" required>
                 </div>
 
-                <!-- 🔹 3. Ajout des boutons "Précédent" et "Suivant" -->
                 <div class="button-container">
                     <button type="button" class="button prev-btn" onclick="window.location.href='/question8'">⬅ Précédent</button>
                     <button type="submit" class="button">Suivant ➡</button>

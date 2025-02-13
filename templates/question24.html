@@ -7,12 +7,50 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        function toggleExplication() {
+            var explication = document.getElementById("explication");
+            if (explication.style.display === "none") {
+                explication.style.display = "block";
+            } else {
+                explication.style.display = "none";
+            }
+        }
+    </script>
+    <style>
+        .explication {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .explication-button {
+            background-color: #d3d3d3;
+            color: black;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .question-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+   
+        
+    </style>
 </head>
 <body>
     <div class="progress-container">
         <img src="{{ url_for('static', filename='images/section24.png') }}" alt="Section 24" class="progress-section">
     </div>
 
+    <div class="container">
+        <div class="question-title">Question 24</div>
     <div class="container">
         <!-- Illustration à gauche -->
         <div class="illustration">
@@ -23,6 +61,13 @@
         <div class="question-content">
             <h2>À quel pourcentage estimez-vous que la végétalisation de votre immeuble augmente sa valorisation immobilière ?</h2>
 
+             <!-- Bouton pour afficher l'explication -->
+         <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
+
+         <!-- Explication cachée par défaut -->
+         <div id="explication" class="explication">
+             <p> A faire </p>
+         </div>
             <form method="POST" action="{{ url_for('question24') }}" id="valuationForm">
                 <div class="form-group">
                     <label for="valuation_percentage">Sélectionnez une estimation :</label>
