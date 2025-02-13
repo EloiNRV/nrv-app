@@ -150,7 +150,7 @@ def question2():
             session['T4_surface'] = float(request.form['T4_surface'])
             session['T5_surface'] = float(request.form['T5_surface'])
 
-            if any(s <= 0 for s in [session['T1_surface'], session['T2_surface'], session['T3_surface'], session['T4_surface'], session['T5_surface']]):
+            if any(s < 0 for s in [session['T1_surface'], session['T2_surface'], session['T3_surface'], session['T4_surface'], session['T5_surface']]):
                 flash("Veuillez entrer des surfaces valides (positives) pour tous les types de logements.", "error")
                 return redirect(url_for('question2'))
 
@@ -466,6 +466,8 @@ def question13():
                 total_pae = cost_per_logement * num_logements
                 session['score_q13'] = 3  # Score attribué si installation d’arrivée d’eau
             else:
+                cost_per_logement = 0
+                num_logements = 0
                 total_pae = 0  # Si "non", le coût est 0
                 session['score_q13'] = 0  # Score 0 si pas d’arrivée d’eau
 
@@ -806,19 +808,17 @@ def question22():
 def question23():
     if request.method == 'POST':
         try:
-            # Récupérer la réponse sélectionnée
-            zone_humide = request.form.get('zone_humide', "0%")
+            # Vérifier si l'utilisateur a répondu "Oui"
+            presence_zone = request.form.get('presence_zone', "non") == "oui"
 
-            # Définition des scores en fonction de la réponse
-            score_mapping = {"0%": 0, "25%": 2, "50%": 3, "75%": 4, "100%": 5}
-            session['score_q23'] = score_mapping.get(zone_humide, 0)  # Stocker le score
+            # Initialisation du score
+            session['score_q23'] = 5 if presence_zone else 1
 
-            # Stocker la réponse dans la session
-            session['zone_humide'] = zone_humide
+            # Si l'utilisateur a répondu "Oui", récupérer les choix cochés
+            session['zones_detectees'] = request.form.getlist('zones_detectees') if presence_zone else []
 
-            # Ajouter dans responses pour cohérence avec les autres questions
+            # Stocker dans responses
             responses["q23"] = session['score_q23']
-
 
             return redirect(url_for('question24'))  # Redirection vers la question suivante
 
@@ -826,9 +826,12 @@ def question23():
             flash(f"Erreur : {e}", "error")
             return redirect(url_for('question23'))
 
-    return render_template('question23.html',
-                           zone_humide=session.get('zone_humide', "0%"),
-                           score_q23=session.get('score_q23', 0))
+    return render_template(
+        'question23.html',
+        presence_zone=session.get('score_q23', 1) == 5,  # Vérifie si la réponse était "oui"
+        zones_detectees=session.get('zones_detectees', []),
+        score_q23=session.get('score_q23', 1)
+    )
 
 
 @app.route('/question24', methods=['GET', 'POST'])

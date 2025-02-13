@@ -16,6 +16,10 @@
                 explication.style.display = "none";
             }
         }
+
+        function toggleZoneSelection(show) {
+            document.getElementById("zone_options").style.display = show ? "block" : "none";
+        }
     </script>
     <style>
         .explication {
@@ -40,8 +44,6 @@
             font-weight: bold;
             margin-bottom: 20px;
         }
-   
-        
     </style>
 </head>
 <body>
@@ -51,45 +53,56 @@
 
     <div class="container">
         <div class="question-title">Question 23</div>
-    <div class="container">
-        <!-- Illustration à gauche -->
+
         <div class="illustration">
             <img src="{{ url_for('static', filename='images/illustration23.png') }}" alt="Illustration" class="illustration-img">
         </div>
 
-        <!-- Contenu de la question à droite -->
         <div class="question-content">
-            <h2>Sur les parcelles mitoyennes existent-ils des zones humides, des bassins, mares ou ruisseaux ?</h2>
+            <h2>Sur les parcelles alentours (rayon de 100m), existent-ils des zones humides, bassins, mares ou ruisseaux ?</h2>
 
-                       <!-- Bouton pour afficher l'explication -->
-         <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
+            <!-- Bouton pour afficher l'explication -->
+            <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
 
-         <!-- Explication cachée par défaut -->
-         <div id="explication" class="explication">
-             <p> A faire </p>
-         </div>
-            <!-- Formulaire -->
+            <!-- Explication cachée par défaut -->
+            <div id="explication" class="explication">
+                <p>Cette question permet d'évaluer l'impact des éléments naturels présents autour de votre projet.</p>
+            </div>
+
             <form method="POST" action="{{ url_for('question23') }}">
                 <div class="form-group">
-                    <label>Choisissez une seule option :</label><br>
+                    <label>Y a-t-il des zones humides, bassins, mares ou ruisseaux ?</label><br>
 
-                    <input type="radio" id="zone_0" name="zone_humide" value="0%" {% if zone_humide == "0%" %}checked{% endif %}>
-                    <label for="zone_0">0%</label>
+                    <input type="radio" id="presence_oui" name="presence_zone" value="oui" 
+                           {% if presence_zone %}checked{% endif %} onclick="toggleZoneSelection(true)">
+                    <label for="presence_oui">Oui</label>
 
-                    <input type="radio" id="zone_25" name="zone_humide" value="25%" {% if zone_humide == "25%" %}checked{% endif %}>
-                    <label for="zone_25">25%</label>
-
-                    <input type="radio" id="zone_50" name="zone_humide" value="50%" {% if zone_humide == "50%" %}checked{% endif %}>
-                    <label for="zone_50">50%</label>
-
-                    <input type="radio" id="zone_75" name="zone_humide" value="75%" {% if zone_humide == "75%" %}checked{% endif %}>
-                    <label for="zone_75">75%</label>
-
-                    <input type="radio" id="zone_100" name="zone_humide" value="100%" {% if zone_humide == "100%" %}checked{% endif %}>
-                    <label for="zone_100">100%</label>
+                    <input type="radio" id="presence_non" name="presence_zone" value="non"
+                           {% if not presence_zone %}checked{% endif %} onclick="toggleZoneSelection(false)">
+                    <label for="presence_non">Non</label>
                 </div>
 
-                <!-- Boutons de navigation -->
+                <!-- Options de sélection des types de zones, cachées par défaut -->
+                <div id="zone_options" class="form-group" style="display: {% if presence_zone %}block{% else %}none{% endif %};">
+                    <label>Sélectionnez les types de zones présentes :</label><br>
+
+                    <input type="checkbox" id="zone_humide" name="zones_detectees" value="zone_humide"
+                           {% if "zone_humide" in zones_detectees %}checked{% endif %}>
+                    <label for="zone_humide">Zones humides</label>
+
+                    <input type="checkbox" id="bassin" name="zones_detectees" value="bassin"
+                           {% if "bassin" in zones_detectees %}checked{% endif %}>
+                    <label for="bassin">Bassins</label>
+
+                    <input type="checkbox" id="mare" name="zones_detectees" value="mare"
+                           {% if "mare" in zones_detectees %}checked{% endif %}>
+                    <label for="mare">Mares</label>
+
+                    <input type="checkbox" id="ruisseau" name="zones_detectees" value="ruisseau"
+                           {% if "ruisseau" in zones_detectees %}checked{% endif %}>
+                    <label for="ruisseau">Ruisseaux</label>
+                </div>
+
                 <div class="button-container">
                     <button type="button" class="button prev-btn" onclick="window.location.href='/question22'">⬅ Précédent</button>
                     <button type="submit" class="button">Suivant ➡</button>
@@ -97,5 +110,21 @@
             </form>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let presenceOui = document.getElementById("presence_oui");
+            let presenceNon = document.getElementById("presence_non");
+
+            presenceOui.addEventListener("change", function() { toggleZoneSelection(true); });
+            presenceNon.addEventListener("change", function() { toggleZoneSelection(false); });
+
+            // Vérifier si la réponse "oui" est sélectionnée pour afficher les options
+            if (presenceOui.checked) {
+                toggleZoneSelection(true);
+            }
+        });
+    </script>
 </body>
 </html>
+
