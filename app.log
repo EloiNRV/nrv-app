@@ -5889,3 +5889,1478 @@
 2025-02-13 16:11:52,863 - INFO - 127.0.0.1 - - [13/Feb/2025 16:11:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2025-02-13 16:11:52,872 - INFO - 127.0.0.1 - - [13/Feb/2025 16:11:52] "[36mGET /static/images/section10.png HTTP/1.1[0m" 304 -
 2025-02-13 16:11:52,874 - INFO - 127.0.0.1 - - [13/Feb/2025 16:11:52] "[36mGET /static/images/illustration10.png HTTP/1.1[0m" 304 -
+2025-02-13 16:52:04,793 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.1.19:10000
+2025-02-13 16:52:04,793 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-13 16:52:15,819 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:15] "GET / HTTP/1.1" 200 -
+2025-02-13 16:52:16,074 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-13 16:52:16,085 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/images/Partner1.png HTTP/1.1" 200 -
+2025-02-13 16:52:16,097 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/images/Partner12.png HTTP/1.1" 200 -
+2025-02-13 16:52:16,100 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/images/project-logo-new.png HTTP/1.1" 200 -
+2025-02-13 16:52:16,108 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/images/Big-Logo.png HTTP/1.1" 200 -
+2025-02-13 16:52:16,116 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/images/Partner0.png HTTP/1.1" 200 -
+2025-02-13 16:52:16,126 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/images/Partner2.png HTTP/1.1" 200 -
+2025-02-13 16:52:16,132 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/images/Partner3.png HTTP/1.1" 200 -
+2025-02-13 16:52:16,136 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/images/Partner4.png HTTP/1.1" 200 -
+2025-02-13 16:52:16,139 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/images/logo2.png HTTP/1.1" 200 -
+2025-02-13 16:52:16,146 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/images/logo1.png HTTP/1.1" 200 -
+2025-02-13 16:52:16,151 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "GET /static/images/Partner5.png HTTP/1.1" 200 -
+2025-02-13 16:52:16,179 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-13 16:52:17,898 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:17] "GET /question1 HTTP/1.1" 200 -
+2025-02-13 16:52:17,926 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:52:17,937 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:17] "GET /static/images/illustration1.png HTTP/1.1" 200 -
+2025-02-13 16:52:17,938 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:17] "GET /static/images/section1.png HTTP/1.1" 200 -
+2025-02-13 16:52:23,608 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:23] "GET /question24 HTTP/1.1" 200 -
+2025-02-13 16:52:23,638 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:52:23,646 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:23] "[33mGET /static/images/section24.png HTTP/1.1[0m" 404 -
+2025-02-13 16:52:23,649 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:23] "[33mGET /static/images/illustration24.png HTTP/1.1[0m" 404 -
+2025-02-13 16:52:25,481 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:25] "[32mPOST /question24 HTTP/1.1[0m" 302 -
+2025-02-13 16:52:25,486 - ERROR -  Erreur dans le calcul du CBS : La surface totale ne peut pas être nulle.
+2025-02-13 16:52:25,486 - ERROR -  Erreur dans la génération des résultats : cannot unpack non-iterable NoneType object
+2025-02-13 16:52:25,486 - ERROR - Exception on /results [GET]
+Traceback (most recent call last):
+  File "c:\Users\ekerg\OneDrive\Bureau\Etude_et_recherche\code interface web\app_eloi.py", line 1501, in results
+    CBS, CBS_score = calculate_cbs()
+    ^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\ekerg\OneDrive\Bureau\Etude_et_recherche\code interface web\app_eloi.py", line 1586, in results
+    return redirect(url_for('home'))
+                    ~~~~~~~^^^^^^^^
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ~~~~~~~~~~~~~~~~~~~^
+        endpoint,
+        ^^^^^^^^^
+    ...<4 lines>...
+        **values,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'home'. Did you mean 'index' instead?
+2025-02-13 16:52:25,509 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:25] "[35m[1mGET /results HTTP/1.1[0m" 500 -
+2025-02-13 16:52:35,384 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:35] "[32mPOST /question24 HTTP/1.1[0m" 302 -
+2025-02-13 16:52:35,391 - ERROR -  Erreur dans le calcul du CBS : La surface totale ne peut pas être nulle.
+2025-02-13 16:52:35,391 - ERROR -  Erreur dans la génération des résultats : cannot unpack non-iterable NoneType object
+2025-02-13 16:52:35,392 - ERROR - Exception on /results [GET]
+Traceback (most recent call last):
+  File "c:\Users\ekerg\OneDrive\Bureau\Etude_et_recherche\code interface web\app_eloi.py", line 1501, in results
+    CBS, CBS_score = calculate_cbs()
+    ^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\ekerg\OneDrive\Bureau\Etude_et_recherche\code interface web\app_eloi.py", line 1586, in results
+    return redirect(url_for('home'))
+                    ~~~~~~~^^^^^^^^
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ~~~~~~~~~~~~~~~~~~~^
+        endpoint,
+        ^^^^^^^^^
+    ...<4 lines>...
+        **values,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "C:\Users\ekerg\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'home'. Did you mean 'index' instead?
+2025-02-13 16:52:35,395 - INFO - 192.168.1.19 - - [13/Feb/2025 16:52:35] "[35m[1mGET /results HTTP/1.1[0m" 500 -
+2025-02-13 16:53:12,971 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.1.19:10000
+2025-02-13 16:53:12,971 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-13 16:53:16,685 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET / HTTP/1.1" 200 -
+2025-02-13 16:53:16,937 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-13 16:53:16,941 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/images/project-logo-new.png HTTP/1.1" 200 -
+2025-02-13 16:53:16,949 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/images/Partner1.png HTTP/1.1" 200 -
+2025-02-13 16:53:16,963 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/images/Partner12.png HTTP/1.1" 200 -
+2025-02-13 16:53:16,965 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/images/Partner0.png HTTP/1.1" 200 -
+2025-02-13 16:53:16,967 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/images/Big-Logo.png HTTP/1.1" 200 -
+2025-02-13 16:53:16,969 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/images/logo1.png HTTP/1.1" 200 -
+2025-02-13 16:53:16,975 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/images/Partner2.png HTTP/1.1" 200 -
+2025-02-13 16:53:16,982 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/images/Partner3.png HTTP/1.1" 200 -
+2025-02-13 16:53:16,983 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/images/logo2.png HTTP/1.1" 200 -
+2025-02-13 16:53:16,992 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/images/Partner4.png HTTP/1.1" 200 -
+2025-02-13 16:53:16,995 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:16] "GET /static/images/Partner5.png HTTP/1.1" 200 -
+2025-02-13 16:53:17,017 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-13 16:53:18,507 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:18] "GET /question1 HTTP/1.1" 200 -
+2025-02-13 16:53:18,533 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:53:18,544 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:18] "GET /static/images/section1.png HTTP/1.1" 200 -
+2025-02-13 16:53:18,546 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:18] "GET /static/images/illustration1.png HTTP/1.1" 200 -
+2025-02-13 16:53:30,453 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:30] "[32mPOST /question1 HTTP/1.1[0m" 302 -
+2025-02-13 16:53:30,462 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:30] "GET /question2 HTTP/1.1" 200 -
+2025-02-13 16:53:30,498 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:53:30,503 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:30] "GET /static/images/illustration2.png HTTP/1.1" 200 -
+2025-02-13 16:53:30,506 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:30] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-02-13 16:53:43,356 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:43] "[32mPOST /question2 HTTP/1.1[0m" 302 -
+2025-02-13 16:53:43,366 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:43] "GET /question3 HTTP/1.1" 200 -
+2025-02-13 16:53:43,403 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:53:43,410 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:43] "GET /static/images/illustration3.png HTTP/1.1" 200 -
+2025-02-13 16:53:43,411 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:43] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-02-13 16:53:52,796 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:52] "[32mPOST /question3 HTTP/1.1[0m" 302 -
+2025-02-13 16:53:52,807 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:52] "GET /question4 HTTP/1.1" 200 -
+2025-02-13 16:53:52,840 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:53:52,848 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:52] "GET /static/images/section4.png HTTP/1.1" 200 -
+2025-02-13 16:53:52,851 - INFO - 127.0.0.1 - - [13/Feb/2025 16:53:52] "GET /static/images/illustration4.png HTTP/1.1" 200 -
+2025-02-13 16:54:00,270 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:00] "[32mPOST /question4 HTTP/1.1[0m" 302 -
+2025-02-13 16:54:00,284 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:00] "GET /question5 HTTP/1.1" 200 -
+2025-02-13 16:54:00,319 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:54:00,326 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:00] "GET /static/images/illustration5.png HTTP/1.1" 200 -
+2025-02-13 16:54:00,326 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:00] "GET /static/images/section5.png HTTP/1.1" 200 -
+2025-02-13 16:54:03,456 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:03] "[32mPOST /question5 HTTP/1.1[0m" 302 -
+2025-02-13 16:54:03,465 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:03] "GET /question6 HTTP/1.1" 200 -
+2025-02-13 16:54:03,508 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:54:03,508 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:03] "GET /static/images/section6.png HTTP/1.1" 200 -
+2025-02-13 16:54:03,510 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:03] "GET /static/images/illustration6.png HTTP/1.1" 200 -
+2025-02-13 16:54:08,593 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:08] "[32mPOST /question6 HTTP/1.1[0m" 302 -
+2025-02-13 16:54:08,603 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:08] "GET /question7 HTTP/1.1" 200 -
+2025-02-13 16:54:08,638 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:54:08,649 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:08] "GET /static/images/section7.png HTTP/1.1" 200 -
+2025-02-13 16:54:08,650 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:08] "GET /static/images/illustration7.png HTTP/1.1" 200 -
+2025-02-13 16:54:12,989 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:12] "[32mPOST /question7 HTTP/1.1[0m" 302 -
+2025-02-13 16:54:13,004 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:13] "GET /question8 HTTP/1.1" 200 -
+2025-02-13 16:54:13,035 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:54:13,042 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:13] "GET /static/images/section8.png HTTP/1.1" 200 -
+2025-02-13 16:54:13,042 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:13] "GET /static/images/illustration8.png HTTP/1.1" 200 -
+2025-02-13 16:54:14,702 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:14] "[32mPOST /question8 HTTP/1.1[0m" 302 -
+2025-02-13 16:54:14,713 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:14] "GET /question9 HTTP/1.1" 200 -
+2025-02-13 16:54:14,744 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:54:14,756 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:14] "GET /static/images/section9.png HTTP/1.1" 200 -
+2025-02-13 16:54:14,757 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:14] "GET /static/images/illustration9.png HTTP/1.1" 200 -
+2025-02-13 16:54:23,717 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:23] "[32mPOST /question9 HTTP/1.1[0m" 302 -
+2025-02-13 16:54:23,730 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:23] "GET /question10 HTTP/1.1" 200 -
+2025-02-13 16:54:23,768 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:54:23,783 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:23] "GET /static/images/section10.png HTTP/1.1" 200 -
+2025-02-13 16:54:23,783 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:23] "GET /static/images/illustration10.png HTTP/1.1" 200 -
+2025-02-13 16:54:24,887 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:24] "[32mPOST /question10 HTTP/1.1[0m" 302 -
+2025-02-13 16:54:24,896 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:24] "GET /question11 HTTP/1.1" 200 -
+2025-02-13 16:54:24,930 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:54:24,937 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:24] "GET /static/images/section11.png HTTP/1.1" 200 -
+2025-02-13 16:54:24,939 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:24] "GET /static/images/illustration11.png HTTP/1.1" 200 -
+2025-02-13 16:54:36,178 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:36] "[32mPOST /question11 HTTP/1.1[0m" 302 -
+2025-02-13 16:54:36,191 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:36] "GET /question12 HTTP/1.1" 200 -
+2025-02-13 16:54:36,228 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:54:36,242 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:36] "GET /static/images/illustration12.png HTTP/1.1" 200 -
+2025-02-13 16:54:36,242 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:36] "GET /static/images/section12.png HTTP/1.1" 200 -
+2025-02-13 16:54:42,510 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:42] "[32mPOST /question12 HTTP/1.1[0m" 302 -
+2025-02-13 16:54:42,522 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:42] "GET /question13 HTTP/1.1" 200 -
+2025-02-13 16:54:42,552 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:54:42,568 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:42] "GET /static/images/section13.png HTTP/1.1" 200 -
+2025-02-13 16:54:42,568 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:42] "GET /static/images/illustration13.png HTTP/1.1" 200 -
+2025-02-13 16:54:52,796 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:52] "[32mPOST /question13 HTTP/1.1[0m" 302 -
+2025-02-13 16:54:52,807 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:52] "GET /question14 HTTP/1.1" 200 -
+2025-02-13 16:54:52,841 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:54:52,851 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:52] "GET /static/images/section14.png HTTP/1.1" 200 -
+2025-02-13 16:54:52,852 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:52] "GET /static/images/illustration14.png HTTP/1.1" 200 -
+2025-02-13 16:54:55,453 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:55] "[32mPOST /question14 HTTP/1.1[0m" 302 -
+2025-02-13 16:54:55,470 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:55] "GET /question15 HTTP/1.1" 200 -
+2025-02-13 16:54:55,507 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:54:55,516 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:55] "GET /static/images/section15.png HTTP/1.1" 200 -
+2025-02-13 16:54:55,517 - INFO - 127.0.0.1 - - [13/Feb/2025 16:54:55] "GET /static/images/illustration15.png HTTP/1.1" 200 -
+2025-02-13 16:55:01,779 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:01] "[32mPOST /question15 HTTP/1.1[0m" 302 -
+2025-02-13 16:55:01,789 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:01] "GET /question16 HTTP/1.1" 200 -
+2025-02-13 16:55:01,829 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:55:01,841 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:01] "GET /static/images/section16.png HTTP/1.1" 200 -
+2025-02-13 16:55:01,842 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:01] "GET /static/images/illustration16.png HTTP/1.1" 200 -
+2025-02-13 16:55:06,622 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:06] "[32mPOST /question16 HTTP/1.1[0m" 302 -
+2025-02-13 16:55:06,637 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:06] "GET /question17 HTTP/1.1" 200 -
+2025-02-13 16:55:06,675 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:55:06,682 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:06] "GET /static/images/section17.png HTTP/1.1" 200 -
+2025-02-13 16:55:06,684 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:06] "GET /static/images/illustration17.png HTTP/1.1" 200 -
+2025-02-13 16:55:09,561 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:09] "[32mPOST /question17 HTTP/1.1[0m" 302 -
+2025-02-13 16:55:09,572 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:09] "GET /question18 HTTP/1.1" 200 -
+2025-02-13 16:55:09,605 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:55:09,612 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:09] "GET /static/images/section18.png HTTP/1.1" 200 -
+2025-02-13 16:55:09,613 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:09] "GET /static/images/illustration18.png HTTP/1.1" 200 -
+2025-02-13 16:55:13,769 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:13] "[32mPOST /question18 HTTP/1.1[0m" 302 -
+2025-02-13 16:55:13,778 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:13] "GET /question19 HTTP/1.1" 200 -
+2025-02-13 16:55:13,814 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:55:13,820 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:13] "GET /static/images/section19.png HTTP/1.1" 200 -
+2025-02-13 16:55:13,822 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:13] "GET /static/images/illustration19.png HTTP/1.1" 200 -
+2025-02-13 16:55:16,699 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:16] "[32mPOST /question19 HTTP/1.1[0m" 302 -
+2025-02-13 16:55:16,712 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:16] "GET /question20 HTTP/1.1" 200 -
+2025-02-13 16:55:16,745 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:55:16,754 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:16] "GET /static/images/illustration20.png HTTP/1.1" 200 -
+2025-02-13 16:55:16,755 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:16] "GET /static/images/section20.png HTTP/1.1" 200 -
+2025-02-13 16:55:19,342 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:19] "[32mPOST /question20 HTTP/1.1[0m" 302 -
+2025-02-13 16:55:19,353 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:19] "GET /question21 HTTP/1.1" 200 -
+2025-02-13 16:55:19,390 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:55:19,403 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:19] "GET /static/images/section21.png HTTP/1.1" 200 -
+2025-02-13 16:55:19,403 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:19] "GET /static/images/illustration21.png HTTP/1.1" 200 -
+2025-02-13 16:55:21,847 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:21] "[32mPOST /question21 HTTP/1.1[0m" 302 -
+2025-02-13 16:55:21,858 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:21] "GET /question22 HTTP/1.1" 200 -
+2025-02-13 16:55:21,895 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:55:21,899 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:21] "GET /static/images/section22.png HTTP/1.1" 200 -
+2025-02-13 16:55:21,904 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:21] "GET /static/images/illustration22.png HTTP/1.1" 200 -
+2025-02-13 16:55:24,108 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:24] "[32mPOST /question22 HTTP/1.1[0m" 302 -
+2025-02-13 16:55:24,123 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:24] "GET /question23 HTTP/1.1" 200 -
+2025-02-13 16:55:24,155 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:55:24,163 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:24] "[33mGET /static/images/illustration23.png HTTP/1.1[0m" 404 -
+2025-02-13 16:55:24,164 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:24] "GET /static/images/section23.png HTTP/1.1" 200 -
+2025-02-13 16:55:28,799 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:28] "[32mPOST /question23 HTTP/1.1[0m" 302 -
+2025-02-13 16:55:28,809 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:28] "GET /question24 HTTP/1.1" 200 -
+2025-02-13 16:55:28,843 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:55:28,854 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:28] "[33mGET /static/images/section24.png HTTP/1.1[0m" 404 -
+2025-02-13 16:55:28,855 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:28] "[33mGET /static/images/illustration24.png HTTP/1.1[0m" 404 -
+2025-02-13 16:55:31,574 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:31] "[32mPOST /question24 HTTP/1.1[0m" 302 -
+2025-02-13 16:55:31,579 - INFO -  Stockage dans session['CBS_score'] = 5
+2025-02-13 16:55:31,580 - INFO -  CBS calculé : 0.58
+2025-02-13 16:55:31,580 - INFO -  Score biodiversité basé sur CBS : 5
+2025-02-13 16:55:31,580 - INFO -  Score Façades Végétalisées = 10
+2025-02-13 16:55:31,580 - INFO -  Risques Façades Végétalisées = 6
+2025-02-13 16:55:31,581 - INFO -  Score Toitures Végétalisées = 5
+2025-02-13 16:55:31,581 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-13 16:55:31,581 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-13 16:55:31,581 - INFO -  Début du calcul des scores environnementaux
+2025-02-13 16:55:31,581 - INFO -  Scores enregistrés: {'q13': 3.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 5.0, 'q19': 4.0, 'q20': 2.0, 'q21': 3.0, 'q22': 3.0, 'q23': 5.0}
+2025-02-13 16:55:31,581 - INFO -  CBS Score = 5.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-13 16:55:31,581 - INFO -  Calcul du score pour B
+2025-02-13 16:55:31,581 - INFO -  Score B = 3.981818181818182 (Numerator: 219.0, Denominator: 55)
+2025-02-13 16:55:31,581 - INFO -  Calcul du score pour E
+2025-02-13 16:55:31,581 - INFO -  Score E = 3.8636363636363638 (Numerator: 85.0, Denominator: 22)
+2025-02-13 16:55:31,581 - INFO -  Calcul du score pour CO2
+2025-02-13 16:55:31,581 - INFO -  Score CO2 = 4.178571428571429 (Numerator: 117.0, Denominator: 28)
+2025-02-13 16:55:31,581 - INFO -  Calcul du score pour W
+2025-02-13 16:55:31,582 - INFO -  Score W = 3.814814814814815 (Numerator: 103.0, Denominator: 27)
+2025-02-13 16:55:31,582 - INFO -  Calcul du score pour C
+2025-02-13 16:55:31,582 - INFO -  Score C = 4.181818181818182 (Numerator: 138.0, Denominator: 33)
+2025-02-13 16:55:31,582 - INFO -  Calcul du score pour R
+2025-02-13 16:55:31,582 - INFO -  Score R = 3.893617021276596 (Numerator: 183.0, Denominator: 47.0)
+2025-02-13 16:55:31,582 - INFO - Scores finaux calculés :
+2025-02-13 16:55:31,582 - INFO -  B = 3.981818181818182
+2025-02-13 16:55:31,582 - INFO -  E = 3.8636363636363638
+2025-02-13 16:55:31,582 - INFO -  CO2 = 4.178571428571429
+2025-02-13 16:55:31,582 - INFO -  W = 3.814814814814815
+2025-02-13 16:55:31,582 - INFO -  C = 4.181818181818182
+2025-02-13 16:55:31,582 - INFO -  R = 3.893617021276596
+2025-02-13 16:55:31,582 - INFO -  Scores finaux pour radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:55:31,583 - INFO - Scores avant affichage dans le radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:55:31,617 - ERROR - Erreur de chargement de biodiversite.png: [Errno 2] No such file or directory: 'static/images/biodiversite.png'
+2025-02-13 16:55:31,624 - ERROR - Erreur de chargement de risques.png: [Errno 2] No such file or directory: 'static/images/risques.png'
+2025-02-13 16:55:31,776 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-13 16:55:31,776 - INFO -  Pfv (Façades) = 115000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-13 16:55:31,777 - INFO -  Pe (Entretien façades) = 6600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-13 16:55:31,777 - INFO -  Cost Setup = 190000.0 €, Cost Fixed = 22000.0 €, Cost Maintenance = 11600.0 €/an
+2025-02-13 16:55:31,777 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-13 16:55:31,777 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-13 16:55:31,777 - INFO -  CBS calculé = 0.58
+2025-02-13 16:55:31,777 - INFO -  Score biodiversité CBS = 5
+2025-02-13 16:55:31,956 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:31] "GET /results HTTP/1.1" 200 -
+2025-02-13 16:55:31,986 - INFO - 127.0.0.1 - - [13/Feb/2025 16:55:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:59:04,439 - INFO -  Stockage dans session['CBS_score'] = 5
+2025-02-13 16:59:04,439 - INFO -  CBS calculé : 0.58
+2025-02-13 16:59:04,439 - INFO -  Score biodiversité basé sur CBS : 5
+2025-02-13 16:59:04,439 - INFO -  Score Façades Végétalisées = 10
+2025-02-13 16:59:04,440 - INFO -  Risques Façades Végétalisées = 6
+2025-02-13 16:59:04,440 - INFO -  Score Toitures Végétalisées = 5
+2025-02-13 16:59:04,440 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-13 16:59:04,440 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-13 16:59:04,440 - INFO -  Début du calcul des scores environnementaux
+2025-02-13 16:59:04,440 - INFO -  Scores enregistrés: {'q13': 3.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 5.0, 'q19': 4.0, 'q20': 2.0, 'q21': 3.0, 'q22': 3.0, 'q23': 5.0}
+2025-02-13 16:59:04,440 - INFO -  CBS Score = 5.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-13 16:59:04,440 - INFO -  Calcul du score pour B
+2025-02-13 16:59:04,440 - INFO -  Score B = 3.981818181818182 (Numerator: 219.0, Denominator: 55)
+2025-02-13 16:59:04,440 - INFO -  Calcul du score pour E
+2025-02-13 16:59:04,440 - INFO -  Score E = 3.8636363636363638 (Numerator: 85.0, Denominator: 22)
+2025-02-13 16:59:04,440 - INFO -  Calcul du score pour CO2
+2025-02-13 16:59:04,440 - INFO -  Score CO2 = 4.178571428571429 (Numerator: 117.0, Denominator: 28)
+2025-02-13 16:59:04,440 - INFO -  Calcul du score pour W
+2025-02-13 16:59:04,440 - INFO -  Score W = 3.814814814814815 (Numerator: 103.0, Denominator: 27)
+2025-02-13 16:59:04,440 - INFO -  Calcul du score pour C
+2025-02-13 16:59:04,440 - INFO -  Score C = 4.181818181818182 (Numerator: 138.0, Denominator: 33)
+2025-02-13 16:59:04,440 - INFO -  Calcul du score pour R
+2025-02-13 16:59:04,440 - INFO -  Score R = 3.893617021276596 (Numerator: 183.0, Denominator: 47.0)
+2025-02-13 16:59:04,440 - INFO - Scores finaux calculés :
+2025-02-13 16:59:04,441 - INFO -  B = 3.981818181818182
+2025-02-13 16:59:04,441 - INFO -  E = 3.8636363636363638
+2025-02-13 16:59:04,441 - INFO -  CO2 = 4.178571428571429
+2025-02-13 16:59:04,441 - INFO -  W = 3.814814814814815
+2025-02-13 16:59:04,441 - INFO -  C = 4.181818181818182
+2025-02-13 16:59:04,441 - INFO -  R = 3.893617021276596
+2025-02-13 16:59:04,441 - INFO -  Scores finaux pour radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:04,441 - INFO - Scores avant affichage dans le radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:04,617 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-13 16:59:04,617 - INFO -  Pfv (Façades) = 115000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-13 16:59:04,617 - INFO -  Pe (Entretien façades) = 6600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-13 16:59:04,617 - INFO -  Cost Setup = 190000.0 €, Cost Fixed = 22000.0 €, Cost Maintenance = 11600.0 €/an
+2025-02-13 16:59:04,617 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-13 16:59:04,617 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-13 16:59:04,617 - INFO -  CBS calculé = 0.58
+2025-02-13 16:59:04,617 - INFO -  Score biodiversité CBS = 5
+2025-02-13 16:59:04,774 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:04] "GET /results HTTP/1.1" 200 -
+2025-02-13 16:59:04,793 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:59:13,186 - INFO -  Stockage dans session['CBS_score'] = 5
+2025-02-13 16:59:13,186 - INFO -  CBS calculé : 0.58
+2025-02-13 16:59:13,186 - INFO -  Score biodiversité basé sur CBS : 5
+2025-02-13 16:59:13,186 - INFO -  Score Façades Végétalisées = 10
+2025-02-13 16:59:13,186 - INFO -  Risques Façades Végétalisées = 6
+2025-02-13 16:59:13,186 - INFO -  Score Toitures Végétalisées = 5
+2025-02-13 16:59:13,187 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-13 16:59:13,187 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-13 16:59:13,187 - INFO -  Début du calcul des scores environnementaux
+2025-02-13 16:59:13,187 - INFO -  Scores enregistrés: {'q13': 3.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 5.0, 'q19': 4.0, 'q20': 2.0, 'q21': 3.0, 'q22': 3.0, 'q23': 5.0}
+2025-02-13 16:59:13,187 - INFO -  CBS Score = 5.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-13 16:59:13,187 - INFO -  Calcul du score pour B
+2025-02-13 16:59:13,187 - INFO -  Score B = 3.981818181818182 (Numerator: 219.0, Denominator: 55)
+2025-02-13 16:59:13,187 - INFO -  Calcul du score pour E
+2025-02-13 16:59:13,187 - INFO -  Score E = 3.8636363636363638 (Numerator: 85.0, Denominator: 22)
+2025-02-13 16:59:13,187 - INFO -  Calcul du score pour CO2
+2025-02-13 16:59:13,187 - INFO -  Score CO2 = 4.178571428571429 (Numerator: 117.0, Denominator: 28)
+2025-02-13 16:59:13,188 - INFO -  Calcul du score pour W
+2025-02-13 16:59:13,188 - INFO -  Score W = 3.814814814814815 (Numerator: 103.0, Denominator: 27)
+2025-02-13 16:59:13,188 - INFO -  Calcul du score pour C
+2025-02-13 16:59:13,188 - INFO -  Score C = 4.181818181818182 (Numerator: 138.0, Denominator: 33)
+2025-02-13 16:59:13,188 - INFO -  Calcul du score pour R
+2025-02-13 16:59:13,188 - INFO -  Score R = 3.893617021276596 (Numerator: 183.0, Denominator: 47.0)
+2025-02-13 16:59:13,189 - INFO - Scores finaux calculés :
+2025-02-13 16:59:13,189 - INFO -  B = 3.981818181818182
+2025-02-13 16:59:13,189 - INFO -  E = 3.8636363636363638
+2025-02-13 16:59:13,189 - INFO -  CO2 = 4.178571428571429
+2025-02-13 16:59:13,189 - INFO -  W = 3.814814814814815
+2025-02-13 16:59:13,189 - INFO -  C = 4.181818181818182
+2025-02-13 16:59:13,189 - INFO -  R = 3.893617021276596
+2025-02-13 16:59:13,190 - INFO -  Scores finaux pour radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:13,190 - INFO - Scores avant affichage dans le radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:13,359 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-13 16:59:13,359 - INFO -  Pfv (Façades) = 115000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-13 16:59:13,359 - INFO -  Pe (Entretien façades) = 6600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-13 16:59:13,359 - INFO -  Cost Setup = 190000.0 €, Cost Fixed = 22000.0 €, Cost Maintenance = 11600.0 €/an
+2025-02-13 16:59:13,359 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-13 16:59:13,359 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-13 16:59:13,359 - INFO -  CBS calculé = 0.58
+2025-02-13 16:59:13,359 - INFO -  Score biodiversité CBS = 5
+2025-02-13 16:59:13,526 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:13] "GET /results HTTP/1.1" 200 -
+2025-02-13 16:59:13,544 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:59:23,065 - INFO -  Stockage dans session['CBS_score'] = 5
+2025-02-13 16:59:23,065 - INFO -  CBS calculé : 0.58
+2025-02-13 16:59:23,065 - INFO -  Score biodiversité basé sur CBS : 5
+2025-02-13 16:59:23,065 - INFO -  Score Façades Végétalisées = 10
+2025-02-13 16:59:23,065 - INFO -  Risques Façades Végétalisées = 6
+2025-02-13 16:59:23,065 - INFO -  Score Toitures Végétalisées = 5
+2025-02-13 16:59:23,065 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-13 16:59:23,065 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-13 16:59:23,065 - INFO -  Début du calcul des scores environnementaux
+2025-02-13 16:59:23,065 - INFO -  Scores enregistrés: {'q13': 3.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 5.0, 'q19': 4.0, 'q20': 2.0, 'q21': 3.0, 'q22': 3.0, 'q23': 5.0}
+2025-02-13 16:59:23,065 - INFO -  CBS Score = 5.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-13 16:59:23,065 - INFO -  Calcul du score pour B
+2025-02-13 16:59:23,066 - INFO -  Score B = 3.981818181818182 (Numerator: 219.0, Denominator: 55)
+2025-02-13 16:59:23,066 - INFO -  Calcul du score pour E
+2025-02-13 16:59:23,066 - INFO -  Score E = 3.8636363636363638 (Numerator: 85.0, Denominator: 22)
+2025-02-13 16:59:23,066 - INFO -  Calcul du score pour CO2
+2025-02-13 16:59:23,066 - INFO -  Score CO2 = 4.178571428571429 (Numerator: 117.0, Denominator: 28)
+2025-02-13 16:59:23,068 - INFO -  Calcul du score pour W
+2025-02-13 16:59:23,068 - INFO -  Score W = 3.814814814814815 (Numerator: 103.0, Denominator: 27)
+2025-02-13 16:59:23,068 - INFO -  Calcul du score pour C
+2025-02-13 16:59:23,069 - INFO -  Score C = 4.181818181818182 (Numerator: 138.0, Denominator: 33)
+2025-02-13 16:59:23,069 - INFO -  Calcul du score pour R
+2025-02-13 16:59:23,069 - INFO -  Score R = 3.893617021276596 (Numerator: 183.0, Denominator: 47.0)
+2025-02-13 16:59:23,069 - INFO - Scores finaux calculés :
+2025-02-13 16:59:23,069 - INFO -  B = 3.981818181818182
+2025-02-13 16:59:23,069 - INFO -  E = 3.8636363636363638
+2025-02-13 16:59:23,069 - INFO -  CO2 = 4.178571428571429
+2025-02-13 16:59:23,069 - INFO -  W = 3.814814814814815
+2025-02-13 16:59:23,069 - INFO -  C = 4.181818181818182
+2025-02-13 16:59:23,069 - INFO -  R = 3.893617021276596
+2025-02-13 16:59:23,069 - INFO -  Scores finaux pour radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:23,069 - INFO - Scores avant affichage dans le radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:23,253 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-13 16:59:23,253 - INFO -  Pfv (Façades) = 115000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-13 16:59:23,253 - INFO -  Pe (Entretien façades) = 6600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-13 16:59:23,253 - INFO -  Cost Setup = 190000.0 €, Cost Fixed = 22000.0 €, Cost Maintenance = 11600.0 €/an
+2025-02-13 16:59:23,253 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-13 16:59:23,253 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-13 16:59:23,253 - INFO -  CBS calculé = 0.58
+2025-02-13 16:59:23,253 - INFO -  Score biodiversité CBS = 5
+2025-02-13 16:59:23,416 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:23] "GET /results HTTP/1.1" 200 -
+2025-02-13 16:59:23,438 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:59:41,370 - INFO -  Stockage dans session['CBS_score'] = 5
+2025-02-13 16:59:41,370 - INFO -  CBS calculé : 0.58
+2025-02-13 16:59:41,370 - INFO -  Score biodiversité basé sur CBS : 5
+2025-02-13 16:59:41,370 - INFO -  Score Façades Végétalisées = 10
+2025-02-13 16:59:41,370 - INFO -  Risques Façades Végétalisées = 6
+2025-02-13 16:59:41,370 - INFO -  Score Toitures Végétalisées = 5
+2025-02-13 16:59:41,370 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-13 16:59:41,370 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-13 16:59:41,370 - INFO -  Début du calcul des scores environnementaux
+2025-02-13 16:59:41,370 - INFO -  Scores enregistrés: {'q13': 3.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 5.0, 'q19': 4.0, 'q20': 2.0, 'q21': 3.0, 'q22': 3.0, 'q23': 5.0}
+2025-02-13 16:59:41,371 - INFO -  CBS Score = 5.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-13 16:59:41,371 - INFO -  Calcul du score pour B
+2025-02-13 16:59:41,371 - INFO -  Score B = 3.981818181818182 (Numerator: 219.0, Denominator: 55)
+2025-02-13 16:59:41,371 - INFO -  Calcul du score pour E
+2025-02-13 16:59:41,371 - INFO -  Score E = 3.8636363636363638 (Numerator: 85.0, Denominator: 22)
+2025-02-13 16:59:41,371 - INFO -  Calcul du score pour CO2
+2025-02-13 16:59:41,372 - INFO -  Score CO2 = 4.178571428571429 (Numerator: 117.0, Denominator: 28)
+2025-02-13 16:59:41,372 - INFO -  Calcul du score pour W
+2025-02-13 16:59:41,373 - INFO -  Score W = 3.814814814814815 (Numerator: 103.0, Denominator: 27)
+2025-02-13 16:59:41,373 - INFO -  Calcul du score pour C
+2025-02-13 16:59:41,373 - INFO -  Score C = 4.181818181818182 (Numerator: 138.0, Denominator: 33)
+2025-02-13 16:59:41,373 - INFO -  Calcul du score pour R
+2025-02-13 16:59:41,373 - INFO -  Score R = 3.893617021276596 (Numerator: 183.0, Denominator: 47.0)
+2025-02-13 16:59:41,373 - INFO - Scores finaux calculés :
+2025-02-13 16:59:41,374 - INFO -  B = 3.981818181818182
+2025-02-13 16:59:41,374 - INFO -  E = 3.8636363636363638
+2025-02-13 16:59:41,374 - INFO -  CO2 = 4.178571428571429
+2025-02-13 16:59:41,374 - INFO -  W = 3.814814814814815
+2025-02-13 16:59:41,374 - INFO -  C = 4.181818181818182
+2025-02-13 16:59:41,374 - INFO -  R = 3.893617021276596
+2025-02-13 16:59:41,374 - INFO -  Scores finaux pour radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:41,374 - INFO - Scores avant affichage dans le radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:41,541 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-13 16:59:41,541 - INFO -  Pfv (Façades) = 115000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-13 16:59:41,541 - INFO -  Pe (Entretien façades) = 6600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-13 16:59:41,541 - INFO -  Cost Setup = 190000.0 €, Cost Fixed = 22000.0 €, Cost Maintenance = 11600.0 €/an
+2025-02-13 16:59:41,542 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-13 16:59:41,542 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-13 16:59:41,542 - INFO -  CBS calculé = 0.58
+2025-02-13 16:59:41,542 - INFO -  Score biodiversité CBS = 5
+2025-02-13 16:59:41,709 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:41] "GET /results HTTP/1.1" 200 -
+2025-02-13 16:59:41,730 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:59:54,280 - INFO -  Stockage dans session['CBS_score'] = 5
+2025-02-13 16:59:54,280 - INFO -  CBS calculé : 0.58
+2025-02-13 16:59:54,280 - INFO -  Score biodiversité basé sur CBS : 5
+2025-02-13 16:59:54,280 - INFO -  Score Façades Végétalisées = 10
+2025-02-13 16:59:54,280 - INFO -  Risques Façades Végétalisées = 6
+2025-02-13 16:59:54,280 - INFO -  Score Toitures Végétalisées = 5
+2025-02-13 16:59:54,280 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-13 16:59:54,280 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-13 16:59:54,281 - INFO -  Début du calcul des scores environnementaux
+2025-02-13 16:59:54,281 - INFO -  Scores enregistrés: {'q13': 3.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 5.0, 'q19': 4.0, 'q20': 2.0, 'q21': 3.0, 'q22': 3.0, 'q23': 5.0}
+2025-02-13 16:59:54,281 - INFO -  CBS Score = 5.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-13 16:59:54,283 - INFO -  Calcul du score pour B
+2025-02-13 16:59:54,283 - INFO -  Score B = 3.981818181818182 (Numerator: 219.0, Denominator: 55)
+2025-02-13 16:59:54,283 - INFO -  Calcul du score pour E
+2025-02-13 16:59:54,283 - INFO -  Score E = 3.8636363636363638 (Numerator: 85.0, Denominator: 22)
+2025-02-13 16:59:54,284 - INFO -  Calcul du score pour CO2
+2025-02-13 16:59:54,284 - INFO -  Score CO2 = 4.178571428571429 (Numerator: 117.0, Denominator: 28)
+2025-02-13 16:59:54,284 - INFO -  Calcul du score pour W
+2025-02-13 16:59:54,284 - INFO -  Score W = 3.814814814814815 (Numerator: 103.0, Denominator: 27)
+2025-02-13 16:59:54,285 - INFO -  Calcul du score pour C
+2025-02-13 16:59:54,285 - INFO -  Score C = 4.181818181818182 (Numerator: 138.0, Denominator: 33)
+2025-02-13 16:59:54,285 - INFO -  Calcul du score pour R
+2025-02-13 16:59:54,285 - INFO -  Score R = 3.893617021276596 (Numerator: 183.0, Denominator: 47.0)
+2025-02-13 16:59:54,285 - INFO - Scores finaux calculés :
+2025-02-13 16:59:54,285 - INFO -  B = 3.981818181818182
+2025-02-13 16:59:54,285 - INFO -  E = 3.8636363636363638
+2025-02-13 16:59:54,285 - INFO -  CO2 = 4.178571428571429
+2025-02-13 16:59:54,285 - INFO -  W = 3.814814814814815
+2025-02-13 16:59:54,285 - INFO -  C = 4.181818181818182
+2025-02-13 16:59:54,285 - INFO -  R = 3.893617021276596
+2025-02-13 16:59:54,286 - INFO -  Scores finaux pour radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:54,286 - INFO - Scores avant affichage dans le radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:54,460 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-13 16:59:54,460 - INFO -  Pfv (Façades) = 115000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-13 16:59:54,461 - INFO -  Pe (Entretien façades) = 6600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-13 16:59:54,461 - INFO -  Cost Setup = 190000.0 €, Cost Fixed = 22000.0 €, Cost Maintenance = 11600.0 €/an
+2025-02-13 16:59:54,461 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-13 16:59:54,461 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-13 16:59:54,461 - INFO -  CBS calculé = 0.58
+2025-02-13 16:59:54,461 - INFO -  Score biodiversité CBS = 5
+2025-02-13 16:59:54,625 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:54] "GET /results HTTP/1.1" 200 -
+2025-02-13 16:59:54,643 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 16:59:56,984 - INFO -  Stockage dans session['CBS_score'] = 5
+2025-02-13 16:59:56,984 - INFO -  CBS calculé : 0.58
+2025-02-13 16:59:56,984 - INFO -  Score biodiversité basé sur CBS : 5
+2025-02-13 16:59:56,985 - INFO -  Score Façades Végétalisées = 10
+2025-02-13 16:59:56,985 - INFO -  Risques Façades Végétalisées = 6
+2025-02-13 16:59:56,985 - INFO -  Score Toitures Végétalisées = 5
+2025-02-13 16:59:56,985 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-13 16:59:56,985 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-13 16:59:56,985 - INFO -  Début du calcul des scores environnementaux
+2025-02-13 16:59:56,985 - INFO -  Scores enregistrés: {'q13': 3.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 5.0, 'q19': 4.0, 'q20': 2.0, 'q21': 3.0, 'q22': 3.0, 'q23': 5.0}
+2025-02-13 16:59:56,985 - INFO -  CBS Score = 5.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-13 16:59:56,985 - INFO -  Calcul du score pour B
+2025-02-13 16:59:56,986 - INFO -  Score B = 3.981818181818182 (Numerator: 219.0, Denominator: 55)
+2025-02-13 16:59:56,987 - INFO -  Calcul du score pour E
+2025-02-13 16:59:56,987 - INFO -  Score E = 3.8636363636363638 (Numerator: 85.0, Denominator: 22)
+2025-02-13 16:59:56,987 - INFO -  Calcul du score pour CO2
+2025-02-13 16:59:56,987 - INFO -  Score CO2 = 4.178571428571429 (Numerator: 117.0, Denominator: 28)
+2025-02-13 16:59:56,988 - INFO -  Calcul du score pour W
+2025-02-13 16:59:56,988 - INFO -  Score W = 3.814814814814815 (Numerator: 103.0, Denominator: 27)
+2025-02-13 16:59:56,988 - INFO -  Calcul du score pour C
+2025-02-13 16:59:56,988 - INFO -  Score C = 4.181818181818182 (Numerator: 138.0, Denominator: 33)
+2025-02-13 16:59:56,988 - INFO -  Calcul du score pour R
+2025-02-13 16:59:56,989 - INFO -  Score R = 3.893617021276596 (Numerator: 183.0, Denominator: 47.0)
+2025-02-13 16:59:56,989 - INFO - Scores finaux calculés :
+2025-02-13 16:59:56,989 - INFO -  B = 3.981818181818182
+2025-02-13 16:59:56,989 - INFO -  E = 3.8636363636363638
+2025-02-13 16:59:56,989 - INFO -  CO2 = 4.178571428571429
+2025-02-13 16:59:56,989 - INFO -  W = 3.814814814814815
+2025-02-13 16:59:56,989 - INFO -  C = 4.181818181818182
+2025-02-13 16:59:56,990 - INFO -  R = 3.893617021276596
+2025-02-13 16:59:56,990 - INFO -  Scores finaux pour radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:56,990 - INFO - Scores avant affichage dans le radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 16:59:57,159 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-13 16:59:57,159 - INFO -  Pfv (Façades) = 115000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-13 16:59:57,159 - INFO -  Pe (Entretien façades) = 6600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-13 16:59:57,159 - INFO -  Cost Setup = 190000.0 €, Cost Fixed = 22000.0 €, Cost Maintenance = 11600.0 €/an
+2025-02-13 16:59:57,159 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-13 16:59:57,159 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-13 16:59:57,159 - INFO -  CBS calculé = 0.58
+2025-02-13 16:59:57,159 - INFO -  Score biodiversité CBS = 5
+2025-02-13 16:59:57,393 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:57] "GET /results HTTP/1.1" 200 -
+2025-02-13 16:59:57,413 - INFO - 127.0.0.1 - - [13/Feb/2025 16:59:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:00:02,661 - INFO - 127.0.0.1 - - [13/Feb/2025 17:00:02] "[32mPOST /question24 HTTP/1.1[0m" 302 -
+2025-02-13 17:00:02,666 - INFO -  Stockage dans session['CBS_score'] = 5
+2025-02-13 17:00:02,667 - INFO -  CBS calculé : 0.58
+2025-02-13 17:00:02,667 - INFO -  Score biodiversité basé sur CBS : 5
+2025-02-13 17:00:02,667 - INFO -  Score Façades Végétalisées = 10
+2025-02-13 17:00:02,667 - INFO -  Risques Façades Végétalisées = 6
+2025-02-13 17:00:02,667 - INFO -  Score Toitures Végétalisées = 5
+2025-02-13 17:00:02,667 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-13 17:00:02,667 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-13 17:00:02,667 - INFO -  Début du calcul des scores environnementaux
+2025-02-13 17:00:02,667 - INFO -  Scores enregistrés: {'q13': 3.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 5.0, 'q19': 4.0, 'q20': 2.0, 'q21': 3.0, 'q22': 3.0, 'q23': 5.0}
+2025-02-13 17:00:02,667 - INFO -  CBS Score = 5.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-13 17:00:02,667 - INFO -  Calcul du score pour B
+2025-02-13 17:00:02,667 - INFO -  Score B = 3.981818181818182 (Numerator: 219.0, Denominator: 55)
+2025-02-13 17:00:02,667 - INFO -  Calcul du score pour E
+2025-02-13 17:00:02,667 - INFO -  Score E = 3.8636363636363638 (Numerator: 85.0, Denominator: 22)
+2025-02-13 17:00:02,668 - INFO -  Calcul du score pour CO2
+2025-02-13 17:00:02,668 - INFO -  Score CO2 = 4.178571428571429 (Numerator: 117.0, Denominator: 28)
+2025-02-13 17:00:02,668 - INFO -  Calcul du score pour W
+2025-02-13 17:00:02,668 - INFO -  Score W = 3.814814814814815 (Numerator: 103.0, Denominator: 27)
+2025-02-13 17:00:02,668 - INFO -  Calcul du score pour C
+2025-02-13 17:00:02,668 - INFO -  Score C = 4.181818181818182 (Numerator: 138.0, Denominator: 33)
+2025-02-13 17:00:02,668 - INFO -  Calcul du score pour R
+2025-02-13 17:00:02,668 - INFO -  Score R = 3.893617021276596 (Numerator: 183.0, Denominator: 47.0)
+2025-02-13 17:00:02,668 - INFO - Scores finaux calculés :
+2025-02-13 17:00:02,668 - INFO -  B = 3.981818181818182
+2025-02-13 17:00:02,668 - INFO -  E = 3.8636363636363638
+2025-02-13 17:00:02,668 - INFO -  CO2 = 4.178571428571429
+2025-02-13 17:00:02,668 - INFO -  W = 3.814814814814815
+2025-02-13 17:00:02,668 - INFO -  C = 4.181818181818182
+2025-02-13 17:00:02,668 - INFO -  R = 3.893617021276596
+2025-02-13 17:00:02,668 - INFO -  Scores finaux pour radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 17:00:02,668 - INFO - Scores avant affichage dans le radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 17:00:02,836 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-13 17:00:02,837 - INFO -  Pfv (Façades) = 115000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-13 17:00:02,837 - INFO -  Pe (Entretien façades) = 6600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-13 17:00:02,837 - INFO -  Cost Setup = 190000.0 €, Cost Fixed = 22000.0 €, Cost Maintenance = 11600.0 €/an
+2025-02-13 17:00:02,837 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-13 17:00:02,837 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-13 17:00:02,837 - INFO -  CBS calculé = 0.58
+2025-02-13 17:00:02,837 - INFO -  Score biodiversité CBS = 5
+2025-02-13 17:00:02,999 - INFO - 127.0.0.1 - - [13/Feb/2025 17:00:02] "GET /results HTTP/1.1" 200 -
+2025-02-13 17:00:03,033 - INFO - 127.0.0.1 - - [13/Feb/2025 17:00:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:00:10,286 - INFO -  Stockage dans session['CBS_score'] = 5
+2025-02-13 17:00:10,286 - INFO -  CBS calculé : 0.58
+2025-02-13 17:00:10,286 - INFO -  Score biodiversité basé sur CBS : 5
+2025-02-13 17:00:10,286 - INFO -  Score Façades Végétalisées = 10
+2025-02-13 17:00:10,286 - INFO -  Risques Façades Végétalisées = 6
+2025-02-13 17:00:10,286 - INFO -  Score Toitures Végétalisées = 5
+2025-02-13 17:00:10,286 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-13 17:00:10,287 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-13 17:00:10,287 - INFO -  Début du calcul des scores environnementaux
+2025-02-13 17:00:10,287 - INFO -  Scores enregistrés: {'q13': 3.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 5.0, 'q19': 4.0, 'q20': 2.0, 'q21': 3.0, 'q22': 3.0, 'q23': 5.0}
+2025-02-13 17:00:10,288 - INFO -  CBS Score = 5.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-13 17:00:10,288 - INFO -  Calcul du score pour B
+2025-02-13 17:00:10,289 - INFO -  Score B = 3.981818181818182 (Numerator: 219.0, Denominator: 55)
+2025-02-13 17:00:10,289 - INFO -  Calcul du score pour E
+2025-02-13 17:00:10,289 - INFO -  Score E = 3.8636363636363638 (Numerator: 85.0, Denominator: 22)
+2025-02-13 17:00:10,290 - INFO -  Calcul du score pour CO2
+2025-02-13 17:00:10,290 - INFO -  Score CO2 = 4.178571428571429 (Numerator: 117.0, Denominator: 28)
+2025-02-13 17:00:10,291 - INFO -  Calcul du score pour W
+2025-02-13 17:00:10,291 - INFO -  Score W = 3.814814814814815 (Numerator: 103.0, Denominator: 27)
+2025-02-13 17:00:10,291 - INFO -  Calcul du score pour C
+2025-02-13 17:00:10,291 - INFO -  Score C = 4.181818181818182 (Numerator: 138.0, Denominator: 33)
+2025-02-13 17:00:10,292 - INFO -  Calcul du score pour R
+2025-02-13 17:00:10,292 - INFO -  Score R = 3.893617021276596 (Numerator: 183.0, Denominator: 47.0)
+2025-02-13 17:00:10,292 - INFO - Scores finaux calculés :
+2025-02-13 17:00:10,292 - INFO -  B = 3.981818181818182
+2025-02-13 17:00:10,292 - INFO -  E = 3.8636363636363638
+2025-02-13 17:00:10,292 - INFO -  CO2 = 4.178571428571429
+2025-02-13 17:00:10,292 - INFO -  W = 3.814814814814815
+2025-02-13 17:00:10,292 - INFO -  C = 4.181818181818182
+2025-02-13 17:00:10,292 - INFO -  R = 3.893617021276596
+2025-02-13 17:00:10,292 - INFO -  Scores finaux pour radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 17:00:10,292 - INFO - Scores avant affichage dans le radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 17:00:10,459 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-13 17:00:10,459 - INFO -  Pfv (Façades) = 115000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-13 17:00:10,459 - INFO -  Pe (Entretien façades) = 6600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-13 17:00:10,459 - INFO -  Cost Setup = 190000.0 €, Cost Fixed = 22000.0 €, Cost Maintenance = 11600.0 €/an
+2025-02-13 17:00:10,459 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-13 17:00:10,459 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-13 17:00:10,459 - INFO -  CBS calculé = 0.58
+2025-02-13 17:00:10,459 - INFO -  Score biodiversité CBS = 5
+2025-02-13 17:00:10,627 - INFO - 127.0.0.1 - - [13/Feb/2025 17:00:10] "GET /results HTTP/1.1" 200 -
+2025-02-13 17:00:10,645 - INFO - 127.0.0.1 - - [13/Feb/2025 17:00:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:01:41,703 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.1.19:10000
+2025-02-13 17:01:41,703 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-13 17:05:02,399 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:10000
+2025-02-13 17:05:02,400 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-13 17:05:02,401 - INFO -  * Restarting with stat
+2025-02-13 17:05:03,492 - WARNING -  * Debugger is active!
+2025-02-13 17:05:03,495 - INFO -  * Debugger PIN: 915-481-357
+2025-02-13 17:05:07,363 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "GET / HTTP/1.1" 200 -
+2025-02-13 17:05:07,601 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:05:07,610 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/images/Partner1.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:07,620 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/images/Partner12.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:07,628 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/images/Partner2.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:07,640 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/images/Big-Logo.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:07,642 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/images/Partner3.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:07,645 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/images/logo2.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:07,653 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/images/Partner0.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:07,656 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/images/project-logo-new.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:07,668 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/images/Partner5.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:07,669 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/images/logo1.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:07,671 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:07] "[36mGET /static/images/Partner4.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:08,805 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:08] "GET /question1 HTTP/1.1" 200 -
+2025-02-13 17:05:08,836 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:05:08,844 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:08] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:08,845 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:08] "[36mGET /static/images/illustration1.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:10,153 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:10] "[32mPOST /question1 HTTP/1.1[0m" 302 -
+2025-02-13 17:05:10,164 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:10] "GET /question2 HTTP/1.1" 200 -
+2025-02-13 17:05:10,192 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:05:10,202 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:10] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:10,203 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:10] "[36mGET /static/images/illustration2.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:11,889 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:11] "[32mPOST /question2 HTTP/1.1[0m" 302 -
+2025-02-13 17:05:11,901 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:11] "GET /question3 HTTP/1.1" 200 -
+2025-02-13 17:05:11,941 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:05:11,941 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:11] "[36mGET /static/images/illustration3.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:11,942 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:11] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:13,705 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:13] "[32mPOST /question3 HTTP/1.1[0m" 302 -
+2025-02-13 17:05:13,717 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:13] "GET /question4 HTTP/1.1" 200 -
+2025-02-13 17:05:13,758 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:05:13,764 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:13] "[36mGET /static/images/section4.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:13,772 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:13] "[36mGET /static/images/illustration4.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:14,949 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:14] "[32mPOST /question4 HTTP/1.1[0m" 302 -
+2025-02-13 17:05:14,958 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:14] "GET /question5 HTTP/1.1" 200 -
+2025-02-13 17:05:14,995 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:05:15,001 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:15] "[36mGET /static/images/section5.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:15,003 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:15] "[36mGET /static/images/illustration5.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:16,075 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:16] "[32mPOST /question5 HTTP/1.1[0m" 302 -
+2025-02-13 17:05:16,084 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:16] "GET /question6 HTTP/1.1" 200 -
+2025-02-13 17:05:16,116 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:05:16,125 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:16] "[36mGET /static/images/section6.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:16,125 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:16] "[36mGET /static/images/illustration6.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:17,013 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:17] "[32mPOST /question6 HTTP/1.1[0m" 302 -
+2025-02-13 17:05:17,021 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:17] "GET /question7 HTTP/1.1" 200 -
+2025-02-13 17:05:17,053 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:05:17,064 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:17] "[36mGET /static/images/section7.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:17,065 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:17] "[36mGET /static/images/illustration7.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:18,319 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:18] "[32mPOST /question7 HTTP/1.1[0m" 302 -
+2025-02-13 17:05:18,338 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:18] "GET /question8 HTTP/1.1" 200 -
+2025-02-13 17:05:18,370 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:05:18,383 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:18] "[36mGET /static/images/section8.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:18,383 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:18] "[36mGET /static/images/illustration8.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:19,448 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:19] "[32mPOST /question8 HTTP/1.1[0m" 302 -
+2025-02-13 17:05:19,459 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:19] "GET /question9 HTTP/1.1" 200 -
+2025-02-13 17:05:19,492 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:05:19,499 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:19] "[36mGET /static/images/section9.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:19,501 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:19] "[36mGET /static/images/illustration9.png HTTP/1.1[0m" 304 -
+2025-02-13 17:05:24,488 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:24] "GET /question24 HTTP/1.1" 200 -
+2025-02-13 17:05:24,513 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:05:24,528 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:24] "[33mGET /static/images/illustration24.png HTTP/1.1[0m" 404 -
+2025-02-13 17:05:24,529 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:24] "[33mGET /static/images/section24.png HTTP/1.1[0m" 404 -
+2025-02-13 17:05:27,601 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:27] "[32mPOST /question24 HTTP/1.1[0m" 302 -
+2025-02-13 17:05:27,607 - INFO -  Stockage dans session['CBS_score'] = 5
+2025-02-13 17:05:27,608 - INFO -  CBS calculé : 0.58
+2025-02-13 17:05:27,608 - INFO -  Score biodiversité basé sur CBS : 5
+2025-02-13 17:05:27,608 - INFO -  Score Façades Végétalisées = 10
+2025-02-13 17:05:27,608 - INFO -  Risques Façades Végétalisées = 6
+2025-02-13 17:05:27,608 - INFO -  Score Toitures Végétalisées = 5
+2025-02-13 17:05:27,608 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-13 17:05:27,608 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-13 17:05:27,608 - INFO -  Début du calcul des scores environnementaux
+2025-02-13 17:05:27,608 - INFO -  Scores enregistrés: {'q13': 3.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 5.0, 'q19': 4.0, 'q20': 2.0, 'q21': 3.0, 'q22': 3.0, 'q23': 5.0}
+2025-02-13 17:05:27,608 - INFO -  CBS Score = 5.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-13 17:05:27,608 - INFO -  Calcul du score pour B
+2025-02-13 17:05:27,608 - INFO -  Score B = 3.981818181818182 (Numerator: 219.0, Denominator: 55)
+2025-02-13 17:05:27,608 - INFO -  Calcul du score pour E
+2025-02-13 17:05:27,609 - INFO -  Score E = 3.8636363636363638 (Numerator: 85.0, Denominator: 22)
+2025-02-13 17:05:27,609 - INFO -  Calcul du score pour CO2
+2025-02-13 17:05:27,609 - INFO -  Score CO2 = 4.178571428571429 (Numerator: 117.0, Denominator: 28)
+2025-02-13 17:05:27,609 - INFO -  Calcul du score pour W
+2025-02-13 17:05:27,609 - INFO -  Score W = 3.814814814814815 (Numerator: 103.0, Denominator: 27)
+2025-02-13 17:05:27,609 - INFO -  Calcul du score pour C
+2025-02-13 17:05:27,609 - INFO -  Score C = 4.181818181818182 (Numerator: 138.0, Denominator: 33)
+2025-02-13 17:05:27,609 - INFO -  Calcul du score pour R
+2025-02-13 17:05:27,609 - INFO -  Score R = 3.893617021276596 (Numerator: 183.0, Denominator: 47.0)
+2025-02-13 17:05:27,609 - INFO - Scores finaux calculés :
+2025-02-13 17:05:27,609 - INFO -  B = 3.981818181818182
+2025-02-13 17:05:27,609 - INFO -  E = 3.8636363636363638
+2025-02-13 17:05:27,609 - INFO -  CO2 = 4.178571428571429
+2025-02-13 17:05:27,609 - INFO -  W = 3.814814814814815
+2025-02-13 17:05:27,609 - INFO -  C = 4.181818181818182
+2025-02-13 17:05:27,609 - INFO -  R = 3.893617021276596
+2025-02-13 17:05:27,609 - INFO -  Scores finaux pour radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 17:05:27,609 - INFO - Scores avant affichage dans le radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 17:05:27,850 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-13 17:05:27,850 - INFO -  Pfv (Façades) = 115000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-13 17:05:27,850 - INFO -  Pe (Entretien façades) = 6600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-13 17:05:27,850 - INFO -  Cost Setup = 190000.0 €, Cost Fixed = 22000.0 €, Cost Maintenance = 11600.0 €/an
+2025-02-13 17:05:27,850 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-13 17:05:27,850 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-13 17:05:27,850 - INFO -  CBS calculé = 0.58
+2025-02-13 17:05:27,850 - INFO -  Score biodiversité CBS = 5
+2025-02-13 17:05:28,025 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:28] "GET /results HTTP/1.1" 200 -
+2025-02-13 17:05:28,075 - INFO - 127.0.0.1 - - [13/Feb/2025 17:05:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:06:47,034 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-13 17:06:47,280 - INFO -  * Restarting with stat
+2025-02-13 17:06:48,568 - WARNING -  * Debugger is active!
+2025-02-13 17:06:48,571 - INFO -  * Debugger PIN: 915-481-357
+2025-02-13 17:06:49,596 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-13 17:06:49,819 - INFO -  * Restarting with stat
+2025-02-13 17:06:51,133 - WARNING -  * Debugger is active!
+2025-02-13 17:06:51,136 - INFO -  * Debugger PIN: 915-481-357
+2025-02-13 17:06:54,004 - INFO -  Stockage dans session['CBS_score'] = 5
+2025-02-13 17:06:54,005 - INFO -  CBS calculé : 0.58
+2025-02-13 17:06:54,005 - INFO -  Score biodiversité basé sur CBS : 5
+2025-02-13 17:06:54,005 - INFO -  Score Façades Végétalisées = 10
+2025-02-13 17:06:54,006 - INFO -  Risques Façades Végétalisées = 6
+2025-02-13 17:06:54,006 - INFO -  Score Toitures Végétalisées = 5
+2025-02-13 17:06:54,006 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-13 17:06:54,007 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-13 17:06:54,007 - INFO -  Début du calcul des scores environnementaux
+2025-02-13 17:06:54,007 - INFO -  Scores enregistrés: {'q13': 3.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 5.0, 'q19': 4.0, 'q20': 2.0, 'q21': 3.0, 'q22': 3.0, 'q23': 5.0}
+2025-02-13 17:06:54,007 - INFO -  CBS Score = 5.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-13 17:06:54,007 - INFO -  Calcul du score pour B
+2025-02-13 17:06:54,007 - INFO -  Score B = 3.981818181818182 (Numerator: 219.0, Denominator: 55)
+2025-02-13 17:06:54,007 - INFO -  Calcul du score pour E
+2025-02-13 17:06:54,007 - INFO -  Score E = 3.8636363636363638 (Numerator: 85.0, Denominator: 22)
+2025-02-13 17:06:54,008 - INFO -  Calcul du score pour CO2
+2025-02-13 17:06:54,008 - INFO -  Score CO2 = 4.178571428571429 (Numerator: 117.0, Denominator: 28)
+2025-02-13 17:06:54,008 - INFO -  Calcul du score pour W
+2025-02-13 17:06:54,008 - INFO -  Score W = 3.814814814814815 (Numerator: 103.0, Denominator: 27)
+2025-02-13 17:06:54,008 - INFO -  Calcul du score pour C
+2025-02-13 17:06:54,008 - INFO -  Score C = 4.181818181818182 (Numerator: 138.0, Denominator: 33)
+2025-02-13 17:06:54,008 - INFO -  Calcul du score pour R
+2025-02-13 17:06:54,008 - INFO -  Score R = 3.893617021276596 (Numerator: 183.0, Denominator: 47.0)
+2025-02-13 17:06:54,008 - INFO - Scores finaux calculés :
+2025-02-13 17:06:54,008 - INFO -  B = 3.981818181818182
+2025-02-13 17:06:54,008 - INFO -  E = 3.8636363636363638
+2025-02-13 17:06:54,008 - INFO -  CO2 = 4.178571428571429
+2025-02-13 17:06:54,008 - INFO -  W = 3.814814814814815
+2025-02-13 17:06:54,008 - INFO -  C = 4.181818181818182
+2025-02-13 17:06:54,008 - INFO -  R = 3.893617021276596
+2025-02-13 17:06:54,009 - INFO -  Scores finaux pour radar : [3.981818181818182, 3.8636363636363638, 4.178571428571429, 3.814814814814815, 4.181818181818182, 1.106382978723404]
+2025-02-13 17:06:54,206 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-13 17:06:54,206 - INFO -  Pfv (Façades) = 115000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-13 17:06:54,207 - INFO -  Pe (Entretien façades) = 6600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-13 17:06:54,207 - INFO -  Cost Setup = 190000.0 €, Cost Fixed = 22000.0 €, Cost Maintenance = 11600.0 €/an
+2025-02-13 17:06:54,207 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-13 17:06:54,207 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-13 17:06:54,207 - INFO -  CBS calculé = 0.58
+2025-02-13 17:06:54,207 - INFO -  Score biodiversité CBS = 5
+2025-02-13 17:06:54,390 - INFO - 127.0.0.1 - - [13/Feb/2025 17:06:54] "GET /results HTTP/1.1" 200 -
+2025-02-13 17:06:54,452 - INFO - 127.0.0.1 - - [13/Feb/2025 17:06:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:56:50,965 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:10000
+2025-02-13 17:56:50,965 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-13 17:56:50,967 - INFO -  * Restarting with stat
+2025-02-13 17:56:52,174 - WARNING -  * Debugger is active!
+2025-02-13 17:56:52,177 - INFO -  * Debugger PIN: 915-481-357
+2025-02-13 17:56:57,068 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "GET / HTTP/1.1" 200 -
+2025-02-13 17:56:57,463 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:56:57,470 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/images/Partner1.png HTTP/1.1[0m" 304 -
+2025-02-13 17:56:57,479 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/images/Partner12.png HTTP/1.1[0m" 304 -
+2025-02-13 17:56:57,491 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/images/Partner2.png HTTP/1.1[0m" 304 -
+2025-02-13 17:56:57,496 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/images/project-logo-new.png HTTP/1.1[0m" 304 -
+2025-02-13 17:56:57,499 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/images/logo2.png HTTP/1.1[0m" 304 -
+2025-02-13 17:56:57,501 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/images/Big-Logo.png HTTP/1.1[0m" 304 -
+2025-02-13 17:56:57,525 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/images/Partner3.png HTTP/1.1[0m" 304 -
+2025-02-13 17:56:57,529 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/images/logo1.png HTTP/1.1[0m" 304 -
+2025-02-13 17:56:57,532 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/images/Partner0.png HTTP/1.1[0m" 304 -
+2025-02-13 17:56:57,542 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/images/Partner4.png HTTP/1.1[0m" 304 -
+2025-02-13 17:56:57,551 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:57] "[36mGET /static/images/Partner5.png HTTP/1.1[0m" 304 -
+2025-02-13 17:56:59,954 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:59] "GET /question1 HTTP/1.1" 200 -
+2025-02-13 17:56:59,985 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:56:59,999 - INFO - 127.0.0.1 - - [13/Feb/2025 17:56:59] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-02-13 17:57:00,001 - INFO - 127.0.0.1 - - [13/Feb/2025 17:57:00] "[36mGET /static/images/illustration1.png HTTP/1.1[0m" 304 -
+2025-02-13 17:57:06,263 - INFO - 127.0.0.1 - - [13/Feb/2025 17:57:06] "GET /question13 HTTP/1.1" 200 -
+2025-02-13 17:57:06,297 - INFO - 127.0.0.1 - - [13/Feb/2025 17:57:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 17:57:06,313 - INFO - 127.0.0.1 - - [13/Feb/2025 17:57:06] "[36mGET /static/images/section13.png HTTP/1.1[0m" 304 -
+2025-02-13 17:57:06,313 - INFO - 127.0.0.1 - - [13/Feb/2025 17:57:06] "[36mGET /static/images/illustration13.png HTTP/1.1[0m" 304 -
+2025-02-13 18:32:12,528 - INFO - 127.0.0.1 - - [13/Feb/2025 18:32:12] "[32mPOST /question13 HTTP/1.1[0m" 302 -
+2025-02-13 18:32:12,540 - INFO - 127.0.0.1 - - [13/Feb/2025 18:32:12] "GET /question14 HTTP/1.1" 200 -
+2025-02-13 18:32:12,625 - INFO - 127.0.0.1 - - [13/Feb/2025 18:32:12] "[36mGET /static/images/section14.png HTTP/1.1[0m" 304 -
+2025-02-13 18:32:12,625 - INFO - 127.0.0.1 - - [13/Feb/2025 18:32:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 18:32:12,628 - INFO - 127.0.0.1 - - [13/Feb/2025 18:32:12] "[36mGET /static/images/illustration14.png HTTP/1.1[0m" 304 -
+2025-02-13 18:33:00,351 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-13 18:33:00,568 - INFO -  * Restarting with stat
+2025-02-13 18:33:01,845 - WARNING -  * Debugger is active!
+2025-02-13 18:33:01,848 - INFO -  * Debugger PIN: 915-481-357
+2025-02-13 18:35:27,639 - INFO - 127.0.0.1 - - [13/Feb/2025 18:35:27] "[32mPOST /question14 HTTP/1.1[0m" 302 -
+2025-02-13 18:35:27,653 - INFO - 127.0.0.1 - - [13/Feb/2025 18:35:27] "GET /question15 HTTP/1.1" 200 -
+2025-02-13 18:35:27,792 - INFO - 127.0.0.1 - - [13/Feb/2025 18:35:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 18:35:27,796 - INFO - 127.0.0.1 - - [13/Feb/2025 18:35:27] "[36mGET /static/images/illustration15.png HTTP/1.1[0m" 304 -
+2025-02-13 18:35:27,798 - INFO - 127.0.0.1 - - [13/Feb/2025 18:35:27] "[36mGET /static/images/section15.png HTTP/1.1[0m" 304 -
+2025-02-13 18:38:42,885 - INFO - 127.0.0.1 - - [13/Feb/2025 18:38:42] "[32mPOST /question15 HTTP/1.1[0m" 302 -
+2025-02-13 18:38:42,901 - INFO - 127.0.0.1 - - [13/Feb/2025 18:38:42] "GET /question16 HTTP/1.1" 200 -
+2025-02-13 18:38:42,932 - INFO - 127.0.0.1 - - [13/Feb/2025 18:38:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 18:38:42,943 - INFO - 127.0.0.1 - - [13/Feb/2025 18:38:42] "[36mGET /static/images/section16.png HTTP/1.1[0m" 304 -
+2025-02-13 18:38:42,945 - INFO - 127.0.0.1 - - [13/Feb/2025 18:38:42] "[36mGET /static/images/illustration16.png HTTP/1.1[0m" 304 -
+2025-02-13 18:41:28,331 - INFO - 127.0.0.1 - - [13/Feb/2025 18:41:28] "[32mPOST /question16 HTTP/1.1[0m" 302 -
+2025-02-13 18:41:28,343 - INFO - 127.0.0.1 - - [13/Feb/2025 18:41:28] "GET /question17 HTTP/1.1" 200 -
+2025-02-13 18:41:28,391 - INFO - 127.0.0.1 - - [13/Feb/2025 18:41:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 18:41:28,393 - INFO - 127.0.0.1 - - [13/Feb/2025 18:41:28] "[36mGET /static/images/illustration17.png HTTP/1.1[0m" 304 -
+2025-02-13 18:41:28,393 - INFO - 127.0.0.1 - - [13/Feb/2025 18:41:28] "[36mGET /static/images/section17.png HTTP/1.1[0m" 304 -
+2025-02-13 18:47:12,807 - INFO - 127.0.0.1 - - [13/Feb/2025 18:47:12] "[32mPOST /question17 HTTP/1.1[0m" 302 -
+2025-02-13 18:47:12,820 - INFO - 127.0.0.1 - - [13/Feb/2025 18:47:12] "GET /question18 HTTP/1.1" 200 -
+2025-02-13 18:47:12,860 - INFO - 127.0.0.1 - - [13/Feb/2025 18:47:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 18:47:12,863 - INFO - 127.0.0.1 - - [13/Feb/2025 18:47:12] "[36mGET /static/images/section18.png HTTP/1.1[0m" 304 -
+2025-02-13 18:47:12,871 - INFO - 127.0.0.1 - - [13/Feb/2025 18:47:12] "[36mGET /static/images/illustration18.png HTTP/1.1[0m" 304 -
+2025-02-13 18:58:01,293 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-13 18:58:01,514 - INFO -  * Restarting with stat
+2025-02-13 18:58:03,264 - WARNING -  * Debugger is active!
+2025-02-13 18:58:03,267 - INFO -  * Debugger PIN: 915-481-357
+2025-02-13 19:02:55,140 - INFO - 127.0.0.1 - - [13/Feb/2025 19:02:55] "[32mPOST /question18 HTTP/1.1[0m" 302 -
+2025-02-13 19:02:55,155 - INFO - 127.0.0.1 - - [13/Feb/2025 19:02:55] "GET /question19 HTTP/1.1" 200 -
+2025-02-13 19:02:55,288 - INFO - 127.0.0.1 - - [13/Feb/2025 19:02:55] "[36mGET /static/images/illustration19.png HTTP/1.1[0m" 304 -
+2025-02-13 19:02:55,296 - INFO - 127.0.0.1 - - [13/Feb/2025 19:02:55] "[36mGET /static/images/section19.png HTTP/1.1[0m" 304 -
+2025-02-13 19:02:55,303 - INFO - 127.0.0.1 - - [13/Feb/2025 19:02:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 19:08:59,240 - INFO - 127.0.0.1 - - [13/Feb/2025 19:08:59] "[32mPOST /question19 HTTP/1.1[0m" 302 -
+2025-02-13 19:08:59,251 - INFO - 127.0.0.1 - - [13/Feb/2025 19:08:59] "GET /question20 HTTP/1.1" 200 -
+2025-02-13 19:08:59,294 - INFO - 127.0.0.1 - - [13/Feb/2025 19:08:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 19:08:59,294 - INFO - 127.0.0.1 - - [13/Feb/2025 19:08:59] "[36mGET /static/images/illustration20.png HTTP/1.1[0m" 304 -
+2025-02-13 19:08:59,295 - INFO - 127.0.0.1 - - [13/Feb/2025 19:08:59] "[36mGET /static/images/section20.png HTTP/1.1[0m" 304 -
+2025-02-13 19:09:05,007 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-13 19:09:05,266 - INFO -  * Restarting with stat
+2025-02-13 19:09:06,960 - WARNING -  * Debugger is active!
+2025-02-13 19:09:06,964 - INFO -  * Debugger PIN: 915-481-357
+2025-02-13 19:11:16,118 - INFO - 127.0.0.1 - - [13/Feb/2025 19:11:16] "[32mPOST /question20 HTTP/1.1[0m" 302 -
+2025-02-13 19:11:16,133 - INFO - 127.0.0.1 - - [13/Feb/2025 19:11:16] "GET /question21 HTTP/1.1" 200 -
+2025-02-13 19:11:16,257 - INFO - 127.0.0.1 - - [13/Feb/2025 19:11:16] "[36mGET /static/images/section21.png HTTP/1.1[0m" 304 -
+2025-02-13 19:11:16,268 - INFO - 127.0.0.1 - - [13/Feb/2025 19:11:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 19:11:16,274 - INFO - 127.0.0.1 - - [13/Feb/2025 19:11:16] "[36mGET /static/images/illustration21.png HTTP/1.1[0m" 304 -
+2025-02-13 19:18:36,896 - INFO - 127.0.0.1 - - [13/Feb/2025 19:18:36] "[32mPOST /question21 HTTP/1.1[0m" 302 -
+2025-02-13 19:18:36,911 - INFO - 127.0.0.1 - - [13/Feb/2025 19:18:36] "GET /question22 HTTP/1.1" 200 -
+2025-02-13 19:18:36,949 - INFO - 127.0.0.1 - - [13/Feb/2025 19:18:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 19:18:36,955 - INFO - 127.0.0.1 - - [13/Feb/2025 19:18:36] "[36mGET /static/images/section22.png HTTP/1.1[0m" 304 -
+2025-02-13 19:18:36,958 - INFO - 127.0.0.1 - - [13/Feb/2025 19:18:36] "[36mGET /static/images/illustration22.png HTTP/1.1[0m" 304 -
+2025-02-13 19:21:36,921 - INFO - 127.0.0.1 - - [13/Feb/2025 19:21:36] "[32mPOST /question22 HTTP/1.1[0m" 302 -
+2025-02-13 19:21:36,946 - INFO - 127.0.0.1 - - [13/Feb/2025 19:21:36] "GET /question23 HTTP/1.1" 200 -
+2025-02-13 19:21:37,090 - INFO - 127.0.0.1 - - [13/Feb/2025 19:21:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-13 19:21:37,098 - INFO - 127.0.0.1 - - [13/Feb/2025 19:21:37] "[33mGET /static/images/illustration23.png HTTP/1.1[0m" 404 -
+2025-02-13 19:21:37,098 - INFO - 127.0.0.1 - - [13/Feb/2025 19:21:37] "[36mGET /static/images/section23.png HTTP/1.1[0m" 304 -
+2025-02-14 12:34:04,998 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:10000
+2025-02-14 12:34:04,999 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-14 12:34:05,009 - INFO -  * Restarting with stat
+2025-02-14 12:34:07,678 - WARNING -  * Debugger is active!
+2025-02-14 12:34:07,684 - INFO -  * Debugger PIN: 915-481-357
+2025-02-14 12:35:49,618 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET / HTTP/1.1" 200 -
+2025-02-14 12:35:49,919 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/images/Partner0.png HTTP/1.1" 200 -
+2025-02-14 12:35:49,929 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/images/Partner1.png HTTP/1.1" 200 -
+2025-02-14 12:35:49,936 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-14 12:35:49,941 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/images/logo1.png HTTP/1.1" 200 -
+2025-02-14 12:35:49,941 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/images/Partner12.png HTTP/1.1" 200 -
+2025-02-14 12:35:49,942 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/images/logo2.png HTTP/1.1" 200 -
+2025-02-14 12:35:49,948 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/images/project-logo-new.png HTTP/1.1" 200 -
+2025-02-14 12:35:49,948 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/images/Big-Logo.png HTTP/1.1" 200 -
+2025-02-14 12:35:49,952 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/images/Partner2.png HTTP/1.1" 200 -
+2025-02-14 12:35:49,974 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/images/Partner3.png HTTP/1.1" 200 -
+2025-02-14 12:35:49,992 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/images/Partner5.png HTTP/1.1" 200 -
+2025-02-14 12:35:49,994 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:49] "GET /static/images/Partner4.png HTTP/1.1" 200 -
+2025-02-14 12:35:50,135 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-14 12:35:52,387 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:52] "GET /question1 HTTP/1.1" 200 -
+2025-02-14 12:35:52,411 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-14 12:35:52,424 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:52] "GET /static/images/section1.png HTTP/1.1" 200 -
+2025-02-14 12:35:52,424 - INFO - 127.0.0.1 - - [14/Feb/2025 12:35:52] "GET /static/images/illustration1.png HTTP/1.1" 200 -
+2025-02-14 12:41:23,068 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-14 12:41:23,291 - INFO -  * Restarting with stat
+2025-02-14 12:41:24,517 - WARNING -  * Debugger is active!
+2025-02-14 12:41:24,520 - INFO -  * Debugger PIN: 915-481-357
+2025-02-14 13:03:39,433 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-14 13:03:39,727 - INFO -  * Restarting with stat
+2025-02-14 13:03:41,348 - WARNING -  * Debugger is active!
+2025-02-14 13:03:41,351 - INFO -  * Debugger PIN: 915-481-357
+2025-02-14 13:07:17,282 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-14 13:07:17,493 - INFO -  * Restarting with stat
+2025-02-14 13:07:18,919 - WARNING -  * Debugger is active!
+2025-02-14 13:07:18,922 - INFO -  * Debugger PIN: 915-481-357
+2025-02-14 14:11:35,499 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:35] "GET /question14 HTTP/1.1" 200 -
+2025-02-14 14:11:35,625 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:35] "GET /static/images/illustration14.png HTTP/1.1" 200 -
+2025-02-14 14:11:35,625 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-14 14:11:35,625 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:35] "GET /static/images/section14.png HTTP/1.1" 200 -
+2025-02-14 14:11:39,561 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:39] "GET /question13 HTTP/1.1" 200 -
+2025-02-14 14:11:39,585 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-14 14:11:39,600 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:39] "GET /static/images/section13.png HTTP/1.1" 200 -
+2025-02-14 14:11:39,600 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:39] "GET /static/images/illustration13.png HTTP/1.1" 200 -
+2025-02-14 14:11:41,769 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:41] "[32mPOST /question13 HTTP/1.1[0m" 302 -
+2025-02-14 14:11:41,775 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:41] "GET /question14 HTTP/1.1" 200 -
+2025-02-14 14:11:41,805 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-14 14:11:41,812 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:41] "[36mGET /static/images/section14.png HTTP/1.1[0m" 304 -
+2025-02-14 14:11:41,815 - INFO - 127.0.0.1 - - [14/Feb/2025 14:11:41] "[36mGET /static/images/illustration14.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:15,250 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-16 16:30:15,626 - INFO -  * Restarting with stat
+2025-02-16 16:30:27,121 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:10000
+2025-02-16 16:30:27,121 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-16 16:30:27,128 - INFO -  * Restarting with stat
+2025-02-16 16:30:28,193 - WARNING -  * Debugger is active!
+2025-02-16 16:30:28,197 - INFO -  * Debugger PIN: 915-481-357
+2025-02-16 16:30:33,995 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:33] "GET / HTTP/1.1" 200 -
+2025-02-16 16:30:34,264 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:30:34,278 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/images/Partner1.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:34,289 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/images/Partner12.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:34,294 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/images/project-logo-new.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:34,317 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/images/Partner2.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:34,319 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/images/logo2.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:34,321 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/images/Big-Logo.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:34,329 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/images/Partner0.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:34,339 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/images/Partner3.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:34,339 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/images/logo1.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:34,344 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/images/Partner4.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:34,357 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:34] "[36mGET /static/images/Partner5.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:36,286 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:36] "GET /question1 HTTP/1.1" 200 -
+2025-02-16 16:30:36,334 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:30:36,335 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:36] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:36,335 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:36] "[36mGET /static/images/illustration1.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:39,314 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:39] "[32mPOST /question1 HTTP/1.1[0m" 302 -
+2025-02-16 16:30:39,324 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:39] "GET /question2 HTTP/1.1" 200 -
+2025-02-16 16:30:39,372 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:30:39,378 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:39] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:39,380 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:39] "GET /static/images/illustration2.png HTTP/1.1" 200 -
+2025-02-16 16:30:41,166 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:41] "[32mPOST /question2 HTTP/1.1[0m" 302 -
+2025-02-16 16:30:41,177 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:41] "GET /question3 HTTP/1.1" 200 -
+2025-02-16 16:30:41,227 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:30:41,231 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:41] "GET /static/images/illustration3.png HTTP/1.1" 200 -
+2025-02-16 16:30:41,233 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:41] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-02-16 16:30:42,746 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:42] "[32mPOST /question3 HTTP/1.1[0m" 302 -
+2025-02-16 16:30:42,755 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:42] "GET /question4 HTTP/1.1" 200 -
+2025-02-16 16:30:42,802 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:30:42,811 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:42] "GET /static/images/section4.png HTTP/1.1" 200 -
+2025-02-16 16:30:42,811 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:42] "GET /static/images/illustration4.png HTTP/1.1" 200 -
+2025-02-16 16:30:44,151 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:44] "[32mPOST /question4 HTTP/1.1[0m" 302 -
+2025-02-16 16:30:44,162 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:44] "GET /question5 HTTP/1.1" 200 -
+2025-02-16 16:30:44,213 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:30:44,219 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:44] "GET /static/images/section5.png HTTP/1.1" 200 -
+2025-02-16 16:30:44,220 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:44] "GET /static/images/illustration5.png HTTP/1.1" 200 -
+2025-02-16 16:30:45,306 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:45] "[32mPOST /question5 HTTP/1.1[0m" 302 -
+2025-02-16 16:30:45,318 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:45] "GET /question6 HTTP/1.1" 200 -
+2025-02-16 16:30:45,365 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:30:45,374 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:45] "GET /static/images/section6.png HTTP/1.1" 200 -
+2025-02-16 16:30:45,374 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:45] "GET /static/images/illustration6.png HTTP/1.1" 200 -
+2025-02-16 16:30:46,743 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:46] "[32mPOST /question6 HTTP/1.1[0m" 302 -
+2025-02-16 16:30:46,755 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:46] "GET /question7 HTTP/1.1" 200 -
+2025-02-16 16:30:46,801 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:30:46,810 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:46] "GET /static/images/section7.png HTTP/1.1" 200 -
+2025-02-16 16:30:46,811 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:46] "GET /static/images/illustration7.png HTTP/1.1" 200 -
+2025-02-16 16:30:47,945 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:47] "[32mPOST /question7 HTTP/1.1[0m" 302 -
+2025-02-16 16:30:47,963 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:47] "GET /question8 HTTP/1.1" 200 -
+2025-02-16 16:30:48,011 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:30:48,021 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:48] "GET /static/images/section8.png HTTP/1.1" 200 -
+2025-02-16 16:30:48,021 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:48] "GET /static/images/illustration8.png HTTP/1.1" 200 -
+2025-02-16 16:30:49,723 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:49] "[32mPOST /question8 HTTP/1.1[0m" 302 -
+2025-02-16 16:30:49,736 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:49] "GET /question9 HTTP/1.1" 200 -
+2025-02-16 16:30:49,785 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:30:49,797 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:49] "GET /static/images/section9.png HTTP/1.1" 200 -
+2025-02-16 16:30:49,797 - INFO - 127.0.0.1 - - [16/Feb/2025 16:30:49] "GET /static/images/illustration9.png HTTP/1.1" 200 -
+2025-02-16 16:38:45,481 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-16 16:38:45,691 - INFO -  * Restarting with stat
+2025-02-16 16:38:47,233 - WARNING -  * Debugger is active!
+2025-02-16 16:38:47,237 - INFO -  * Debugger PIN: 915-481-357
+2025-02-16 16:38:49,940 - INFO - 127.0.0.1 - - [16/Feb/2025 16:38:49] "GET /question9 HTTP/1.1" 200 -
+2025-02-16 16:38:50,031 - INFO - 127.0.0.1 - - [16/Feb/2025 16:38:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:38:50,052 - INFO - 127.0.0.1 - - [16/Feb/2025 16:38:50] "GET /static/images/illustration9.png HTTP/1.1" 200 -
+2025-02-16 16:38:50,058 - INFO - 127.0.0.1 - - [16/Feb/2025 16:38:50] "[36mGET /static/images/section9.png HTTP/1.1[0m" 304 -
+2025-02-16 16:48:33,158 - INFO - 127.0.0.1 - - [16/Feb/2025 16:48:33] "[32mPOST /question9 HTTP/1.1[0m" 302 -
+2025-02-16 16:48:33,172 - INFO - 127.0.0.1 - - [16/Feb/2025 16:48:33] "GET /question10 HTTP/1.1" 200 -
+2025-02-16 16:48:33,213 - INFO - 127.0.0.1 - - [16/Feb/2025 16:48:33] "GET /static/images/section10.png HTTP/1.1" 200 -
+2025-02-16 16:48:33,213 - INFO - 127.0.0.1 - - [16/Feb/2025 16:48:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:48:33,213 - INFO - 127.0.0.1 - - [16/Feb/2025 16:48:33] "GET /static/images/illustration10.png HTTP/1.1" 200 -
+2025-02-16 16:48:34,564 - INFO - 127.0.0.1 - - [16/Feb/2025 16:48:34] "[32mPOST /question10 HTTP/1.1[0m" 302 -
+2025-02-16 16:48:34,579 - INFO - 127.0.0.1 - - [16/Feb/2025 16:48:34] "GET /question11 HTTP/1.1" 200 -
+2025-02-16 16:48:34,610 - INFO - 127.0.0.1 - - [16/Feb/2025 16:48:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 16:48:34,625 - INFO - 127.0.0.1 - - [16/Feb/2025 16:48:34] "GET /static/images/section11.png HTTP/1.1" 200 -
+2025-02-16 16:48:34,625 - INFO - 127.0.0.1 - - [16/Feb/2025 16:48:34] "GET /static/images/illustration11.png HTTP/1.1" 200 -
+2025-02-16 17:16:58,113 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-16 17:16:58,390 - INFO -  * Restarting with stat
+2025-02-16 17:16:59,739 - WARNING -  * Debugger is active!
+2025-02-16 17:16:59,741 - INFO -  * Debugger PIN: 915-481-357
+2025-02-16 17:17:10,861 - INFO - 127.0.0.1 - - [16/Feb/2025 17:17:10] "GET /question11 HTTP/1.1" 200 -
+2025-02-16 17:17:10,971 - INFO - 127.0.0.1 - - [16/Feb/2025 17:17:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:17:10,977 - INFO - 127.0.0.1 - - [16/Feb/2025 17:17:10] "GET /static/images/illustration11.png HTTP/1.1" 200 -
+2025-02-16 17:17:10,979 - INFO - 127.0.0.1 - - [16/Feb/2025 17:17:10] "[36mGET /static/images/section11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:19:59,694 - INFO - 127.0.0.1 - - [16/Feb/2025 17:19:59] "GET /question11 HTTP/1.1" 200 -
+2025-02-16 17:19:59,713 - INFO - 127.0.0.1 - - [16/Feb/2025 17:19:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:19:59,721 - INFO - 127.0.0.1 - - [16/Feb/2025 17:19:59] "[36mGET /static/images/section11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:19:59,725 - INFO - 127.0.0.1 - - [16/Feb/2025 17:19:59] "[36mGET /static/images/illustration11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:20:02,516 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:02] "GET /question11 HTTP/1.1" 200 -
+2025-02-16 17:20:02,542 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:20:02,542 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:02] "[36mGET /static/images/section11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:20:02,542 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:02] "[36mGET /static/images/illustration11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:20:14,607 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-16 17:20:14,826 - INFO -  * Restarting with stat
+2025-02-16 17:20:16,433 - WARNING -  * Debugger is active!
+2025-02-16 17:20:16,435 - INFO -  * Debugger PIN: 915-481-357
+2025-02-16 17:20:17,631 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:17] "GET /question11 HTTP/1.1" 200 -
+2025-02-16 17:20:17,730 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:20:17,745 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:17] "[36mGET /static/images/illustration11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:20:17,746 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:17] "[36mGET /static/images/section11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:20:39,040 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:39] "GET /question11 HTTP/1.1" 200 -
+2025-02-16 17:20:39,062 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:20:39,063 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:39] "[36mGET /static/images/section11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:20:39,064 - INFO - 127.0.0.1 - - [16/Feb/2025 17:20:39] "[36mGET /static/images/illustration11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:26:28,524 - INFO - 127.0.0.1 - - [16/Feb/2025 17:26:28] "GET /question11 HTTP/1.1" 200 -
+2025-02-16 17:26:28,540 - INFO - 127.0.0.1 - - [16/Feb/2025 17:26:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:26:28,549 - INFO - 127.0.0.1 - - [16/Feb/2025 17:26:28] "[36mGET /static/images/section11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:26:28,549 - INFO - 127.0.0.1 - - [16/Feb/2025 17:26:28] "GET /static/images/illustration11.png HTTP/1.1" 200 -
+2025-02-16 17:26:36,125 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-16 17:26:36,342 - INFO -  * Restarting with stat
+2025-02-16 17:26:37,573 - WARNING -  * Debugger is active!
+2025-02-16 17:26:37,576 - INFO -  * Debugger PIN: 915-481-357
+2025-02-16 17:26:40,422 - INFO - 127.0.0.1 - - [16/Feb/2025 17:26:40] "GET /question11 HTTP/1.1" 200 -
+2025-02-16 17:26:40,533 - INFO - 127.0.0.1 - - [16/Feb/2025 17:26:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:26:40,535 - INFO - 127.0.0.1 - - [16/Feb/2025 17:26:40] "[36mGET /static/images/illustration11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:26:40,539 - INFO - 127.0.0.1 - - [16/Feb/2025 17:26:40] "[36mGET /static/images/section11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:27:17,054 - INFO - 127.0.0.1 - - [16/Feb/2025 17:27:17] "[32mPOST /question11 HTTP/1.1[0m" 302 -
+2025-02-16 17:27:17,067 - INFO - 127.0.0.1 - - [16/Feb/2025 17:27:17] "GET /question12 HTTP/1.1" 200 -
+2025-02-16 17:27:17,105 - INFO - 127.0.0.1 - - [16/Feb/2025 17:27:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:27:17,117 - INFO - 127.0.0.1 - - [16/Feb/2025 17:27:17] "GET /static/images/illustration12.png HTTP/1.1" 200 -
+2025-02-16 17:27:17,117 - INFO - 127.0.0.1 - - [16/Feb/2025 17:27:17] "GET /static/images/section12.png HTTP/1.1" 200 -
+2025-02-16 17:50:59,567 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-16 17:50:59,788 - INFO -  * Restarting with stat
+2025-02-16 17:51:01,418 - WARNING -  * Debugger is active!
+2025-02-16 17:51:01,421 - INFO -  * Debugger PIN: 915-481-357
+2025-02-16 17:51:02,992 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:02] "GET /question12 HTTP/1.1" 200 -
+2025-02-16 17:51:03,102 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:51:03,103 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:03] "GET /static/images/illustration12.png HTTP/1.1" 200 -
+2025-02-16 17:51:03,106 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:03] "[36mGET /static/images/section12.png HTTP/1.1[0m" 304 -
+2025-02-16 17:51:12,268 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:12] "GET /question11 HTTP/1.1" 200 -
+2025-02-16 17:51:12,297 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:51:12,308 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:12] "[36mGET /static/images/section11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:51:12,309 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:12] "[36mGET /static/images/illustration11.png HTTP/1.1[0m" 304 -
+2025-02-16 17:51:14,860 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:14] "[32mPOST /question11 HTTP/1.1[0m" 302 -
+2025-02-16 17:51:14,867 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:14] "GET /question12 HTTP/1.1" 200 -
+2025-02-16 17:51:14,907 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:51:14,913 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:14] "[36mGET /static/images/section12.png HTTP/1.1[0m" 304 -
+2025-02-16 17:51:14,915 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:14] "[36mGET /static/images/illustration12.png HTTP/1.1[0m" 304 -
+2025-02-16 17:51:20,133 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:20] "[32mPOST /question12 HTTP/1.1[0m" 302 -
+2025-02-16 17:51:20,144 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:20] "GET /question13 HTTP/1.1" 200 -
+2025-02-16 17:51:20,181 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:51:20,196 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:20] "[36mGET /static/images/section13.png HTTP/1.1[0m" 304 -
+2025-02-16 17:51:20,197 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:20] "[36mGET /static/images/illustration13.png HTTP/1.1[0m" 304 -
+2025-02-16 17:51:31,445 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:31] "[32mPOST /question13 HTTP/1.1[0m" 302 -
+2025-02-16 17:51:31,458 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:31] "GET /question14 HTTP/1.1" 200 -
+2025-02-16 17:51:31,496 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:51:31,502 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:31] "[36mGET /static/images/section14.png HTTP/1.1[0m" 304 -
+2025-02-16 17:51:31,503 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:31] "[36mGET /static/images/illustration14.png HTTP/1.1[0m" 304 -
+2025-02-16 17:51:32,783 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:32] "[32mPOST /question14 HTTP/1.1[0m" 302 -
+2025-02-16 17:51:32,795 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:32] "GET /question15 HTTP/1.1" 200 -
+2025-02-16 17:51:32,826 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:51:32,837 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:32] "GET /static/images/illustration15.png HTTP/1.1" 200 -
+2025-02-16 17:51:32,838 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:32] "GET /static/images/section15.png HTTP/1.1" 200 -
+2025-02-16 17:51:34,578 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:34] "[32mPOST /question15 HTTP/1.1[0m" 302 -
+2025-02-16 17:51:34,589 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:34] "GET /question16 HTTP/1.1" 200 -
+2025-02-16 17:51:34,624 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:51:34,630 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:34] "GET /static/images/section16.png HTTP/1.1" 200 -
+2025-02-16 17:51:34,631 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:34] "GET /static/images/illustration16.png HTTP/1.1" 200 -
+2025-02-16 17:51:36,440 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:36] "[32mPOST /question16 HTTP/1.1[0m" 302 -
+2025-02-16 17:51:36,453 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:36] "GET /question17 HTTP/1.1" 200 -
+2025-02-16 17:51:36,485 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:51:36,494 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:36] "GET /static/images/section17.png HTTP/1.1" 200 -
+2025-02-16 17:51:36,494 - INFO - 127.0.0.1 - - [16/Feb/2025 17:51:36] "GET /static/images/illustration17.png HTTP/1.1" 200 -
+2025-02-16 17:52:11,857 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:11] "GET /question17 HTTP/1.1" 200 -
+2025-02-16 17:52:11,880 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:52:11,881 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:11] "[36mGET /static/images/section17.png HTTP/1.1[0m" 304 -
+2025-02-16 17:52:11,881 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:11] "GET /static/images/illustration17.png HTTP/1.1" 200 -
+2025-02-16 17:52:18,640 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:18] "GET /question16 HTTP/1.1" 200 -
+2025-02-16 17:52:18,669 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:52:18,683 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:18] "[36mGET /static/images/section16.png HTTP/1.1[0m" 304 -
+2025-02-16 17:52:18,683 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:18] "[36mGET /static/images/illustration16.png HTTP/1.1[0m" 304 -
+2025-02-16 17:52:20,726 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:20] "GET /question15 HTTP/1.1" 200 -
+2025-02-16 17:52:20,754 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:52:20,769 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:20] "[36mGET /static/images/section15.png HTTP/1.1[0m" 304 -
+2025-02-16 17:52:20,771 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:20] "[36mGET /static/images/illustration15.png HTTP/1.1[0m" 304 -
+2025-02-16 17:52:22,458 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:22] "GET /question14 HTTP/1.1" 200 -
+2025-02-16 17:52:22,489 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 17:52:22,504 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:22] "[36mGET /static/images/section14.png HTTP/1.1[0m" 304 -
+2025-02-16 17:52:22,504 - INFO - 127.0.0.1 - - [16/Feb/2025 17:52:22] "[36mGET /static/images/illustration14.png HTTP/1.1[0m" 304 -
+2025-02-16 18:10:24,831 - INFO - 127.0.0.1 - - [16/Feb/2025 18:10:24] "GET /question14 HTTP/1.1" 200 -
+2025-02-16 18:10:24,854 - INFO - 127.0.0.1 - - [16/Feb/2025 18:10:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:10:24,854 - INFO - 127.0.0.1 - - [16/Feb/2025 18:10:24] "[36mGET /static/images/section14.png HTTP/1.1[0m" 304 -
+2025-02-16 18:10:24,854 - INFO - 127.0.0.1 - - [16/Feb/2025 18:10:24] "GET /static/images/illustration14.png HTTP/1.1" 200 -
+2025-02-16 18:11:04,409 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:04] "GET /question14 HTTP/1.1" 200 -
+2025-02-16 18:11:04,439 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:04] "[36mGET /static/images/section14.png HTTP/1.1[0m" 304 -
+2025-02-16 18:11:04,439 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:11:04,439 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:04] "GET /static/images/illustration14.png HTTP/1.1" 200 -
+2025-02-16 18:11:18,374 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:18] "[32mPOST /question14 HTTP/1.1[0m" 302 -
+2025-02-16 18:11:18,381 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:18] "GET /question15 HTTP/1.1" 200 -
+2025-02-16 18:11:18,426 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:11:18,426 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:18] "[36mGET /static/images/section15.png HTTP/1.1[0m" 304 -
+2025-02-16 18:11:18,426 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:18] "[36mGET /static/images/illustration15.png HTTP/1.1[0m" 304 -
+2025-02-16 18:11:33,491 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:33] "[32mPOST /question15 HTTP/1.1[0m" 302 -
+2025-02-16 18:11:33,498 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:33] "GET /question16 HTTP/1.1" 200 -
+2025-02-16 18:11:33,540 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:11:33,545 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:33] "[36mGET /static/images/section16.png HTTP/1.1[0m" 304 -
+2025-02-16 18:11:33,549 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:33] "[36mGET /static/images/illustration16.png HTTP/1.1[0m" 304 -
+2025-02-16 18:11:35,441 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:35] "[32mPOST /question16 HTTP/1.1[0m" 302 -
+2025-02-16 18:11:35,453 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:35] "GET /question17 HTTP/1.1" 200 -
+2025-02-16 18:11:35,493 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:11:35,497 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:35] "[36mGET /static/images/illustration17.png HTTP/1.1[0m" 304 -
+2025-02-16 18:11:35,498 - INFO - 127.0.0.1 - - [16/Feb/2025 18:11:35] "[36mGET /static/images/section17.png HTTP/1.1[0m" 304 -
+2025-02-16 18:18:34,851 - INFO - 127.0.0.1 - - [16/Feb/2025 18:18:34] "GET /question17 HTTP/1.1" 200 -
+2025-02-16 18:18:34,871 - INFO - 127.0.0.1 - - [16/Feb/2025 18:18:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:18:34,873 - INFO - 127.0.0.1 - - [16/Feb/2025 18:18:34] "[36mGET /static/images/section17.png HTTP/1.1[0m" 304 -
+2025-02-16 18:18:34,874 - INFO - 127.0.0.1 - - [16/Feb/2025 18:18:34] "GET /static/images/illustration17.png HTTP/1.1" 200 -
+2025-02-16 18:18:38,430 - INFO - 127.0.0.1 - - [16/Feb/2025 18:18:38] "[32mPOST /question17 HTTP/1.1[0m" 302 -
+2025-02-16 18:18:38,445 - INFO - 127.0.0.1 - - [16/Feb/2025 18:18:38] "GET /question18 HTTP/1.1" 200 -
+2025-02-16 18:18:38,479 - INFO - 127.0.0.1 - - [16/Feb/2025 18:18:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:18:38,488 - INFO - 127.0.0.1 - - [16/Feb/2025 18:18:38] "GET /static/images/section18.png HTTP/1.1" 200 -
+2025-02-16 18:18:38,489 - INFO - 127.0.0.1 - - [16/Feb/2025 18:18:38] "GET /static/images/illustration18.png HTTP/1.1" 200 -
+2025-02-16 18:20:44,184 - INFO - 127.0.0.1 - - [16/Feb/2025 18:20:44] "GET /question18 HTTP/1.1" 200 -
+2025-02-16 18:20:44,212 - INFO - 127.0.0.1 - - [16/Feb/2025 18:20:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:20:44,212 - INFO - 127.0.0.1 - - [16/Feb/2025 18:20:44] "[36mGET /static/images/section18.png HTTP/1.1[0m" 304 -
+2025-02-16 18:20:44,212 - INFO - 127.0.0.1 - - [16/Feb/2025 18:20:44] "GET /static/images/illustration18.png HTTP/1.1" 200 -
+2025-02-16 18:21:16,599 - INFO - 127.0.0.1 - - [16/Feb/2025 18:21:16] "[32mPOST /question18 HTTP/1.1[0m" 302 -
+2025-02-16 18:21:16,615 - INFO - 127.0.0.1 - - [16/Feb/2025 18:21:16] "GET /question19 HTTP/1.1" 200 -
+2025-02-16 18:21:16,660 - INFO - 127.0.0.1 - - [16/Feb/2025 18:21:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:21:16,660 - INFO - 127.0.0.1 - - [16/Feb/2025 18:21:16] "GET /static/images/section19.png HTTP/1.1" 200 -
+2025-02-16 18:21:16,661 - INFO - 127.0.0.1 - - [16/Feb/2025 18:21:16] "GET /static/images/illustration19.png HTTP/1.1" 200 -
+2025-02-16 18:35:04,807 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:04] "GET /question19 HTTP/1.1" 200 -
+2025-02-16 18:35:04,833 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:04] "GET /static/images/illustration19.png HTTP/1.1" 200 -
+2025-02-16 18:35:04,834 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:35:04,834 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:04] "[36mGET /static/images/section19.png HTTP/1.1[0m" 304 -
+2025-02-16 18:35:08,670 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:08] "[32mPOST /question19 HTTP/1.1[0m" 302 -
+2025-02-16 18:35:08,685 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:08] "GET /question20 HTTP/1.1" 200 -
+2025-02-16 18:35:08,736 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:35:08,748 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:08] "GET /static/images/section20.png HTTP/1.1" 200 -
+2025-02-16 18:35:08,749 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:08] "GET /static/images/illustration20.png HTTP/1.1" 200 -
+2025-02-16 18:35:34,761 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:34] "[32mPOST /question20 HTTP/1.1[0m" 302 -
+2025-02-16 18:35:34,774 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:34] "GET /question21 HTTP/1.1" 200 -
+2025-02-16 18:35:34,817 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:35:34,830 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:34] "GET /static/images/section21.png HTTP/1.1" 200 -
+2025-02-16 18:35:34,830 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:34] "GET /static/images/illustration21.png HTTP/1.1" 200 -
+2025-02-16 18:35:39,260 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:39] "[32mPOST /question21 HTTP/1.1[0m" 302 -
+2025-02-16 18:35:39,276 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:39] "GET /question22 HTTP/1.1" 200 -
+2025-02-16 18:35:39,311 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:35:39,318 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:39] "GET /static/images/section22.png HTTP/1.1" 200 -
+2025-02-16 18:35:39,319 - INFO - 127.0.0.1 - - [16/Feb/2025 18:35:39] "GET /static/images/illustration22.png HTTP/1.1" 200 -
+2025-02-16 18:39:45,138 - INFO - 127.0.0.1 - - [16/Feb/2025 18:39:45] "GET /question22 HTTP/1.1" 200 -
+2025-02-16 18:39:45,158 - INFO - 127.0.0.1 - - [16/Feb/2025 18:39:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:39:45,166 - INFO - 127.0.0.1 - - [16/Feb/2025 18:39:45] "[36mGET /static/images/section22.png HTTP/1.1[0m" 304 -
+2025-02-16 18:39:45,166 - INFO - 127.0.0.1 - - [16/Feb/2025 18:39:45] "GET /static/images/illustration22.png HTTP/1.1" 200 -
+2025-02-16 18:39:52,354 - INFO - 127.0.0.1 - - [16/Feb/2025 18:39:52] "[32mPOST /question22 HTTP/1.1[0m" 302 -
+2025-02-16 18:39:52,372 - INFO - 127.0.0.1 - - [16/Feb/2025 18:39:52] "GET /question23 HTTP/1.1" 200 -
+2025-02-16 18:39:52,405 - INFO - 127.0.0.1 - - [16/Feb/2025 18:39:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:39:52,416 - INFO - 127.0.0.1 - - [16/Feb/2025 18:39:52] "[33mGET /static/images/illustration23.png HTTP/1.1[0m" 404 -
+2025-02-16 18:39:52,417 - INFO - 127.0.0.1 - - [16/Feb/2025 18:39:52] "GET /static/images/section23.png HTTP/1.1" 200 -
+2025-02-16 18:45:29,362 - INFO - 127.0.0.1 - - [16/Feb/2025 18:45:29] "GET /question23 HTTP/1.1" 200 -
+2025-02-16 18:45:29,390 - INFO - 127.0.0.1 - - [16/Feb/2025 18:45:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:45:29,391 - INFO - 127.0.0.1 - - [16/Feb/2025 18:45:29] "GET /static/images/illustration23.png HTTP/1.1" 200 -
+2025-02-16 18:45:29,392 - INFO - 127.0.0.1 - - [16/Feb/2025 18:45:29] "[36mGET /static/images/section23.png HTTP/1.1[0m" 304 -
+2025-02-16 18:45:32,887 - INFO - 127.0.0.1 - - [16/Feb/2025 18:45:32] "[32mPOST /question23 HTTP/1.1[0m" 302 -
+2025-02-16 18:45:32,909 - INFO - 127.0.0.1 - - [16/Feb/2025 18:45:32] "GET /question24 HTTP/1.1" 200 -
+2025-02-16 18:45:32,955 - INFO - 127.0.0.1 - - [16/Feb/2025 18:45:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 18:45:32,956 - INFO - 127.0.0.1 - - [16/Feb/2025 18:45:32] "[33mGET /static/images/section24.png HTTP/1.1[0m" 404 -
+2025-02-16 18:45:32,957 - INFO - 127.0.0.1 - - [16/Feb/2025 18:45:32] "[33mGET /static/images/illustration24.png HTTP/1.1[0m" 404 -
+2025-02-16 19:24:19,299 - INFO - 127.0.0.1 - - [16/Feb/2025 19:24:19] "GET /question24 HTTP/1.1" 200 -
+2025-02-16 19:24:19,322 - INFO - 127.0.0.1 - - [16/Feb/2025 19:24:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:24:19,333 - INFO - 127.0.0.1 - - [16/Feb/2025 19:24:19] "[33mGET /static/images/section24.png HTTP/1.1[0m" 404 -
+2025-02-16 19:24:19,335 - INFO - 127.0.0.1 - - [16/Feb/2025 19:24:19] "GET /static/images/illustration24.png HTTP/1.1" 200 -
+2025-02-16 19:25:04,791 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:04] "GET /question24 HTTP/1.1" 200 -
+2025-02-16 19:25:04,815 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:25:04,826 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:04] "GET /static/images/section24.png HTTP/1.1" 200 -
+2025-02-16 19:25:04,828 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:04] "[36mGET /static/images/illustration24.png HTTP/1.1[0m" 304 -
+2025-02-16 19:25:06,732 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:06] "GET /question23 HTTP/1.1" 200 -
+2025-02-16 19:25:06,764 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:25:06,770 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:06] "[36mGET /static/images/section23.png HTTP/1.1[0m" 304 -
+2025-02-16 19:25:06,771 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:06] "[36mGET /static/images/illustration23.png HTTP/1.1[0m" 304 -
+2025-02-16 19:25:09,981 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:09] "GET /question22 HTTP/1.1" 200 -
+2025-02-16 19:25:10,009 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:25:10,021 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:10] "[36mGET /static/images/section22.png HTTP/1.1[0m" 304 -
+2025-02-16 19:25:10,022 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:10] "[36mGET /static/images/illustration22.png HTTP/1.1[0m" 304 -
+2025-02-16 19:25:49,971 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:49] "[32mPOST /question22 HTTP/1.1[0m" 302 -
+2025-02-16 19:25:49,977 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:49] "GET /question23 HTTP/1.1" 200 -
+2025-02-16 19:25:50,018 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:50] "GET /static/images/section23.png HTTP/1.1" 200 -
+2025-02-16 19:25:50,019 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:25:50,019 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:50] "[36mGET /static/images/illustration23.png HTTP/1.1[0m" 304 -
+2025-02-16 19:25:52,461 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:52] "[32mPOST /question23 HTTP/1.1[0m" 302 -
+2025-02-16 19:25:52,471 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:52] "GET /question24 HTTP/1.1" 200 -
+2025-02-16 19:25:52,514 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:25:52,518 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:52] "[36mGET /static/images/section24.png HTTP/1.1[0m" 304 -
+2025-02-16 19:25:52,519 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:52] "[36mGET /static/images/illustration24.png HTTP/1.1[0m" 304 -
+2025-02-16 19:25:55,981 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:55] "[32mPOST /question24 HTTP/1.1[0m" 302 -
+2025-02-16 19:25:55,988 - INFO -  Stockage dans session['CBS_score'] = 4
+2025-02-16 19:25:55,989 - INFO -  CBS calculé : 0.53
+2025-02-16 19:25:55,989 - INFO -  Score biodiversité basé sur CBS : 4
+2025-02-16 19:25:55,990 - INFO -  Score Façades Végétalisées = 2
+2025-02-16 19:25:55,990 - INFO -  Risques Façades Végétalisées = 6
+2025-02-16 19:25:55,990 - INFO -  Score Toitures Végétalisées = 2
+2025-02-16 19:25:55,990 - INFO -  Risques Toitures Végétalisées = 5
+2025-02-16 19:25:55,990 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-16 19:25:55,990 - INFO -  Début du calcul des scores environnementaux
+2025-02-16 19:25:55,991 - INFO -  Scores enregistrés: {'q13': 0.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 3.0, 'q19': 5.0, 'q20': 3.0, 'q21': 3.0, 'q22': 0.0, 'q23': 5.0}
+2025-02-16 19:25:55,991 - INFO -  CBS Score = 4.0, ScoreFv = 2.0, ScoreTv = 2.0
+2025-02-16 19:25:55,991 - INFO -  Calcul du score pour B
+2025-02-16 19:25:55,991 - INFO -  Score B = 2.5 (Numerator: 140.0, Denominator: 56)
+2025-02-16 19:25:55,991 - INFO -  Calcul du score pour E
+2025-02-16 19:25:55,991 - INFO -  Score E = 2.4347826086956523 (Numerator: 56.0, Denominator: 23)
+2025-02-16 19:25:55,991 - INFO -  Calcul du score pour CO2
+2025-02-16 19:25:55,991 - INFO -  Score CO2 = 2.5185185185185186 (Numerator: 68.0, Denominator: 27)
+2025-02-16 19:25:55,991 - INFO -  Calcul du score pour W
+2025-02-16 19:25:55,991 - INFO -  Score W = 2.962962962962963 (Numerator: 80.0, Denominator: 27)
+2025-02-16 19:25:55,991 - INFO -  Calcul du score pour C
+2025-02-16 19:25:55,991 - INFO -  Score C = 2.6486486486486487 (Numerator: 98.0, Denominator: 37)
+2025-02-16 19:25:55,991 - INFO -  Calcul du score pour R
+2025-02-16 19:25:55,991 - INFO -  Score R = 3.6 (Numerator: 162.0, Denominator: 45.0)
+2025-02-16 19:25:55,991 - INFO - Scores finaux calculés :
+2025-02-16 19:25:55,991 - INFO -  B = 2.5
+2025-02-16 19:25:55,991 - INFO -  E = 2.4347826086956523
+2025-02-16 19:25:55,991 - INFO -  CO2 = 2.5185185185185186
+2025-02-16 19:25:55,991 - INFO -  W = 2.962962962962963
+2025-02-16 19:25:55,991 - INFO -  C = 2.6486486486486487
+2025-02-16 19:25:55,991 - INFO -  R = 3.6
+2025-02-16 19:25:55,992 - INFO -  Scores finaux pour radar : [2.5, 2.4347826086956523, 2.5185185185185186, 2.962962962962963, 2.6486486486486487, 3.6]
+2025-02-16 19:25:56,321 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-16 19:25:56,322 - INFO -  Pfv (Façades) = 0 €, Ptv (Toitures) = 0.0 €
+2025-02-16 19:25:56,322 - INFO -  Pe (Entretien façades) = 0 €/an, Pe1 (Entretien toitures) = 0.0 €/an
+2025-02-16 19:25:56,322 - INFO -  Cost Setup = 0.0 €, Cost Fixed = 2000.0 €, Cost Maintenance = 0.0 €/an
+2025-02-16 19:25:56,322 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-16 19:25:56,322 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-16 19:25:56,322 - INFO -  CBS calculé = 0.53
+2025-02-16 19:25:56,322 - INFO -  Score biodiversité CBS = 4
+2025-02-16 19:25:56,498 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:56] "GET /results HTTP/1.1" 200 -
+2025-02-16 19:25:56,529 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:34:47,947 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-16 19:34:48,200 - INFO -  * Restarting with stat
+2025-02-16 19:34:49,421 - WARNING -  * Debugger is active!
+2025-02-16 19:34:49,424 - INFO -  * Debugger PIN: 915-481-357
+2025-02-16 19:35:30,618 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-16 19:35:30,838 - INFO -  * Restarting with stat
+2025-02-16 19:35:32,271 - WARNING -  * Debugger is active!
+2025-02-16 19:35:32,274 - INFO -  * Debugger PIN: 915-481-357
+2025-02-16 19:35:34,123 - INFO -  Stockage dans session['CBS_score'] = 4
+2025-02-16 19:35:34,123 - INFO -  CBS calculé : 0.53
+2025-02-16 19:35:34,123 - INFO -  Score biodiversité basé sur CBS : 4
+2025-02-16 19:35:34,123 - INFO -  Score Façades Végétalisées = 2
+2025-02-16 19:35:34,124 - INFO -  Risques Façades Végétalisées = 3
+2025-02-16 19:35:34,124 - INFO -  Score Toitures Végétalisées = 2
+2025-02-16 19:35:34,124 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-16 19:35:34,124 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-16 19:35:34,124 - INFO -  Début du calcul des scores environnementaux
+2025-02-16 19:35:34,124 - INFO -  Scores enregistrés: {'q13': 0.0, 'q14': 0.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 3.0, 'q19': 5.0, 'q20': 3.0, 'q21': 3.0, 'q22': 0.0, 'q23': 5.0}
+2025-02-16 19:35:34,124 - INFO -  CBS Score = 4.0, ScoreFv = 2.0, ScoreTv = 2.0
+2025-02-16 19:35:34,124 - INFO -  Calcul du score pour B
+2025-02-16 19:35:34,124 - INFO -  Score B = 2.5 (Numerator: 140.0, Denominator: 56)
+2025-02-16 19:35:34,124 - INFO -  Calcul du score pour E
+2025-02-16 19:35:34,124 - INFO -  Score E = 2.4347826086956523 (Numerator: 56.0, Denominator: 23)
+2025-02-16 19:35:34,124 - INFO -  Calcul du score pour CO2
+2025-02-16 19:35:34,124 - INFO -  Score CO2 = 2.5185185185185186 (Numerator: 68.0, Denominator: 27)
+2025-02-16 19:35:34,124 - INFO -  Calcul du score pour W
+2025-02-16 19:35:34,124 - INFO -  Score W = 2.962962962962963 (Numerator: 80.0, Denominator: 27)
+2025-02-16 19:35:34,124 - INFO -  Calcul du score pour C
+2025-02-16 19:35:34,124 - INFO -  Score C = 2.6486486486486487 (Numerator: 98.0, Denominator: 37)
+2025-02-16 19:35:34,124 - INFO -  Calcul du score pour R
+2025-02-16 19:35:34,124 - INFO -  Score R = 3.0444444444444443 (Numerator: 137.0, Denominator: 45.0)
+2025-02-16 19:35:34,125 - INFO - Scores finaux calculés :
+2025-02-16 19:35:34,125 - INFO -  B = 2.5
+2025-02-16 19:35:34,125 - INFO -  E = 2.4347826086956523
+2025-02-16 19:35:34,125 - INFO -  CO2 = 2.5185185185185186
+2025-02-16 19:35:34,125 - INFO -  W = 2.962962962962963
+2025-02-16 19:35:34,125 - INFO -  C = 2.6486486486486487
+2025-02-16 19:35:34,125 - INFO -  R = 3.0444444444444443
+2025-02-16 19:35:34,125 - INFO -  Scores finaux pour radar : [2.5, 2.4347826086956523, 2.5185185185185186, 2.962962962962963, 2.6486486486486487, 3.0444444444444443]
+2025-02-16 19:35:34,325 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-16 19:35:34,326 - INFO -  Pfv (Façades) = 0 €, Ptv (Toitures) = 0.0 €
+2025-02-16 19:35:34,327 - INFO -  Pe (Entretien façades) = 0 €/an, Pe1 (Entretien toitures) = 0.0 €/an
+2025-02-16 19:35:34,327 - INFO -  Cost Setup = 0.0 €, Cost Fixed = 2000.0 €, Cost Maintenance = 0.0 €/an
+2025-02-16 19:35:34,327 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-16 19:35:34,327 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-16 19:35:34,327 - INFO -  CBS calculé = 0.53
+2025-02-16 19:35:34,327 - INFO -  Score biodiversité CBS = 4
+2025-02-16 19:35:34,498 - INFO - 127.0.0.1 - - [16/Feb/2025 19:35:34] "GET /results HTTP/1.1" 200 -
+2025-02-16 19:35:34,571 - INFO - 127.0.0.1 - - [16/Feb/2025 19:35:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:35:44,765 - INFO - 127.0.0.1 - - [16/Feb/2025 19:35:44] "GET /question11 HTTP/1.1" 200 -
+2025-02-16 19:35:44,798 - INFO - 127.0.0.1 - - [16/Feb/2025 19:35:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:35:44,805 - INFO - 127.0.0.1 - - [16/Feb/2025 19:35:44] "[36mGET /static/images/section11.png HTTP/1.1[0m" 304 -
+2025-02-16 19:35:44,807 - INFO - 127.0.0.1 - - [16/Feb/2025 19:35:44] "[36mGET /static/images/illustration11.png HTTP/1.1[0m" 304 -
+2025-02-16 19:36:00,120 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:00] "[32mPOST /question11 HTTP/1.1[0m" 302 -
+2025-02-16 19:36:00,130 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:00] "GET /question12 HTTP/1.1" 200 -
+2025-02-16 19:36:00,167 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:36:00,173 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:00] "[36mGET /static/images/section12.png HTTP/1.1[0m" 304 -
+2025-02-16 19:36:00,177 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:00] "[36mGET /static/images/illustration12.png HTTP/1.1[0m" 304 -
+2025-02-16 19:37:30,832 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-16 19:37:31,058 - INFO -  * Restarting with stat
+2025-02-16 19:37:32,184 - WARNING -  * Debugger is active!
+2025-02-16 19:37:32,187 - INFO -  * Debugger PIN: 915-481-357
+2025-02-16 19:38:10,372 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-02-16 19:38:10,620 - INFO -  * Restarting with stat
+2025-02-16 19:38:11,756 - WARNING -  * Debugger is active!
+2025-02-16 19:38:11,760 - INFO -  * Debugger PIN: 915-481-357
+2025-02-16 19:38:27,221 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:27] "GET /question12 HTTP/1.1" 200 -
+2025-02-16 19:38:27,335 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:27] "[36mGET /static/images/illustration12.png HTTP/1.1[0m" 304 -
+2025-02-16 19:38:27,342 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:27] "[36mGET /static/images/section12.png HTTP/1.1[0m" 304 -
+2025-02-16 19:38:27,343 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:38:42,076 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:42] "[32mPOST /question12 HTTP/1.1[0m" 302 -
+2025-02-16 19:38:42,088 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:42] "GET /question13 HTTP/1.1" 200 -
+2025-02-16 19:38:42,127 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:38:42,138 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:42] "[33mGET /static/images/illustration13.png HTTP/1.1[0m" 404 -
+2025-02-16 19:38:42,140 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:42] "[36mGET /static/images/section13.png HTTP/1.1[0m" 304 -
+2025-02-16 19:38:50,045 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:50] "[32mPOST /question13 HTTP/1.1[0m" 302 -
+2025-02-16 19:38:50,057 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:50] "GET /question14 HTTP/1.1" 200 -
+2025-02-16 19:38:50,093 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:38:50,099 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:50] "[36mGET /static/images/section14.png HTTP/1.1[0m" 304 -
+2025-02-16 19:38:50,100 - INFO - 127.0.0.1 - - [16/Feb/2025 19:38:50] "[36mGET /static/images/illustration14.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:17,614 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:17] "GET /question13 HTTP/1.1" 200 -
+2025-02-16 19:39:17,644 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:17,659 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:17] "[36mGET /static/images/section13.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:17,659 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:17] "GET /static/images/illustration13.png HTTP/1.1" 200 -
+2025-02-16 19:39:20,432 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:20] "GET /question13 HTTP/1.1" 200 -
+2025-02-16 19:39:20,455 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:20] "[36mGET /static/images/illustration13.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:20,455 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:20,455 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:20] "[36mGET /static/images/section13.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:22,519 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:22] "[32mPOST /question13 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:22,527 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:22] "GET /question14 HTTP/1.1" 200 -
+2025-02-16 19:39:22,557 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:22,564 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:22] "[36mGET /static/images/section14.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:22,565 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:22] "[36mGET /static/images/illustration14.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:28,634 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:28] "[32mPOST /question14 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:28,647 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:28] "GET /question15 HTTP/1.1" 200 -
+2025-02-16 19:39:28,680 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:28,689 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:28] "[36mGET /static/images/section15.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:28,690 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:28] "[36mGET /static/images/illustration15.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:30,757 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:30] "[32mPOST /question15 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:30,769 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:30] "GET /question16 HTTP/1.1" 200 -
+2025-02-16 19:39:30,799 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:30,810 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:30] "[36mGET /static/images/section16.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:30,811 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:30] "[36mGET /static/images/illustration16.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:33,601 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:33] "[32mPOST /question16 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:33,612 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:33] "GET /question17 HTTP/1.1" 200 -
+2025-02-16 19:39:33,651 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:33,657 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:33] "[36mGET /static/images/section17.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:33,658 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:33] "[36mGET /static/images/illustration17.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:36,905 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:36] "[32mPOST /question17 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:36,916 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:36] "GET /question18 HTTP/1.1" 200 -
+2025-02-16 19:39:36,951 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:36,958 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:36] "[36mGET /static/images/section18.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:36,959 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:36] "[36mGET /static/images/illustration18.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:40,011 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:40] "[32mPOST /question18 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:40,022 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:40] "GET /question19 HTTP/1.1" 200 -
+2025-02-16 19:39:40,058 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:40,067 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:40] "[36mGET /static/images/section19.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:40,069 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:40] "[36mGET /static/images/illustration19.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:42,147 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:42] "[32mPOST /question19 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:42,158 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:42] "GET /question20 HTTP/1.1" 200 -
+2025-02-16 19:39:42,190 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:42,198 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:42] "[36mGET /static/images/illustration20.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:42,198 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:42] "[36mGET /static/images/section20.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:44,974 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:44] "[32mPOST /question20 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:44,984 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:44] "GET /question21 HTTP/1.1" 200 -
+2025-02-16 19:39:45,018 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:45,026 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:45] "[36mGET /static/images/section21.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:45,027 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:45] "[36mGET /static/images/illustration21.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:46,631 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:46] "[32mPOST /question21 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:46,641 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:46] "GET /question22 HTTP/1.1" 200 -
+2025-02-16 19:39:46,672 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:46,680 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:46] "[36mGET /static/images/section22.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:46,681 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:46] "[36mGET /static/images/illustration22.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:49,008 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:49] "[32mPOST /question22 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:49,023 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:49] "GET /question23 HTTP/1.1" 200 -
+2025-02-16 19:39:49,056 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:49,065 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:49] "[36mGET /static/images/section23.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:49,065 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:49] "[36mGET /static/images/illustration23.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:51,047 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:51] "[32mPOST /question23 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:51,057 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:51] "GET /question24 HTTP/1.1" 200 -
+2025-02-16 19:39:51,087 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:39:51,100 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:51] "[36mGET /static/images/section24.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:51,102 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:51] "[36mGET /static/images/illustration24.png HTTP/1.1[0m" 304 -
+2025-02-16 19:39:55,575 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:55] "[32mPOST /question24 HTTP/1.1[0m" 302 -
+2025-02-16 19:39:55,583 - INFO -  Stockage dans session['CBS_score'] = 4
+2025-02-16 19:39:55,583 - INFO -  CBS calculé : 0.58
+2025-02-16 19:39:55,583 - INFO -  Score biodiversité basé sur CBS : 4
+2025-02-16 19:39:55,583 - INFO -  Score Façades Végétalisées = 10
+2025-02-16 19:39:55,583 - INFO -  Risques Façades Végétalisées = 6
+2025-02-16 19:39:55,584 - INFO -  Score Toitures Végétalisées = 5
+2025-02-16 19:39:55,584 - INFO -  Risques Toitures Végétalisées = 3
+2025-02-16 19:39:55,584 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-02-16 19:39:55,584 - INFO -  Début du calcul des scores environnementaux
+2025-02-16 19:39:55,584 - INFO -  Scores enregistrés: {'q13': 0.0, 'q14': 3.0, 'q15': 3.0, 'q16': 3.0, 'q17': 3.0, 'q18': 3.0, 'q19': 5.0, 'q20': 3.0, 'q21': 3.0, 'q22': 0.0, 'q23': 5.0}
+2025-02-16 19:39:55,584 - INFO -  CBS Score = 4.0, ScoreFv = 10.0, ScoreTv = 5.0
+2025-02-16 19:39:55,584 - INFO -  Calcul du score pour B
+2025-02-16 19:39:55,584 - INFO -  Score B = 3.6964285714285716 (Numerator: 207.0, Denominator: 56)
+2025-02-16 19:39:55,584 - INFO -  Calcul du score pour E
+2025-02-16 19:39:55,584 - INFO -  Score E = 4.608695652173913 (Numerator: 106.0, Denominator: 23)
+2025-02-16 19:39:55,584 - INFO -  Calcul du score pour CO2
+2025-02-16 19:39:55,584 - INFO -  Score CO2 = 4.37037037037037 (Numerator: 118.0, Denominator: 27)
+2025-02-16 19:39:55,584 - INFO -  Calcul du score pour W
+2025-02-16 19:39:55,584 - INFO -  Score W = 3.7037037037037037 (Numerator: 100.0, Denominator: 27)
+2025-02-16 19:39:55,585 - INFO -  Calcul du score pour C
+2025-02-16 19:39:55,585 - INFO -  Score C = 3.8378378378378377 (Numerator: 142.0, Denominator: 37)
+2025-02-16 19:39:55,585 - INFO -  Calcul du score pour R
+2025-02-16 19:39:55,585 - INFO -  Score R = 3.3777777777777778 (Numerator: 152.0, Denominator: 45.0)
+2025-02-16 19:39:55,585 - INFO - Scores finaux calculés :
+2025-02-16 19:39:55,585 - INFO -  B = 3.6964285714285716
+2025-02-16 19:39:55,585 - INFO -  E = 4.608695652173913
+2025-02-16 19:39:55,585 - INFO -  CO2 = 4.37037037037037
+2025-02-16 19:39:55,585 - INFO -  W = 3.7037037037037037
+2025-02-16 19:39:55,585 - INFO -  C = 3.8378378378378377
+2025-02-16 19:39:55,586 - INFO -  R = 3.3777777777777778
+2025-02-16 19:39:55,586 - INFO -  Scores finaux pour radar : [3.6964285714285716, 4.608695652173913, 4.37037037037037, 3.7037037037037037, 3.8378378378378377, 3.3777777777777778]
+2025-02-16 19:39:55,762 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-02-16 19:39:55,762 - INFO -  Pfv (Façades) = 48000.0 €, Ptv (Toitures) = 75000.0 €
+2025-02-16 19:39:55,762 - INFO -  Pe (Entretien façades) = 5600.0 €/an, Pe1 (Entretien toitures) = 5000.0 €/an
+2025-02-16 19:39:55,762 - INFO -  Cost Setup = 123000.0 €, Cost Fixed = 3000.0 €, Cost Maintenance = 10600.0 €/an
+2025-02-16 19:39:55,762 - INFO -  Gain Rotation = 34020.14652014653 €, Gain Intérêt = 4780.047388989071 €
+2025-02-16 19:39:55,762 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 80000.0 €
+2025-02-16 19:39:55,762 - INFO -  CBS calculé = 0.58
+2025-02-16 19:39:55,762 - INFO -  Score biodiversité CBS = 4
+2025-02-16 19:39:55,940 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:55] "GET /results HTTP/1.1" 200 -
+2025-02-16 19:39:55,971 - INFO - 127.0.0.1 - - [16/Feb/2025 19:39:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,831 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "GET / HTTP/1.1" 200 -
+2025-02-16 19:40:18,862 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,887 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/images/project-logo-new.png HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,889 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/images/Big-Logo.png HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,890 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/images/logo2.png HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,891 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/images/logo1.png HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,892 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/images/Partner1.png HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,893 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/images/Partner0.png HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,912 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/images/Partner12.png HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,912 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/images/Partner2.png HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,923 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/images/Partner3.png HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,926 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/images/Partner4.png HTTP/1.1[0m" 304 -
+2025-02-16 19:40:18,931 - INFO - 127.0.0.1 - - [16/Feb/2025 19:40:18] "[36mGET /static/images/Partner5.png HTTP/1.1[0m" 304 -

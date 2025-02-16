@@ -504,7 +504,7 @@ def question14():
             if has_composte:
                 # Récupérer et stocker le prix du compost
                 session['Pc'] = float(request.form.get('composte_price', 0) or 0)
-                session['score_q14'] = 1  # Score de 1 si l'utilisateur ajoute un compost
+                session['score_q14'] = 3  # Score de 1 si l'utilisateur ajoute un compost
             else:
                 # Si "Non", on met Pc à 0
                 session['Pc'] = 0  
@@ -1083,7 +1083,7 @@ def calculate_Fv_values():
         if no_facade:
             # Si aucune façade végétale n'est choisie, scores par défaut
             score_fv = 2
-            risques_fv = 5
+            risques_fv = 3
         else:
             # . Récupération des surfaces et quantités
             surface_grimpantes_mur = safe_float(session.get('surface_grimpantes_mur', 0))
@@ -1103,11 +1103,11 @@ def calculate_Fv_values():
 
             if surface_hydroponie_substrat > 0:
                 score_fv += 5
-                risques_fv += 0
+                risques_fv += 2
 
             if surface_hydroponie_feutre > 0:
                 score_fv += 5
-                risques_fv += 0
+                risques_fv += 2
 
             if nombre_jardiniere > 0:
                 score_fv += 5
@@ -1116,7 +1116,7 @@ def calculate_Fv_values():
             # Si aucun choix n'a été fait, appliquer des valeurs par défaut
             if score_fv == 0 and risques_fv == 0:
                 score_fv = 2
-                risques_fv = 6
+                risques_fv = 3
 
         # . Stocker les valeurs calculées dans `session`
         session['ScoreFv'] = score_fv
@@ -1152,7 +1152,7 @@ def calculate_Tv_values():
         if no_toiture:
             # Si aucune toiture végétale n'est choisie, scores par défaut
             score_tv = 0
-            risques_tv = 5
+            risques_tv = 3
         else:
             # . Récupération des surfaces
             intensive_surface = safe_float(session.get('intensive_surface', 0))
@@ -1162,16 +1162,16 @@ def calculate_Tv_values():
             # . Appliquer les scores et risques en fonction des surfaces
             if intensive_surface > 0:
                 score_tv = 5  # Intensive
-                risques_tv = 5  # Risque faible
+                risques_tv = 3  # Risque faible
             elif semi_intensive_surface > 0:
                 score_tv = 5  # Semi-intensive
                 risques_tv = 3  # Risque modéré
             elif extensive_surface > 0:
                 score_tv = 5  # Extensive
-                risques_tv = 0  # Risque élevé
+                risques_tv = 3  # Risque élevé
             else:
                 score_tv = 2  # Aucune toiture végétalisée
-                risques_tv = 5  # Risque par défaut
+                risques_tv = 3  # Risque par défaut
 
         # . Stocker les valeurs calculées dans `session`
         session['ScoreTv'] = score_tv
@@ -1236,13 +1236,13 @@ def calculate_cbs():
         if CBS < 0.3:
             CBS_score = 1
         elif CBS < 0.5:
-            CBS_score = 4
+            CBS_score = 3
         elif CBS < 0.7:
-            CBS_score = 5
+            CBS_score = 4
         elif CBS < 0.9:
             CBS_score = 5
         else:
-            CBS_score = 1
+            CBS_score = 5
 
         # . Ajouter le score CBS dans la session pour le critère Biodiversité
         session.setdefault('responses', {})["CBS"] = CBS_score
@@ -1332,10 +1332,10 @@ COEFFICIENTS = {
             "q20": {"B": 5, "E":1, "CO2": 3, "W": 1, "C": 1, "R": 3}, 
             "q21": {"B": 3, "E": 2, "CO2": 3, "W": 1, "C": 1, "R": 2}, 
             "q22": {"B": 3, "E": 1, "CO2": 0, "W": 1, "C": 4, "R": 1}, 
-            "q23": {"B": 3, "E": 0, "CO2": 0, "W": 5, "C": 0, "R": 5},  
-            "CBS": {"B": 5, "E": 0, "CO2": 0, "W": 0, "C": 0, "R": 1},
-            "Fv": {"B": 5, "E": 2, "CO2": 4, "W": 1, "C": 3, "R": 1},
-            "Tv": {"B": 4, "E": 5, "CO2": 5, "W": 3, "C": 4, "R": 1}
+            "q23": {"B": 3, "E": 0, "CO2": 0, "W": 5, "C": 3, "R": 5},  
+            "CBS": {"B": 5, "E": 1, "CO2": 4, "W": 0, "C": 3, "R": 3},
+            "Fv": {"B": 5, "E": 4, "CO2": 4, "W": 1, "C": 4, "R": 0},
+            "Tv": {"B": 5, "E": 4, "CO2": 4, "W": 3, "C": 4, "R": 0}
         }
 
 def calculate_environmental_scores():
@@ -1422,7 +1422,7 @@ import io
 import base64
 
 def plot_radar(scores):
-    labels = np.array(['Biodiversité', 'Énergie', 'CO2', 'Eau', 'Confort', 'Risques incendie'])
+    labels = np.array(['Biodiversité', 'Énergie', 'CO2', 'Eau', 'Confort', 'Diminution des risques'])
     num_vars = len(labels)
 
     # Vérifier les valeurs avant affichage
@@ -1538,7 +1538,7 @@ def results():
             scores_dict.get("CO2", 1),  # CO2
             scores_dict.get("W", 1),    # Eau
             scores_dict.get("C", 1),    # Confort
-            max(5 - scores_dict.get("R", 1), 0)  #  Risques incendie (inversé, avec minimum à 0)
+            scores_dict.get("R", 1)  #  Risques incendie (inversé, avec minimum à 0)
         ]
 
         app.logger.info(f" Scores finaux pour radar : {scores}")
@@ -1588,5 +1588,5 @@ def results():
 import os
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))  # Utilise le port de Render
-    app.run(host="0.0.0.0", port=port)
+    port = int(os.environ.get("PORT", 10000))  
+    app.run(host="127.0.0.1", port=port, debug=True)  # Active le mode debug
