@@ -48,7 +48,8 @@ default_values = {
     'num_T5': 0,  # Nombre de T5
 
     # Variables générales
-    'Cc': 0.0,  # Coût de construction
+    'Ccm' : 0.0, #Cout de constructiuon au m2
+    'Cc': 0.0,  # Coût de construction total 
     'Ti': 0.0,  # Taux d'intérêt initial
     'Tib': 0.0,  # Réduction du taux d'intérêt
     'Tiv': 0.0,  # Taux d'intérêt avec végétalisation
@@ -191,20 +192,36 @@ def question3():
 
 @app.route('/question4', methods=['GET', 'POST'])
 def question4():
+    # Récupération des surfaces et nombres de logements stockés en session
+    surface_habitable = (
+        session.get('T1_surface', 0) * session.get('num_T1', 0) +
+        session.get('T2_surface', 0) * session.get('num_T2', 0) +
+        session.get('T3_surface', 0) * session.get('num_T3', 0) +
+        session.get('T4_surface', 0) * session.get('num_T4', 0) +
+        session.get('T5_surface', 0) * session.get('num_T5', 0)
+    )
+
+    # Calcul de la surface construite
+    surface_construite = surface_habitable * 1.2
+    session['surface_construite'] = surface_construite  # Stocke la valeur en session
+
     if request.method == 'POST':
         try:
-            session['Cc'] = float(request.form['Cc'])
-            if session['Cc'] <= 0:
+            session['Ccm'] = float(request.form['Ccm'])
+            if session['Ccm'] <= 0:
                 raise ValueError
         except ValueError:
-            flash("Veuillez entrer un coût de construction valide.", "error")
+            flash("Veuillez entrer un coût valide.", "error")
             return redirect(url_for('question4'))
         
-        
-
+        # Calcul du coût total de construction
+        session['Cc'] = surface_construite * session['Ccm']
         return redirect(url_for('question5'))  # Redirection vers la question suivante
 
-    return render_template('question4.html', Cc=session.get('Cc', 0))
+    return render_template('question4.html', Ccm=session.get('Ccm', 0), surface_construite=surface_construite)
+
+
+
 
 @app.route('/question5', methods=['GET', 'POST'])
 def question5():
@@ -921,14 +938,37 @@ def calculate_rotation_gain():
         # . Stocker le résultat dans Flask
         session['rotation_savings'] = total_saving_rota
 
-        # Debug dans la console Flask
-        print(f"Économies liées à la rotation : {total_saving_rota:.2f} €")
 
         return total_saving_rota
 
     except Exception as e:
-        print(f"Erreur lors du calcul des économies de rotation : {e}")
+        
         return 0
+    
+def calculer_cout_total():
+    """Calcule le coût total de construction de l'immeuble de logements."""
+    # Calcul de la surface habitable
+    surface_habitable = (
+        session.get('num_T1', 0) * session.get('T1_surface', 0) +
+        session.get('num_T2', 0) * session.get('T2_surface', 0) +
+        session.get('num_T3', 0) * session.get('T3_surface', 0) +
+        session.get('num_T4', 0) * session.get('T4_surface', 0) +
+        session.get('num_T5', 0) * session.get('T5_surface', 0)
+    )
+
+    # Calcul de la surface construite (surface habitable x 1.2)
+    surface_construite = surface_habitable * 1.2
+
+    # Récupération du coût de construction au m²
+    Ccm = session.get('Ccm', 0)
+
+    # Calcul du coût total de construction
+    Cc = surface_construite * Ccm
+
+    # Stockage dans la session
+    session['Cc'] = Cc
+
+    return Cc
 
 
 def calculate_annual_interest_gain():
@@ -962,14 +1002,14 @@ def calculate_annual_interest_gain():
 
         return gain_TI
     except Exception as e:
-        print(f"Erreur lors du calcul du gain d'intérêt annuel : {e}")
+        
         return 0
 
 
 def calculate_totals_facade():
     try:
         # . Vérification des valeurs récupérées
-        Sgm = float(session.get('surface_grimpantes_mur', 0))
+        Sgm = float(session.get('surface_grimpantes_mur', 0))                   
         Sgc = float(session.get('surface_grimpantes_cables', 0))
         Nj = float(session.get('nombre_jardiniere', 0))
         Cj = float(session.get('cout_jardiniere', 0))
@@ -1016,7 +1056,7 @@ def calculate_totals_facade():
         return Pfv, Pe
 
     except Exception as e:
-        print(f"ERREUR dans calculate_totals_facade : {e}")
+        
         return 0, 0
 
 def calculate_totals_toiture():
@@ -1050,7 +1090,7 @@ def calculate_totals_toiture():
         return Ptv, Pe1
 
     except Exception as e:
-        print(f"Erreur lors du calcul des coûts des toitures : {e}")
+        
         return 0, 0
 
 
@@ -1082,8 +1122,8 @@ def calculate_Fv_values():
 
         if no_facade:
             # Si aucune façade végétale n'est choisie, scores par défaut
-            score_fv = 2
-            risques_fv = 3
+            score_fv = 0
+            risques_fv = 0
         else:
             # . Récupération des surfaces et quantités
             surface_grimpantes_mur = safe_float(session.get('surface_grimpantes_mur', 0))
@@ -1102,21 +1142,21 @@ def calculate_Fv_values():
                 risques_fv += 5
 
             if surface_hydroponie_substrat > 0:
-                score_fv += 5
-                risques_fv += 2
+                score_fv += 3
+                risques_fv += 3
 
             if surface_hydroponie_feutre > 0:
-                score_fv += 5
-                risques_fv += 2
+                score_fv += 3
+                risques_fv += 3
 
             if nombre_jardiniere > 0:
-                score_fv += 5
-                risques_fv += 1
+                score_fv += 3
+                risques_fv += 3
 
             # Si aucun choix n'a été fait, appliquer des valeurs par défaut
             if score_fv == 0 and risques_fv == 0:
-                score_fv = 2
-                risques_fv = 3
+                score_fv = 0
+                risques_fv = 0
 
         # . Stocker les valeurs calculées dans `session`
         session['ScoreFv'] = score_fv
@@ -1152,7 +1192,7 @@ def calculate_Tv_values():
         if no_toiture:
             # Si aucune toiture végétale n'est choisie, scores par défaut
             score_tv = 0
-            risques_tv = 3
+            risques_tv = 0
         else:
             # . Récupération des surfaces
             intensive_surface = safe_float(session.get('intensive_surface', 0))
@@ -1161,17 +1201,17 @@ def calculate_Tv_values():
 
             # . Appliquer les scores et risques en fonction des surfaces
             if intensive_surface > 0:
-                score_tv = 5  # Intensive
+                score_tv = 3  # Intensive
                 risques_tv = 3  # Risque faible
             elif semi_intensive_surface > 0:
-                score_tv = 5  # Semi-intensive
-                risques_tv = 3  # Risque modéré
+                score_tv = 4  # Semi-intensive
+                risques_tv = 4  # Risque modéré
             elif extensive_surface > 0:
-                score_tv = 5  # Extensive
-                risques_tv = 3  # Risque élevé
+                score_tv = 4  # Extensive
+                risques_tv = 4  # Risque élevé
             else:
-                score_tv = 2  # Aucune toiture végétalisée
-                risques_tv = 3  # Risque par défaut
+                score_tv = 0  # Aucune toiture végétalisée
+                risques_tv = 0  # Risque par défaut
 
         # . Stocker les valeurs calculées dans `session`
         session['ScoreTv'] = score_tv
@@ -1211,10 +1251,10 @@ def calculate_cbs():
 
         # . Calcul du CBS avec pondération
         surface_totale_vegetalisee = (
-            safe_float(session.get('surface_dalle', 0)) * 0.6 +  # Pondération parking
+            safe_float(session.get('surface_dalle', 0)) * 0.8 +  # Pondération parking
             safe_float(session.get('surface_pleine_terre', 0)) +  # Pleine terre
-            surface_facades * 0.5 +  # Pondération façades
-            surface_toitures * 0.8  # Pondération toitures
+            surface_facades * 0.3 +  # Pondération façades
+            surface_toitures * 0.3  # Pondération toitures
         )
 
         surface_totale = (
@@ -1322,18 +1362,18 @@ def generate_roi_graph():
 
 # . Dictionnaire des coefficients pour chaque critère
 COEFFICIENTS = {
-            "q13": {"B": 4, "E": 0, "CO2": 1, "W": 1, "C": 3, "R": 5}, 
+            "q13": {"B": 4, "E": 0, "CO2": 1, "W": 5, "C": 3, "R": 5}, 
             "q14": {"B": 4, "E": 2, "CO2": 2, "W": 1, "C": 0, "R": 0}, 
             "q15": {"B": 4, "E": 2, "CO2": 2, "W": 5, "C": 4, "R": 5}, 
             "q16": {"B": 4, "E": 2, "CO2": 2, "W": 5, "C": 4, "R": 5}, 
             "q17": {"B": 4, "E": 3, "CO2": 3, "W": 1, "C": 1, "R": 1}, 
-            "q18": {"B": 5, "E": 0, "CO2": 1, "W": 1, "C": 3, "R": 3}, 
-            "q19": {"B": 2, "E": 2, "CO2": 2, "W": 1, "C": 5, "R": 5}, 
-            "q20": {"B": 5, "E":1, "CO2": 3, "W": 1, "C": 1, "R": 3}, 
-            "q21": {"B": 3, "E": 2, "CO2": 3, "W": 1, "C": 1, "R": 2}, 
-            "q22": {"B": 3, "E": 1, "CO2": 0, "W": 1, "C": 4, "R": 1}, 
+            "q18": {"B": 5, "E": 0, "CO2": 1, "W": 3, "C": 3, "R": 3}, 
+            "q19": {"B": 2, "E": 2, "CO2": 2, "W": 0, "C": 5, "R": 5}, 
+            "q20": {"B": 5, "E":1, "CO2": 3, "W": 500, "C": 1, "R": 3}, 
+            "q21": {"B": 3, "E": 2, "CO2": 3, "W": 0, "C": 1, "R": 2}, 
+            "q22": {"B": 3, "E": 1, "CO2": 0, "W": 0, "C": 4, "R": 1}, 
             "q23": {"B": 3, "E": 0, "CO2": 0, "W": 5, "C": 3, "R": 5},  
-            "CBS": {"B": 5, "E": 1, "CO2": 4, "W": 0, "C": 3, "R": 3},
+            "CBS": {"B": 5, "E": 3, "CO2": 3, "W": 4, "C": 4, "R": 3},
             "Fv": {"B": 5, "E": 4, "CO2": 4, "W": 1, "C": 4, "R": 0},
             "Tv": {"B": 5, "E": 4, "CO2": 4, "W": 3, "C": 4, "R": 0}
         }
@@ -1425,8 +1465,6 @@ def plot_radar(scores):
     labels = np.array(['Biodiversité', 'Énergie', 'CO2', 'Eau', 'Confort', 'Diminution des risques'])
     num_vars = len(labels)
 
-    # Vérifier les valeurs avant affichage
-    print(f"Scores avant affichage dans le radar : {scores}")
 
     # Clipper les scores entre 0 et 5 (sans toucher R, qui est déjà transformé en results())
     scores = np.clip(scores, 0, 5)

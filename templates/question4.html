@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question 4 - Coût de construction</title>
+    <title>Question 4 - Coût de construction au m²</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
     <script>
         function toggleExplication() {
             var explication = document.getElementById("explication");
-            if (explication.style.display === "none") {
-                explication.style.display = "block";
-            } else {
-                explication.style.display = "none";
-            }
+            explication.style.display = (explication.style.display === "none") ? "block" : "none";
         }
+
+        function updateTotalCost() {
+            const costInput = document.getElementById("cost_input");
+            const totalCostDisplay = document.getElementById("total_cost_display");
+            const hiddenInput = document.getElementById("Ccm_hidden");
+
+            // Récupération de la surface construite stockée en session Flask
+            const surfaceConstruite = parseFloat("{{ session.get('surface_construite', 0) }}");
+
+            costInput.addEventListener("input", function(event) {
+                let rawValue = event.target.value.replace(/\s+/g, "").replace(",", ".");
+
+                if (!isNaN(rawValue) && rawValue.length > 0) {
+                    let costPerM2 = parseFloat(rawValue);
+                    let totalCost = surfaceConstruite * costPerM2;
+
+                    event.target.value = Number(rawValue).toLocaleString('fr-FR');
+                    totalCostDisplay.innerHTML = isNaN(totalCost) ? "<span style='color:grey'>Entrez un montant valide</span>" 
+                        : "Coût total estimé : <strong>" + totalCost.toLocaleString('fr-FR') + " €</strong>";
+                } else {
+                    totalCostDisplay.innerHTML = "<span style='color:grey'>Entrez un montant pour voir l'estimation</span>";
+                }
+            });
+
+            // Avant soumission : envoyer la valeur brute sans espaces
+            document.getElementById("costForm").addEventListener("submit", function() {
+                hiddenInput.value = costInput.value.replace(/\s+/g, "");
+            });
+        }
+        
+        document.addEventListener("DOMContentLoaded", updateTotalCost);
     </script>
+
     <style>
         .explication {
             display: none;
@@ -40,6 +69,12 @@
             font-weight: bold;
             margin-bottom: 20px;
         }
+        #total_cost_display {
+            font-weight: normal;
+            font-size: 16px;
+            color: grey;
+            margin-top: 8px;
+        }
     </style>
 </head>
 <body>
@@ -57,23 +92,28 @@
 
         <!-- Contenu de la question à droite -->
         <div class="question-content">
-            <h2>Quelle est l’estimation du coût de la construction de votre immeuble de logements sans végétalisation ?</h2>
-            <p>Veuillez entrer le coût estimé en euros (€).</p>
+            <h2>Quel est le coût de construction estimé au m² de votre immeuble de logements sans végétalisation ?</h2>
+            <p>Veuillez entrer le coût en euros (€) par mètre carré.</p>
 
             <!-- Bouton pour afficher l'explication -->
             <button class="explication-button" onclick="toggleExplication()">Afficher l'explication</button>
 
             <!-- Explication cachée par défaut -->
             <div id="explication" class="explication">
-                <p>Cette section vous permet d'indiquer l'estimation du coût total de construction de votre immeuble sans végétalisation. Ces données sont essentielles pour calculer le retour sur investissement.</p>
+                <p>Cette section vous permet d'indiquer le coût de construction estimé par m² pour votre projet de logements, sans végétalisation. Ces données sont essentielles pour l'évaluation des coûts et du retour sur investissement.</p>
             </div>
 
             <form id="costForm" method="POST" action="{{ url_for('question4') }}">
                 <div class="form-group">
-                    <label for="cost_input">Coût de construction (€) :</label>
-                    <input type="text" id="cost_input" required value="{{ session.get('Cc', '') }}">
-                    <input type="hidden" id="Cc_hidden" name="Cc"> <!-- Valeur propre sans espaces -->
+                    <label for="cost_input">Coût de construction au m² (€) :</label>
+                    <input type="text" id="cost_input" required value="{{ session.get('Ccm', '') }}">
+                    <input type="hidden" id="Ccm_hidden" name="Ccm"> <!-- Valeur propre sans espaces -->
                 </div>
+
+                <!-- Affichage dynamique du coût total -->
+                <p id="total_cost_display">
+                    <span style="color:grey">Entrez un montant pour voir l'estimation</span>
+                </p>
 
                 <!-- Boutons de navigation -->
                 <div class="button-container">
@@ -84,28 +124,9 @@
         </div>
     </div>
 
-    <!-- Script pour formater les nombres et envoyer proprement -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const costInput = document.getElementById("cost_input");
-            const hiddenInput = document.getElementById("Cc_hidden");
-            const costForm = document.getElementById("costForm");
-
-            // Formatage dynamique lors de la saisie
-            costInput.addEventListener("input", function(event) {
-                let rawValue = event.target.value.replace(/\s+/g, ""); // Supprime les espaces existants
-                if (!isNaN(rawValue) && rawValue.length > 0) {
-                    event.target.value = Number(rawValue).toLocaleString('fr-FR'); // Affichage avec espaces
-                }
-            });
-
-            // Avant soumission : envoyer la valeur brute sans espaces
-            costForm.addEventListener("submit", function() {
-                hiddenInput.value = costInput.value.replace(/\s+/g, ""); // Nettoyage de la valeur
-            });
-        });
-    </script>
-
 </body>
 </html>
+
+
+
 
