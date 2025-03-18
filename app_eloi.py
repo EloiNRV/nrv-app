@@ -4,6 +4,14 @@ matplotlib.use('Agg')  # Non-interactive backend to prevent Tkinter issues
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 import logging
 
+
+# Actualiser le dépot git, à noter dans un terminal : 
+                                # git status
+                                # git add .
+                                # git commit -m "Mise à jour du radar et corrections diverses"
+                                # git push origin main  # Vérifie si ta branche est "main" ou "master"
+
+
 # . Configuration du logging
 logging.basicConfig(
     level=logging.INFO,  # Niveau de log : INFO (change en DEBUG pour plus de détails)
@@ -1362,20 +1370,20 @@ def generate_roi_graph():
 
 # . Dictionnaire des coefficients pour chaque critère
 COEFFICIENTS = {
-            "q13": {"B": 4, "E": 0, "CO2": 1, "W": 5, "C": 3, "R": 5}, 
-            "q14": {"B": 4, "E": 2, "CO2": 2, "W": 1, "C": 0, "R": 0}, 
-            "q15": {"B": 4, "E": 2, "CO2": 2, "W": 5, "C": 4, "R": 5}, 
-            "q16": {"B": 4, "E": 2, "CO2": 2, "W": 5, "C": 4, "R": 5}, 
+            "q13": {"B": 4, "E": 0, "CO2": 1, "W": 4, "C": 3, "R": 5}, 
+            "q14": {"B": 4, "E": 2, "CO2": 2, "W": 0, "C": 0, "R": 0}, 
+            "q15": {"B": 4, "E": 2, "CO2": 2, "W": 3, "C": 4, "R": 5}, 
+            "q16": {"B": 4, "E": 2, "CO2": 2, "W": 2, "C": 4, "R": 5}, 
             "q17": {"B": 4, "E": 3, "CO2": 3, "W": 1, "C": 1, "R": 1}, 
             "q18": {"B": 5, "E": 0, "CO2": 1, "W": 3, "C": 3, "R": 3}, 
             "q19": {"B": 2, "E": 2, "CO2": 2, "W": 0, "C": 5, "R": 5}, 
-            "q20": {"B": 5, "E":1, "CO2": 3, "W": 500, "C": 1, "R": 3}, 
+            "q20": {"B": 5, "E":1, "CO2": 3, "W": 0, "C": 1, "R": 3}, 
             "q21": {"B": 3, "E": 2, "CO2": 3, "W": 0, "C": 1, "R": 2}, 
             "q22": {"B": 3, "E": 1, "CO2": 0, "W": 0, "C": 4, "R": 1}, 
             "q23": {"B": 3, "E": 0, "CO2": 0, "W": 5, "C": 3, "R": 5},  
             "CBS": {"B": 5, "E": 3, "CO2": 3, "W": 4, "C": 4, "R": 3},
-            "Fv": {"B": 5, "E": 4, "CO2": 4, "W": 1, "C": 4, "R": 0},
-            "Tv": {"B": 5, "E": 4, "CO2": 4, "W": 3, "C": 4, "R": 0}
+            "Fv": {"B": 5, "E": 4, "CO2": 4, "W": 5, "C": 4, "R": 0},
+            "Tv": {"B": 5, "E": 4, "CO2": 4, "W": 5, "C": 4, "R": 0}
         }
 
 def calculate_environmental_scores():
@@ -1469,12 +1477,10 @@ def plot_radar(scores):
     # Clipper les scores entre 0 et 5 (sans toucher R, qui est déjà transformé en results())
     scores = np.clip(scores, 0, 5)
 
-    # Calcul de la moyenne (ligne à 3 pour chaque critère)
-    avg_scores = np.full(num_vars, 3)
 
     angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
     scores = np.concatenate((scores, [scores[0]]))  # Boucle pour fermer le radar
-    avg_scores = np.concatenate((avg_scores, [avg_scores[0]]))  # Boucle pour la ligne moyenne
+   
     angles += angles[:1]  # Fermeture des angles
 
     fig, ax = plt.subplots(figsize=(7, 7), subplot_kw=dict(polar=True))
@@ -1483,8 +1489,6 @@ def plot_radar(scores):
     ax.fill(angles, scores, color='lightgreen', alpha=0.25)
     ax.plot(angles, scores, color='green', linewidth=2, linestyle='solid')
 
-    # Tracer la ligne de moyenne (3)
-    ax.plot(angles, avg_scores, color='#C96049', linewidth=2, linestyle='dashed')
 
     # Fixer les limites radiales entre 0 et 5
     ax.set_ylim(0, 5)
