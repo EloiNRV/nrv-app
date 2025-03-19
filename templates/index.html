@@ -7,12 +7,27 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        .top-left-partner {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            max-width: 200px; /* Ajuste si besoin */
+        }
+        .main-section {
+            position: relative; /* Pour que le positionnement absolu du logo fonctionne */
+        }
+    </style>
 </head>
 <body>
     <section class="main-section">
+        <!-- Logo Partner5 en haut à gauche -->
+        <img src="{{ url_for('static', filename='images/Partner5.png') }}" alt="Partner 5" class="top-left-partner">
+
         <article class="left-content">
             <h1>Evaluation des services écosystémiques apportés par la végétalisation des logements</h1>
-            <p>Le site est en ligne simple et intuitif à utiliser. L'utilisateur est invité à répondre à un questionnaire comprenant des valeurs à renseigner, des choix multiples et uniques. Les résultats affichés par le site incluent d'abord un radar élaboré à partir des questions et des données issues de la littérature, visant à estimer les avantages de la végétalisation sous différents critères. Ensuite, un graphique exprime en euros par an les avantages financiers de la végétation, permettant à l'utilisateur de comprendre quand son projet de végétalisation deviendra rentable ou s'équilibrera.</p>
+            <p>Bienvenue sur l’outil NRV, conçu pour vous accompagner dans l’évaluation des bénéfices de la végétalisation de votre projet immobilier. En répondant à un court questionnaire, vous pourrez estimer à la fois les avantages environnementaux et les gains économiques potentiels liés à la végétalisation. À l’issue du questionnaire, un radar mettra en avant les services écosystémiques apportés, tandis qu’un graphique financier vous permettra de visualiser la rentabilité de votre démarche.</p>
             <button class="begin-btn" onclick="window.location.href='/question1'">Commencer</button>
         </article>
         <aside class="right-content">
@@ -24,20 +39,12 @@
         <div class="logos-content">
             <div class="logo-item">
                 <img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Logo 1">
-
             </div>
             <div class="logo-item">
                 <img src="{{ url_for('static', filename='images/logo2.png') }}" alt="Logo 2">
-
-
-
             </div>
         </div>
     </section>
-
-
-
-
 
     <footer>
         <div class="footer-content">
@@ -51,9 +58,7 @@
                 <img src="{{ url_for('static', filename='images/Partner2.png') }}" alt="Partner 2">
                 <img src="{{ url_for('static', filename='images/Partner3.png') }}" alt="Partner 3">
                 <img src="{{ url_for('static', filename='images/Partner4.png') }}" alt="Partner 4">
-                <img src="{{ url_for('static', filename='images/Partner5.png') }}" alt="Partner 5">
-
-
+                <!-- Partner5 supprimé ici -->
             </div>
         </div>
 

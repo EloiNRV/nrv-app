@@ -10678,3 +10678,397 @@ OSError: [Errno 22] Invalid argument
 2025-03-18 12:59:33,164 - INFO - 127.0.0.1 - - [18/Mar/2025 12:59:33] "[36mGET /static/images/illustration1.png HTTP/1.1[0m" 304 -
 2025-03-18 12:59:33,165 - INFO - 127.0.0.1 - - [18/Mar/2025 12:59:33] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
 2025-03-18 13:09:06,405 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
+2025-03-18 13:09:06,634 - INFO -  * Restarting with stat
+2025-03-18 13:09:07,830 - WARNING -  * Debugger is active!
+2025-03-18 13:09:07,833 - INFO -  * Debugger PIN: 915-481-357
+2025-03-18 13:09:15,156 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:15] "GET /question1 HTTP/1.1" 200 -
+2025-03-18 13:09:15,250 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:15,272 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:15] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:15,273 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:15] "[36mGET /static/images/illustration1.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:17,165 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:17] "[32mPOST /question1 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:17,180 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:17] "GET /question2 HTTP/1.1" 200 -
+2025-03-18 13:09:17,215 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:17,224 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:17] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:17,226 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:17] "[36mGET /static/images/illustration2.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:18,738 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:18] "[32mPOST /question2 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:18,749 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:18] "GET /question3 HTTP/1.1" 200 -
+2025-03-18 13:09:18,786 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:18,788 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:18] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:18,791 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:18] "[36mGET /static/images/illustration3.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:20,320 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:20] "[32mPOST /question3 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:20,331 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:20] "GET /question4 HTTP/1.1" 200 -
+2025-03-18 13:09:20,371 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:20,373 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:20] "[36mGET /static/images/section4.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:20,374 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:20] "[36mGET /static/images/illustration4.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:21,731 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:21] "[32mPOST /question4 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:21,743 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:21] "GET /question5 HTTP/1.1" 200 -
+2025-03-18 13:09:21,774 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:21,786 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:21] "[36mGET /static/images/section5.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:21,786 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:21] "[36mGET /static/images/illustration5.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:23,018 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:23] "[32mPOST /question5 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:23,029 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:23] "GET /question6 HTTP/1.1" 200 -
+2025-03-18 13:09:23,065 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:23,071 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:23] "[36mGET /static/images/illustration6.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:23,071 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:23] "[36mGET /static/images/section6.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:24,333 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:24] "[32mPOST /question6 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:24,346 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:24] "GET /question7 HTTP/1.1" 200 -
+2025-03-18 13:09:24,383 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:24,394 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:24] "[36mGET /static/images/section7.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:24,394 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:24] "[36mGET /static/images/illustration7.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:25,509 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:25] "[32mPOST /question7 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:25,526 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:25] "GET /question8 HTTP/1.1" 200 -
+2025-03-18 13:09:25,562 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:25,571 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:25] "[36mGET /static/images/section8.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:25,573 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:25] "[36mGET /static/images/illustration8.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:26,865 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:26] "[32mPOST /question8 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:26,878 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:26] "GET /question9 HTTP/1.1" 200 -
+2025-03-18 13:09:26,910 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:26,918 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:26] "[36mGET /static/images/section9.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:26,918 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:26] "[36mGET /static/images/illustration9.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:28,124 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:28] "[32mPOST /question9 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:28,139 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:28] "GET /question10 HTTP/1.1" 200 -
+2025-03-18 13:09:28,170 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:28,185 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:28] "[36mGET /static/images/section10.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:28,185 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:28] "[36mGET /static/images/illustration10.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:29,295 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:29] "[32mPOST /question10 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:29,305 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:29] "GET /question11 HTTP/1.1" 200 -
+2025-03-18 13:09:29,337 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:29,348 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:29] "[36mGET /static/images/section11.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:29,349 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:29] "[36mGET /static/images/illustration11.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:30,479 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:30] "[32mPOST /question11 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:30,490 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:30] "GET /question12 HTTP/1.1" 200 -
+2025-03-18 13:09:30,521 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:30,532 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:30] "[36mGET /static/images/section12.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:30,533 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:30] "[36mGET /static/images/illustration12.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:31,561 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:31] "[32mPOST /question12 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:31,572 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:31] "GET /question13 HTTP/1.1" 200 -
+2025-03-18 13:09:31,606 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:31,613 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:31] "[36mGET /static/images/section13.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:31,613 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:31] "[36mGET /static/images/illustration13.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:32,578 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:32] "[32mPOST /question13 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:32,590 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:32] "GET /question14 HTTP/1.1" 200 -
+2025-03-18 13:09:32,624 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:32,633 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:32] "[36mGET /static/images/illustration14.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:32,633 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:32] "[36mGET /static/images/section14.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:34,015 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:34] "[32mPOST /question14 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:34,025 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:34] "GET /question15 HTTP/1.1" 200 -
+2025-03-18 13:09:34,061 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:34,069 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:34] "[36mGET /static/images/section15.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:34,070 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:34] "[36mGET /static/images/illustration15.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:35,307 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:35] "[32mPOST /question15 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:35,320 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:35] "GET /question16 HTTP/1.1" 200 -
+2025-03-18 13:09:35,352 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:35,362 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:35] "[36mGET /static/images/section16.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:35,363 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:35] "[36mGET /static/images/illustration16.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:36,430 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:36] "[32mPOST /question16 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:36,440 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:36] "GET /question17 HTTP/1.1" 200 -
+2025-03-18 13:09:36,476 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:36,486 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:36] "[36mGET /static/images/section17.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:36,486 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:36] "[36mGET /static/images/illustration17.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:37,655 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:37] "[32mPOST /question17 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:37,666 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:37] "GET /question18 HTTP/1.1" 200 -
+2025-03-18 13:09:37,697 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:37,708 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:37] "[36mGET /static/images/section18.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:37,708 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:37] "[36mGET /static/images/illustration18.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:38,951 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:38] "[32mPOST /question18 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:38,965 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:38] "GET /question19 HTTP/1.1" 200 -
+2025-03-18 13:09:39,005 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:39,014 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:39] "[36mGET /static/images/illustration19.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:39,015 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:39] "[36mGET /static/images/section19.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:40,107 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:40] "[32mPOST /question19 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:40,120 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:40] "GET /question20 HTTP/1.1" 200 -
+2025-03-18 13:09:40,155 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:40,163 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:40] "[36mGET /static/images/section20.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:40,164 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:40] "[36mGET /static/images/illustration20.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:41,669 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:41] "[32mPOST /question20 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:41,681 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:41] "GET /question21 HTTP/1.1" 200 -
+2025-03-18 13:09:41,713 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:41,720 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:41] "[36mGET /static/images/section21.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:41,721 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:41] "[36mGET /static/images/illustration21.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:42,900 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:42] "[32mPOST /question21 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:42,911 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:42] "GET /question22 HTTP/1.1" 200 -
+2025-03-18 13:09:42,947 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:42,956 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:42] "[36mGET /static/images/section22.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:42,957 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:42] "[36mGET /static/images/illustration22.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:44,085 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:44] "[32mPOST /question22 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:44,096 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:44] "GET /question23 HTTP/1.1" 200 -
+2025-03-18 13:09:44,128 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:44,139 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:44] "[36mGET /static/images/section23.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:44,139 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:44] "[36mGET /static/images/illustration23.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:45,336 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:45] "[32mPOST /question23 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:45,348 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:45] "GET /question24 HTTP/1.1" 200 -
+2025-03-18 13:09:45,392 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 13:09:45,402 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:45] "[36mGET /static/images/section24.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:45,422 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:45] "[36mGET /static/images/illustration24.png HTTP/1.1[0m" 304 -
+2025-03-18 13:09:46,506 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:46] "[32mPOST /question24 HTTP/1.1[0m" 302 -
+2025-03-18 13:09:46,518 - INFO -  Stockage dans session['CBS_score'] = 3
+2025-03-18 13:09:46,518 - INFO -  CBS calculé : 0.46
+2025-03-18 13:09:46,518 - INFO -  Score biodiversité basé sur CBS : 3
+2025-03-18 13:09:46,518 - INFO -  Score Façades Végétalisées = 0
+2025-03-18 13:09:46,518 - INFO -  Risques Façades Végétalisées = 0
+2025-03-18 13:09:46,518 - INFO -  Score Toitures Végétalisées = 0
+2025-03-18 13:09:46,518 - INFO -  Risques Toitures Végétalisées = 0
+2025-03-18 13:09:46,518 - INFO -  Vérification de COEFFICIENTS : dict_keys(['q13', 'q14', 'q15', 'q16', 'q17', 'q18', 'q19', 'q20', 'q21', 'q22', 'q23', 'CBS', 'Fv', 'Tv'])
+2025-03-18 13:09:46,519 - INFO -  Début du calcul des scores environnementaux
+2025-03-18 13:09:46,519 - INFO -  Scores enregistrés: {'q13': 0.0, 'q14': 3.0, 'q15': 3.0, 'q16': 0.0, 'q17': 3.0, 'q18': 2.0, 'q19': 4.0, 'q20': 3.0, 'q21': 2.0, 'q22': 5.0, 'q23': 1.0}
+2025-03-18 13:09:46,519 - INFO -  CBS Score = 3.0, ScoreFv = 0.0, ScoreTv = 0.0
+2025-03-18 13:09:46,519 - INFO -  Calcul du score pour B
+2025-03-18 13:09:46,519 - INFO -  Score B = 1.9285714285714286 (Numerator: 108.0, Denominator: 56)
+2025-03-18 13:09:46,519 - INFO -  Calcul du score pour E
+2025-03-18 13:09:46,519 - INFO -  Score E = 1.7826086956521738 (Numerator: 41.0, Denominator: 23)
+2025-03-18 13:09:46,519 - INFO -  Calcul du score pour CO2
+2025-03-18 13:09:46,519 - INFO -  Score CO2 = 1.7037037037037037 (Numerator: 46.0, Denominator: 27)
+2025-03-18 13:09:46,519 - INFO -  Calcul du score pour W
+2025-03-18 13:09:46,519 - INFO -  Score W = 0.8214285714285714 (Numerator: 23.0, Denominator: 28)
+2025-03-18 13:09:46,519 - INFO -  Calcul du score pour C
+2025-03-18 13:09:46,519 - INFO -  Score C = 1.864864864864865 (Numerator: 69.0, Denominator: 37)
+2025-03-18 13:09:46,519 - INFO -  Calcul du score pour R
+2025-03-18 13:09:46,519 - INFO -  Score R = 1.488888888888889 (Numerator: 67.0, Denominator: 45.0)
+2025-03-18 13:09:46,519 - INFO - Scores finaux calculés :
+2025-03-18 13:09:46,520 - INFO -  B = 1.9285714285714286
+2025-03-18 13:09:46,520 - INFO -  E = 1.7826086956521738
+2025-03-18 13:09:46,520 - INFO -  CO2 = 1.7037037037037037
+2025-03-18 13:09:46,520 - INFO -  W = 0.8214285714285714
+2025-03-18 13:09:46,520 - INFO -  C = 1.864864864864865
+2025-03-18 13:09:46,520 - INFO -  R = 1.488888888888889
+2025-03-18 13:09:46,520 - INFO -  Scores finaux pour radar : [1.9285714285714286, 1.7826086956521738, 1.7037037037037037, 0.8214285714285714, 1.864864864864865, 1.488888888888889]
+2025-03-18 13:09:46,703 - INFO -  DEBUG - Vérification des coûts et gains :
+2025-03-18 13:09:46,703 - INFO -  Pfv (Façades) = 0 €, Ptv (Toitures) = 0.0 €
+2025-03-18 13:09:46,704 - INFO -  Pe (Entretien façades) = 0 €/an, Pe1 (Entretien toitures) = 0.0 €/an
+2025-03-18 13:09:46,704 - INFO -  Cost Setup = 0.0 €, Cost Fixed = 5000.0 €, Cost Maintenance = 0.0 €/an
+2025-03-18 13:09:46,704 - INFO -  Gain Rotation = 18912.08791208791 €, Gain Intérêt = 3728.43696341147 €
+2025-03-18 13:09:46,704 - INFO -  Gain Subventions = 10000.0 €, Gain Valorisation = 0.0 €
+2025-03-18 13:09:46,704 - INFO -  CBS calculé = 0.46
+2025-03-18 13:09:46,704 - INFO -  Score biodiversité CBS = 3
+2025-03-18 13:09:46,845 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:46] "GET /results HTTP/1.1" 200 -
+2025-03-18 13:09:46,878 - INFO - 127.0.0.1 - - [18/Mar/2025 13:09:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:30:41,387 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:10000
+2025-03-18 16:30:41,388 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 16:30:41,397 - INFO -  * Restarting with stat
+2025-03-18 16:30:42,576 - WARNING -  * Debugger is active!
+2025-03-18 16:30:42,581 - INFO -  * Debugger PIN: 915-481-357
+2025-03-18 16:30:47,558 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "GET / HTTP/1.1" 200 -
+2025-03-18 16:30:47,884 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:30:47,897 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/images/Partner1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:30:47,906 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/images/Partner12.png HTTP/1.1[0m" 304 -
+2025-03-18 16:30:47,915 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/images/logo2.png HTTP/1.1[0m" 304 -
+2025-03-18 16:30:47,921 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/images/Partner2.png HTTP/1.1[0m" 304 -
+2025-03-18 16:30:47,924 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/images/Big-Logo.png HTTP/1.1[0m" 304 -
+2025-03-18 16:30:47,937 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/images/Partner3.png HTTP/1.1[0m" 304 -
+2025-03-18 16:30:47,947 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/images/Partner4.png HTTP/1.1[0m" 304 -
+2025-03-18 16:30:47,952 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/images/Partner5.png HTTP/1.1[0m" 304 -
+2025-03-18 16:30:47,956 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/images/logo1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:30:47,963 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/images/Partner0.png HTTP/1.1[0m" 304 -
+2025-03-18 16:30:47,964 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:47] "[36mGET /static/images/project-logo-new.png HTTP/1.1[0m" 304 -
+2025-03-18 16:30:48,009 - INFO - 127.0.0.1 - - [18/Mar/2025 16:30:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-18 16:35:51,418 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "GET / HTTP/1.1" 200 -
+2025-03-18 16:35:51,444 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:35:51,457 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/images/project-logo-new.png HTTP/1.1[0m" 304 -
+2025-03-18 16:35:51,457 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/images/logo1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:35:51,458 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/images/Partner5.png HTTP/1.1[0m" 304 -
+2025-03-18 16:35:51,458 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/images/logo2.png HTTP/1.1[0m" 304 -
+2025-03-18 16:35:51,460 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/images/Big-Logo.png HTTP/1.1[0m" 304 -
+2025-03-18 16:35:51,466 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/images/Partner0.png HTTP/1.1[0m" 304 -
+2025-03-18 16:35:51,478 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/images/Partner1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:35:51,501 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/images/Partner12.png HTTP/1.1[0m" 304 -
+2025-03-18 16:35:51,501 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/images/Partner3.png HTTP/1.1[0m" 304 -
+2025-03-18 16:35:51,502 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/images/Partner2.png HTTP/1.1[0m" 304 -
+2025-03-18 16:35:51,502 - INFO - 127.0.0.1 - - [18/Mar/2025 16:35:51] "[36mGET /static/images/Partner4.png HTTP/1.1[0m" 304 -
+2025-03-18 16:39:43,895 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:43] "GET / HTTP/1.1" 200 -
+2025-03-18 16:39:43,920 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:39:43,946 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:43] "[36mGET /static/images/Big-Logo.png HTTP/1.1[0m" 304 -
+2025-03-18 16:39:43,950 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:43] "[36mGET /static/images/logo2.png HTTP/1.1[0m" 304 -
+2025-03-18 16:39:43,950 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:43] "[36mGET /static/images/Partner5.png HTTP/1.1[0m" 304 -
+2025-03-18 16:39:43,950 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:43] "[36mGET /static/images/logo1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:39:43,952 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:43] "[36mGET /static/images/project-logo-new.png HTTP/1.1[0m" 304 -
+2025-03-18 16:39:43,955 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:43] "[36mGET /static/images/Partner0.png HTTP/1.1[0m" 304 -
+2025-03-18 16:39:43,986 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:43] "[36mGET /static/images/Partner1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:39:43,988 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:43] "[36mGET /static/images/Partner12.png HTTP/1.1[0m" 304 -
+2025-03-18 16:39:44,001 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:44] "[36mGET /static/images/Partner3.png HTTP/1.1[0m" 304 -
+2025-03-18 16:39:44,004 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:44] "[36mGET /static/images/Partner2.png HTTP/1.1[0m" 304 -
+2025-03-18 16:39:44,005 - INFO - 127.0.0.1 - - [18/Mar/2025 16:39:44] "[36mGET /static/images/Partner4.png HTTP/1.1[0m" 304 -
+2025-03-18 16:42:43,679 - INFO - 127.0.0.1 - - [18/Mar/2025 16:42:43] "GET /question1 HTTP/1.1" 200 -
+2025-03-18 16:42:43,713 - INFO - 127.0.0.1 - - [18/Mar/2025 16:42:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:42:43,715 - INFO - 127.0.0.1 - - [18/Mar/2025 16:42:43] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:42:43,715 - INFO - 127.0.0.1 - - [18/Mar/2025 16:42:43] "[36mGET /static/images/illustration1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:20,221 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:20] "GET /question1 HTTP/1.1" 200 -
+2025-03-18 16:47:20,242 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-18 16:47:20,251 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:20] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:20,251 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:20] "[36mGET /static/images/illustration1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:23,608 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:23] "[32mPOST /question1 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:23,619 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:23] "GET /question2 HTTP/1.1" 200 -
+2025-03-18 16:47:23,649 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:23,653 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:23] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:23,658 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:23] "[36mGET /static/images/illustration2.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:25,534 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:25] "[32mPOST /question2 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:25,548 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:25] "GET /question3 HTTP/1.1" 200 -
+2025-03-18 16:47:25,581 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:25,583 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:25] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:25,589 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:25] "[36mGET /static/images/illustration3.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:27,549 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:27] "[32mPOST /question3 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:27,564 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:27] "GET /question4 HTTP/1.1" 200 -
+2025-03-18 16:47:27,599 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:27,599 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:27] "[36mGET /static/images/section4.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:27,600 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:27] "[36mGET /static/images/illustration4.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:28,648 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:28] "[32mPOST /question4 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:28,655 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:28] "GET /question4 HTTP/1.1" 200 -
+2025-03-18 16:47:28,680 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:28] "[36mGET /static/images/section4.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:28,680 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:28] "[36mGET /static/images/illustration4.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:28,681 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:29,765 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:29] "[32mPOST /question4 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:29,772 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:29] "GET /question4 HTTP/1.1" 200 -
+2025-03-18 16:47:29,793 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:29,794 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:29] "[36mGET /static/images/section4.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:29,796 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:29] "[36mGET /static/images/illustration4.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:33,078 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:33] "[32mPOST /question4 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:33,092 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:33] "GET /question5 HTTP/1.1" 200 -
+2025-03-18 16:47:33,130 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:33,132 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:33] "[36mGET /static/images/section5.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:33,137 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:33] "[36mGET /static/images/illustration5.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:36,977 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:36] "GET /question11 HTTP/1.1" 200 -
+2025-03-18 16:47:37,007 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:37,012 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:37] "[36mGET /static/images/section11.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:37,016 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:37] "[36mGET /static/images/illustration11.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:40,217 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:40] "[32mPOST /question11 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:40,229 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:40] "GET /question12 HTTP/1.1" 200 -
+2025-03-18 16:47:40,260 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:40,273 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:40] "[36mGET /static/images/section12.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:40,274 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:40] "[36mGET /static/images/illustration12.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:42,151 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:42] "[32mPOST /question12 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:42,163 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:42] "GET /question13 HTTP/1.1" 200 -
+2025-03-18 16:47:42,192 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:42,204 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:42] "[36mGET /static/images/section13.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:42,205 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:42] "[36mGET /static/images/illustration13.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:43,252 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:43] "[32mPOST /question13 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:43,264 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:43] "GET /question14 HTTP/1.1" 200 -
+2025-03-18 16:47:43,294 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:43,306 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:43] "[36mGET /static/images/section14.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:43,307 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:43] "[36mGET /static/images/illustration14.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:44,268 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:44] "[32mPOST /question14 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:44,280 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:44] "GET /question15 HTTP/1.1" 200 -
+2025-03-18 16:47:44,313 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:44,323 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:44] "[36mGET /static/images/section15.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:44,324 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:44] "[36mGET /static/images/illustration15.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:45,568 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:45] "[32mPOST /question15 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:45,579 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:45] "GET /question16 HTTP/1.1" 200 -
+2025-03-18 16:47:45,609 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:45,619 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:45] "[36mGET /static/images/section16.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:45,622 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:45] "[36mGET /static/images/illustration16.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:46,742 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:46] "[32mPOST /question16 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:46,753 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:46] "GET /question17 HTTP/1.1" 200 -
+2025-03-18 16:47:46,789 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:46,798 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:46] "[36mGET /static/images/section17.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:46,801 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:46] "[36mGET /static/images/illustration17.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:48,148 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:48] "[32mPOST /question17 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:48,161 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:48] "GET /question18 HTTP/1.1" 200 -
+2025-03-18 16:47:48,194 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:48,204 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:48] "[36mGET /static/images/section18.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:48,207 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:48] "[36mGET /static/images/illustration18.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:51,013 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:51] "[32mPOST /question18 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:51,028 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:51] "GET /question19 HTTP/1.1" 200 -
+2025-03-18 16:47:51,058 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:51,069 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:51] "[36mGET /static/images/section19.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:51,071 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:51] "[36mGET /static/images/illustration19.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:52,304 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:52] "[32mPOST /question19 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:52,315 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:52] "GET /question20 HTTP/1.1" 200 -
+2025-03-18 16:47:52,347 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:52,359 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:52] "[36mGET /static/images/section20.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:52,360 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:52] "[36mGET /static/images/illustration20.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:53,494 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:53] "[32mPOST /question20 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:53,505 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:53] "GET /question21 HTTP/1.1" 200 -
+2025-03-18 16:47:53,537 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:53,548 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:53] "[36mGET /static/images/section21.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:53,548 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:53] "[36mGET /static/images/illustration21.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:55,691 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:55] "[32mPOST /question21 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:55,704 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:55] "GET /question22 HTTP/1.1" 200 -
+2025-03-18 16:47:55,738 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:55,750 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:55] "[36mGET /static/images/illustration22.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:55,750 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:55] "[36mGET /static/images/section22.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:57,323 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:57] "[32mPOST /question22 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:57,337 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:57] "GET /question23 HTTP/1.1" 200 -
+2025-03-18 16:47:57,373 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:57,376 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:57] "[36mGET /static/images/section23.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:57,378 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:57] "[36mGET /static/images/illustration23.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:59,022 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:59] "[32mPOST /question23 HTTP/1.1[0m" 302 -
+2025-03-18 16:47:59,034 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:59] "GET /question24 HTTP/1.1" 200 -
+2025-03-18 16:47:59,067 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-18 16:47:59,077 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:59] "[36mGET /static/images/section24.png HTTP/1.1[0m" 304 -
+2025-03-18 16:47:59,079 - INFO - 127.0.0.1 - - [18/Mar/2025 16:47:59] "[36mGET /static/images/illustration24.png HTTP/1.1[0m" 304 -
+2025-03-18 16:48:00,247 - INFO - 127.0.0.1 - - [18/Mar/2025 16:48:00] "[32mPOST /question24 HTTP/1.1[0m" 302 -
+2025-03-18 16:48:00,253 - ERROR -  Erreur dans le calcul du CBS : La surface totale ne peut pas être nulle.
+2025-03-18 16:48:00,253 - ERROR -  Erreur dans la génération des résultats : cannot unpack non-iterable NoneType object
+2025-03-18 16:48:00,291 - INFO - 127.0.0.1 - - [18/Mar/2025 16:48:00] "[35m[1mGET /results HTTP/1.1[0m" 500 -
+2025-03-18 16:48:00,325 - INFO - 127.0.0.1 - - [18/Mar/2025 16:48:00] "GET /results?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-18 16:48:00,334 - INFO - 127.0.0.1 - - [18/Mar/2025 16:48:00] "GET /results?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-18 16:48:00,397 - INFO - 127.0.0.1 - - [18/Mar/2025 16:48:00] "GET /results?__debugger__=yes&cmd=resource&f=console.png&s=dGtCg1gfj70cetXonZEC HTTP/1.1" 200 -
+2025-03-18 16:48:00,413 - INFO - 127.0.0.1 - - [18/Mar/2025 16:48:00] "GET /results?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-19 13:24:31,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:10000
+2025-03-19 13:24:31,529 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-19 13:24:31,540 - INFO -  * Restarting with stat
+2025-03-19 13:24:32,933 - WARNING -  * Debugger is active!
+2025-03-19 13:24:32,938 - INFO -  * Debugger PIN: 915-481-357
+2025-03-19 13:24:36,779 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:36] "GET / HTTP/1.1" 200 -
+2025-03-19 13:24:37,074 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-19 13:24:37,092 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[36mGET /static/images/Partner0.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:37,105 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[36mGET /static/images/Partner1.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:37,130 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[36mGET /static/images/logo1.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:37,133 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[36mGET /static/images/logo2.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:37,141 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[36mGET /static/images/project-logo-new.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:37,153 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[36mGET /static/images/Big-Logo.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:37,156 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[36mGET /static/images/Partner5.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:37,177 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[36mGET /static/images/Partner12.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:37,190 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[36mGET /static/images/Partner2.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:37,219 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[36mGET /static/images/Partner3.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:37,219 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[36mGET /static/images/Partner4.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:37,259 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-19 13:24:47,650 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:47] "GET /question1 HTTP/1.1" 200 -
+2025-03-19 13:24:47,697 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-19 13:24:47,699 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:47] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:47,701 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:47] "[36mGET /static/images/illustration1.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:51,951 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:51] "[32mPOST /question1 HTTP/1.1[0m" 302 -
+2025-03-19 13:24:51,964 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:51] "GET /question2 HTTP/1.1" 200 -
+2025-03-19 13:24:52,002 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-19 13:24:52,010 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:52] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-03-19 13:24:52,015 - INFO - 127.0.0.1 - - [19/Mar/2025 13:24:52] "[36mGET /static/images/illustration2.png HTTP/1.1[0m" 304 -
+2025-03-19 13:25:07,390 - INFO - 127.0.0.1 - - [19/Mar/2025 13:25:07] "GET /question1 HTTP/1.1" 200 -
+2025-03-19 13:25:07,426 - INFO - 127.0.0.1 - - [19/Mar/2025 13:25:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-19 13:25:07,440 - INFO - 127.0.0.1 - - [19/Mar/2025 13:25:07] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-03-19 13:25:07,440 - INFO - 127.0.0.1 - - [19/Mar/2025 13:25:07] "[36mGET /static/images/illustration1.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,305 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "GET / HTTP/1.1" 200 -
+2025-03-19 13:29:25,325 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,349 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/images/logo2.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,350 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/images/Partner5.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,352 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/images/logo1.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,352 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/images/Big-Logo.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,352 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/images/project-logo-new.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,356 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/images/Partner0.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,367 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/images/Partner1.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,375 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/images/Partner12.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,378 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/images/Partner2.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,386 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/images/Partner3.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:25,391 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:25] "[36mGET /static/images/Partner4.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:42,791 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:42] "GET /question1 HTTP/1.1" 200 -
+2025-03-19 13:29:42,829 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-19 13:29:42,837 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:42] "[36mGET /static/images/section1.png HTTP/1.1[0m" 304 -
+2025-03-19 13:29:42,837 - INFO - 127.0.0.1 - - [19/Mar/2025 13:29:42] "[36mGET /static/images/illustration1.png HTTP/1.1[0m" 304 -
+2025-03-19 13:30:19,214 - INFO - 127.0.0.1 - - [19/Mar/2025 13:30:19] "GET /question5 HTTP/1.1" 200 -
+2025-03-19 13:30:19,251 - INFO - 127.0.0.1 - - [19/Mar/2025 13:30:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-19 13:30:19,258 - INFO - 127.0.0.1 - - [19/Mar/2025 13:30:19] "[36mGET /static/images/illustration5.png HTTP/1.1[0m" 304 -
+2025-03-19 13:30:19,259 - INFO - 127.0.0.1 - - [19/Mar/2025 13:30:19] "[36mGET /static/images/section5.png HTTP/1.1[0m" 304 -
+2025-03-19 13:30:28,139 - INFO - 127.0.0.1 - - [19/Mar/2025 13:30:28] "[32mPOST /question5 HTTP/1.1[0m" 302 -
+2025-03-19 13:30:28,152 - INFO - 127.0.0.1 - - [19/Mar/2025 13:30:28] "GET /question6 HTTP/1.1" 200 -
+2025-03-19 13:30:28,201 - INFO - 127.0.0.1 - - [19/Mar/2025 13:30:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-19 13:30:28,202 - INFO - 127.0.0.1 - - [19/Mar/2025 13:30:28] "[36mGET /static/images/section6.png HTTP/1.1[0m" 304 -
+2025-03-19 13:30:28,202 - INFO - 127.0.0.1 - - [19/Mar/2025 13:30:28] "[36mGET /static/images/illustration6.png HTTP/1.1[0m" 304 -
+2025-03-19 13:31:00,941 - INFO - 127.0.0.1 - - [19/Mar/2025 13:31:00] "[32mPOST /question6 HTTP/1.1[0m" 302 -
+2025-03-19 13:31:00,966 - INFO - 127.0.0.1 - - [19/Mar/2025 13:31:00] "GET /question7 HTTP/1.1" 200 -
+2025-03-19 13:31:01,004 - INFO - 127.0.0.1 - - [19/Mar/2025 13:31:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-19 13:31:01,015 - INFO - 127.0.0.1 - - [19/Mar/2025 13:31:01] "[36mGET /static/images/section7.png HTTP/1.1[0m" 304 -
+2025-03-19 13:31:01,016 - INFO - 127.0.0.1 - - [19/Mar/2025 13:31:01] "[36mGET /static/images/illustration7.png HTTP/1.1[0m" 304 -
+2025-03-19 13:39:19,749 - INFO - 127.0.0.1 - - [19/Mar/2025 13:39:19] "GET /question7 HTTP/1.1" 200 -
+2025-03-19 13:39:19,775 - INFO - 127.0.0.1 - - [19/Mar/2025 13:39:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-19 13:39:19,776 - INFO - 127.0.0.1 - - [19/Mar/2025 13:39:19] "[36mGET /static/images/illustration7.png HTTP/1.1[0m" 304 -
+2025-03-19 13:39:19,776 - INFO - 127.0.0.1 - - [19/Mar/2025 13:39:19] "[36mGET /static/images/section7.png HTTP/1.1[0m" 304 -
+2025-03-19 13:39:28,391 - INFO -  * Detected change in 'c:\\Users\\ekerg\\OneDrive\\Bureau\\Etude_et_recherche\\code interface web\\app_eloi.py', reloading
