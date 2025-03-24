@@ -1329,11 +1329,11 @@ def generate_roi_graph():
 
     # Courbes de coûts et gains
     costs = cost_setup + cost_fixed + (cost_maintenance * years)
-    gains = ((gain_rotation + gain_interest) * years) + gain_aid + np.where(years >= 3, gain_valuation, 0)
+    gains = ((gain_rotation + gain_interest) * years) + gain_aid + ((gain_valuation/20) * years) 
 
     # Définition de l'intersection
     def difference(x):
-        return (cost_setup + cost_fixed + cost_maintenance * x) - ((gain_rotation + gain_interest) * x + gain_aid + (gain_valuation if x >= 3 else 0))
+        return (cost_setup + cost_fixed + cost_maintenance * x) - ((gain_rotation + gain_interest) * x + gain_aid + (gain_valuation /20) * x )
 
     x_guess = 5  # Hypothèse initiale
     intersection_year = fsolve(difference, x_guess)[0]
