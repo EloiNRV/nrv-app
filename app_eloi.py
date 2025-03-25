@@ -1327,13 +1327,34 @@ def generate_roi_graph():
     gain_aid = session.get('Ps', 0)
     gain_valuation = session.get('Cc', 0) * session.get('valuation_percentage', 0)
 
+    # Calcul de la dilution de la valorisation en fonction des années (boucle for)
+    dilution = np.zeros_like(years, dtype=float)
+    for i, t in enumerate(years):
+        if t <= 5:
+            dilution[i] = gain_valuation * 0.10 * (t / 5)
+        elif t <= 10:
+            dilution[i] = gain_valuation * 0.10 + gain_valuation * 0.80 * ((t - 5) / 5)
+        elif t <= 20:
+            dilution[i] = gain_valuation * 0.10 + gain_valuation * 0.80 + gain_valuation * 0.10 * ((t - 10) / 10)
+        else:
+            dilution[i] = gain_valuation
+
     # Courbes de coûts et gains
     costs = cost_setup + cost_fixed + (cost_maintenance * years)
-    gains = ((gain_rotation + gain_interest) * years) + gain_aid + ((gain_valuation/20) * years) 
+    gains = ((gain_rotation + gain_interest) * years) + gain_aid + dilution
 
     # Définition de l'intersection
     def difference(x):
-        return (cost_setup + cost_fixed + cost_maintenance * x) - ((gain_rotation + gain_interest) * x + gain_aid + (gain_valuation /20) * x )
+        # x est un scalaire, on utilise des conditions classiques
+        if x <= 5:
+            dilution_x = gain_valuation * 0.10 * (x / 5)
+        elif x <= 10:
+            dilution_x = gain_valuation * 0.10 + gain_valuation * 0.80 * ((x - 5) / 5)
+        elif x <= 20:
+            dilution_x = gain_valuation * 0.10 + gain_valuation * 0.80 + gain_valuation * 0.10 * ((x - 10) / 10)
+        else:
+            dilution_x = gain_valuation
+        return (cost_setup + cost_fixed + cost_maintenance * x) - ((gain_rotation + gain_interest) * x + gain_aid + dilution_x)
 
     x_guess = 5  # Hypothèse initiale
     intersection_year = fsolve(difference, x_guess)[0]
@@ -1344,7 +1365,7 @@ def generate_roi_graph():
     ax.plot(years, gains, label="Gains total apporté par la végétalisation", color="#2E8B57", linewidth=2)
 
     # Ajout du point d'intersection
-    if intersection_year > 0 and intersection_year < 20:
+    if 0 < intersection_year < 20:
         plt.axvline(x=intersection_year, color='black', linestyle='--', alpha=0.7)
         plt.scatter(intersection_year, (gain_rotation + gain_interest) * intersection_year + gain_aid, color='black', zorder=5)
         plt.text(intersection_year + 0.5, (gain_rotation + gain_interest) * intersection_year + gain_aid, f'{intersection_year:.1f} ans', color='black')
@@ -1358,7 +1379,7 @@ def generate_roi_graph():
     plt.legend()
     plt.grid(True, linestyle="--", alpha=0.6)
 
-    #  Sauvegarde en Base64 pour affichage dans Flask
+    # Sauvegarde en Base64 pour affichage dans Flask
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
     buf.seek(0)
@@ -1366,7 +1387,6 @@ def generate_roi_graph():
     buf.close()
 
     return f"data:image/png;base64,{image_base64}"
-
 
 # . Dictionnaire des coefficients pour chaque critère
 COEFFICIENTS = {
