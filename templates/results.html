@@ -160,6 +160,9 @@
                 <h2 class="section-title">Évaluation des critères environnementaux</h2>
                 <img src="{{ radar_image }}" alt="Graphique Radar" class="radar-img">
                 <p class="likert-scale">Note de 1 à 5 sur l'échelle de Likert, un immeuble non végétalisé à une note de 0.</p>
+                <a href="{{ url_for('static', filename='docs/Fonctionnement_du radar_NRV.pdf') }}" target="_blank" class="button" style="margin-top: 15px;">
+                    Consulter l'explication du radar NRV
+                </a>
             </div>
 
             <!-- Séparateur visuel -->
@@ -173,6 +176,9 @@
                     Ce graphique compare l’évolution des coûts et des gains liés à la végétalisation sur une période de 20 ans.
                     L'intersection des courbes indique le moment où l’investissement devient rentable.
                 </p>
+                <a href="{{ url_for('static', filename='docs/Graphique_ROI.pdf') }}" target="_blank" class="button" style="margin-top: 15px;">
+                    Consulter l'explication du graphique de retour sur investissement 
+                </a>
             </div>
 
             

@@ -708,11 +708,11 @@ def question19():
 
             # Dictionnaire des scores
             scores_entretien = {
-                "plus d’1 fois /mois": 5,
+                "plus d’1 fois /mois": 3,
                 "1 fois /mois": 4,
-                "4 fois /an": 2,
-                "2 fois /an": 1,
-                "1 fois /an ou moins": 0
+                "4 fois /an": 5,
+                "2 fois /an": 2,
+                "1 fois /an ou moins": 1
             }
              # Stocker la réponse en session ( Correction ajoutée ici)
             session['entretien_frequence'] = entretien_frequence  
@@ -869,7 +869,7 @@ def question24():
 
             # Vérification si l'utilisateur a sélectionné "Aucune idée"
             if valuation_percentage == "Aucune idée":
-                session['valuation_percentage'] = 0.05  # Stocker 5% en tant que valeur réelle
+                session['valuation_percentage'] = 0  # Stocker 0% en tant que valeur réelle
             else:
                 session['valuation_percentage'] = float(valuation_percentage.replace("%", "")) / 100
 
@@ -1390,20 +1390,20 @@ def generate_roi_graph():
 
 # . Dictionnaire des coefficients pour chaque critère
 COEFFICIENTS = {
-            "q13": {"B": 4, "E": 0, "CO2": 1, "W": 4, "C": 3, "R": 5}, 
-            "q14": {"B": 4, "E": 2, "CO2": 2, "W": 0, "C": 0, "R": 0}, 
-            "q15": {"B": 4, "E": 2, "CO2": 2, "W": 3, "C": 4, "R": 5}, 
-            "q16": {"B": 4, "E": 2, "CO2": 2, "W": 2, "C": 4, "R": 5}, 
-            "q17": {"B": 4, "E": 3, "CO2": 3, "W": 1, "C": 1, "R": 1}, 
-            "q18": {"B": 5, "E": 0, "CO2": 1, "W": 3, "C": 3, "R": 3}, 
-            "q19": {"B": 2, "E": 2, "CO2": 2, "W": 0, "C": 5, "R": 5}, 
-            "q20": {"B": 5, "E":1, "CO2": 3, "W": 0, "C": 1, "R": 3}, 
-            "q21": {"B": 3, "E": 2, "CO2": 3, "W": 0, "C": 1, "R": 2}, 
-            "q22": {"B": 3, "E": 1, "CO2": 0, "W": 0, "C": 4, "R": 1}, 
+            "q13": {"B": 4, "E": 3, "CO2": 1, "W": 1, "C": 5, "R": 5}, 
+            "q14": {"B": 5, "E": 2, "CO2": 2, "W": 1, "C": 0, "R": 0}, 
+            "q15": {"B": 4, "E": 2, "CO2": 2, "W": 5, "C": 3, "R": 5}, 
+            "q16": {"B": 4, "E": 3, "CO2": 2, "W": 5, "C": 4, "R": 5}, 
+            "q17": {"B": 4, "E": 3, "CO2": 3, "W": 3, "C": 4, "R": 1}, 
+            "q18": {"B": 5, "E": 1, "CO2": 3, "W": 3, "C": 3, "R": 3}, 
+            "q19": {"B": 4, "E": 0, "CO2": 2, "W": 1, "C": 5, "R": 5}, 
+            "q20": {"B": 5, "E":1, "CO2": 3, "W": 3, "C": 3, "R": 3}, 
+            "q21": {"B": 4, "E": 2, "CO2": 3, "W": 1, "C": 2, "R": 2}, 
+            "q22": {"B": 3, "E": 0, "CO2": 2, "W": 2, "C": 5, "R": 2}, 
             "q23": {"B": 3, "E": 0, "CO2": 0, "W": 5, "C": 3, "R": 5},  
-            "CBS": {"B": 5, "E": 3, "CO2": 3, "W": 4, "C": 4, "R": 3},
-            "Fv": {"B": 5, "E": 4, "CO2": 4, "W": 5, "C": 4, "R": 0},
-            "Tv": {"B": 5, "E": 4, "CO2": 4, "W": 5, "C": 4, "R": 0}
+            "CBS": {"B": 5, "E": 5, "CO2": 3, "W": 5, "C": 4, "R": 3}, #Question 1
+            "Fv": {"B": 5, "E": 5, "CO2": 2, "W": 3, "C": 4, "R": 2},  #Question 11 
+            "Tv": {"B": 5, "E": 5, "CO2": 3, "W": 3, "C": 4, "R": 2}   #Question  12 
         }
 
 def calculate_environmental_scores():
@@ -1462,10 +1462,6 @@ def calculate_environmental_scores():
                     numerator += CBS_score * COEFFICIENTS["CBS"]["B"]
                     denominator += COEFFICIENTS["CBS"]["B"]
 
-                # . Ajout spécifique pour les risques
-                if critere == "R":
-                    numerator += RisquesFv * CoefFv + RisquesTv * CoefTv
-                    denominator += CoefFv + CoefTv
 
                 scores[critere] = safe_divide(numerator, denominator)
 
